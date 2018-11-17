@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url("../node_modules/bootstrap/dist/css/bootstrap.css");
+
+@import url("vendor/css/style.css");
+@import url("vendor/font-awesome5/css/all.css");
+@import url("vendor/gritter/jquery.gritter.css");
+@import url("vendor/css/animate.css");
+@import url("vendor/css/iCheck/custom.css");
+@import url("vendor/css/switchery/switchery.css");
+@import url("../node_modules/leaflet/dist/leaflet.css");
+@import url("../node_modules/icheck-bootstrap//icheck-bootstrap.min.css");
+@import url("../node_modules/datatables.net-dt/css/jquery.dataTables.css");
+
+@import url("vendor/css/ngx-pagination/ngx-pagination.css");
+@import url("vendor/css/charts.css");
+
+
+.landing-page .navbar-default {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.landing-page .navbar-default .nav li a {
+  color: #676a6c;
+}
+
+.md-skin .ibox-title,
+.md-skin .ibox-content {
+  border-style: solid solid none;
+}
+
+
+
+.onoffswitch-label-warning {
+  border: 2px solid #FFAA5A;
+}
+
+.onoffswitch-inner-warning:before {
+  background-color: #FFAA5A;
+}
+
+.onoffswitch-inner-warning:after {}
+
+
+.onoffswitch-switch-warning {
+  border: 2px solid #FFAA5A;
+}
+
+.onoffswitch-inner:before {
+  content: "Oui";
+}
+
+.onoffswitch-inner:after {
+  content: "Non";
+
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
+
+
+.landing-page .navbar-default .navbar-brand:hover,
+.landing-page .navbar-default .navbar-brand:focus {
+  background: #fff;
+  color: #fff;
+}
+
+.landing-page .navbar-default .navbar-brand {
+  color: #fff;
+  height: auto;
+  display: block;
+  font-size: 14px;
+  background: #fff;
+  padding: 15px 20px 15px 20px;
+  border-radius: 0 0 5px 5px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out 0s;
+  margin-top: -16px;
+}

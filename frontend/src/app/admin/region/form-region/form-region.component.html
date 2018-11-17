@@ -1,0 +1,29 @@
+<div class="modal-header b-r-sm" [ngClass]="{ 'bg-primary' : !edit, 'bg-warning' : edit }">
+  <h3 class="modal-title pull-left">{{title}}</h3>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="onCancel()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form #RegionForm="ngForm">
+
+
+
+    <div class="form-group {{ errors.name ? 'has-error' : '' }} ">
+      <label for="name">Nom</label>
+      <input id="name" type="text" class="form-control"  name="name" [(ngModel)]="region.name">
+    </div>
+    <div class="alert alert-danger" [hidden]="!errors.name">
+      {{errors.name}}
+    </div>
+
+
+
+  </form>
+</div>
+<div class="modal-footer">
+    <!--{{RegionForm.value| json}}-->
+  <button type="button" class="btn btn-secondary" (click)="onCancel()">Fermer</button>
+  <button type="button" [disabled]=!RegionForm.valid class="btn" [ngClass]="edit ? 'btn-warning' :  'btn-primary'"
+          (click)="onConfirm()">Sauvegarder</button>
+  </div>

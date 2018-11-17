@@ -1,0 +1,47 @@
+<!-- <div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-9">
+    <h2>Regions</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/administrateur/home">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a #h1Variable></a>
+      </li>
+    </ol>
+  </div>
+</div> -->
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="ibox ">
+        <div class="ibox-content">
+          <form #geojsonFrom="ngForm" (ngSubmit)="OnSubmit()">
+            <div class="row">
+              <div class="col-12">
+                <div class="btn-group col-12  ">
+                  <label title="Upload json file" for="inputFile" class="btn btn-default btn-block">
+                    <input type="file" id="inputFile" class="hide pull-left" (change)="handleFileInput($event.target.files ) ">
+                    Upload new Json/Geojson file
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div *ngIf="errorFile != null" class="alert alert-danger ">
+                  {{ errorFile}}
+                </div>
+              </div>
+              <div class="col-6 offset-3">
+                <button [disabled]="!enableSubmitForm" type="submit" title="Download image" id="download" class="btn btn-block btn-primary">Download</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-upload-level-map [geoJsonInput]="geoJsonFile"></app-upload-level-map>

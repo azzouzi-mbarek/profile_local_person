@@ -1,0 +1,20 @@
+<app-ibox [title]="region.name" [hideFooter]="false" [hideBody]="false">
+
+  <div class="iBoxBody">
+
+  </div>
+
+
+  <div class=" iBoxFooter">
+    <div class="m-t-xs btn-group">
+      <button (click)="viewDetailsRegion()" class="btn   btn-info"><i class="fa fa-eye"></i> details</button>
+      <button (click)="editRegion()" class="btn btn-warning"><i class="fa fa-wrench"></i> Modifier</button>
+      <button (click)="deleteRegion()" class="btn btn-danger"><i class="fa fa-trash"></i> Supprimer</button>
+
+    </div>
+  </div>
+
+
+
+
+</app-ibox>

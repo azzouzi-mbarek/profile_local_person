@@ -1,0 +1,241 @@
+<div class="container-fluid">
+  <div class="wrapper wrapper-content">
+    <div class="row animated fadeInRight">
+      <div class="col-md-5">
+        <div class="ibox ">
+          <div class="ibox-title text-center">
+            <h2>{{ country?.properties.name }}</h2>
+          </div>
+          <div>
+            <div class="ibox-content no-padding border-left-right">
+              <app-country-map *ngIf="country" [country]="country"></app-country-map>
+
+            </div>
+            <div class="ibox-content profile-content">
+              <div class="row m-t-md">
+                <h5>
+                  About {{ country?.properties.name }}
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                </p>
+              </div>
+              <div class="hr-line-dashed"></div>
+              <div class="row m-t-md">
+                <div class="col-4">
+
+                  <p class="font-bold"><i class="fas fa-globe-africa"></i> Subregion : {{ country?.properties.region }}</p>
+                </div>
+                <div class="col-4">
+                  <p><i class="fas fa-city"></i> Capital :</p>
+
+                </div>
+                <div class="col-4">
+
+                  <p><i class="far fa-money-bill-alt"></i> National currency :</p>
+                </div>
+                <div class="col-4">
+
+                  <p><i class="far fa-money-bill-alt"></i> Code ISO 3166-1 :</p>
+                </div>
+                <div class="col-4">
+
+                  <p><i class="fas fa-phone"></i> Indicatif Tele :</p>
+                </div>
+
+              </div>
+              <div class="hr-line-dashed"></div>
+              <div class="row">
+
+
+
+                <div class="col-lg-6  ">
+                  <div class="row">
+
+                    <div class="col-12  d-flex justify-content-center ">
+                      <ngx-charts-pie-grid [view]="optionsSurface.view" [label]="optionsSurface.label" [scheme]="optionsSurface.colorScheme"
+                        [animations]="optionsSurface.animations" [tooltipText]="optionsSurface.tooltipTemplate"
+                        [tooltipDisabled]="optionsSurface.tooltipDisabled" [results]="optionsSurface.data"
+                        [designatedTotal]="optionsSurface.totalValue">
+                      </ngx-charts-pie-grid>
+                    </div>
+                    <div class="col-12">
+                      <h3 class="text-center">Area From Africa Km2</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+
+                    <div class="col-12  d-flex justify-content-center ">
+                      <ngx-charts-pie-grid [view]="optionsPopulation.view" [label]="optionsPopulation.label" [scheme]="optionsPopulation.colorScheme"
+                        [animations]="optionsPopulation.animations" [tooltipText]="optionsPopulation.tooltipTemplate"
+                        [tooltipDisabled]="optionsPopulation.tooltipDisabled" [results]="optionsPopulation.data"
+                        [designatedTotal]="optionsPopulation.totalValue">
+                      </ngx-charts-pie-grid>
+                    </div>
+                    <div class="col-12  ">
+                      <h3 class="text-center">Population From Africa</h3>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <div class="hr-line-dashed"></div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-7">
+        <div class="tabs-container">
+          <ul class="nav nav-tabs" role="tablist">
+            <!-- Levels -->
+            <li><a class="nav-link active show" data-toggle="tab" href="#tab-1">Levels</a></li>
+            <!-- fin  -->
+            <!-- Persons -->
+            <li><a class="nav-link" data-toggle="tab" href="#tab-2">Persons </a></li>
+          </ul>
+          <div class="tab-content">
+            <!-- tab levels -->
+            <div role="tabpanel" id="tab-1" class="tab-pane active show">
+              <div class="panel-body">
+                <div class="container">
+                  <!-- table levels -->
+                  <h2><i _ngcontent-c11="" class="fa fa-bank"></i> Local government of {{ country?.properties.name }}
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum consequat tortor ut
+                  </p>
+
+                  <div class="row">
+
+
+                    <div class="col-md-12">
+                      <div class="ibox">
+                        <div class="ibox-title">
+                          <div class="d-flex justify-content-between col-12">
+                            <h2>{{title | uppercase}}</h2>
+
+                            <button class="btn btn-info" [routerLink]="['/administrateur/levels/' , country?.properties.id  , 1 ]">Maps
+                              Levels</button>
+                          </div>
+                        </div>
+                        <div class="ibox-content">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerLevels" class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th>ID</th>
+                                    <th> name</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let level of levels">
+                                    <td>{{ level.properties.id }}</td>
+                                    <td>{{level.properties.name}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ibox-footer">
+                          <div class="row text-center">
+                            <div class="col-md-12">
+
+                              <button class="btn btn-success m-r-xs">Add New Level By From</button>
+                              <button [routerLink]="['/administrateur/addLevelByFile/' , country?.properties.id  , 1 ]"
+                                class="btn btn-primary">Add
+                                Level By GeoJson File
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <!-- tab Persons -->
+            <div role="tabpanel" id="tab-2" class="tab-pane">
+              <div class="panel-body">
+                <div class="container">
+                  <!-- table levels -->
+                  <h2><i _ngcontent-c11="" class="fa fa-bank"></i> LeaderShips of {{ country?.name }} </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum consequat tortor ut
+                  </p>
+
+                  <div class="row">
+
+
+                    <div class="col-md-12">
+                      <div class="ibox">
+                        <div class="ibox-title">
+                          LeaderShips
+                        </div>
+
+                        <div class="ibox-content ">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerLevels" class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th>ID</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let person of persons">
+                                    <td>{{ person.id }}</td>
+                                    <td>{{person.first_name}}</td>
+                                    <td>{{person.last_name}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ibox-footer">
+                          <div class="row text-center">
+                            <div class="col-md-12">
+
+                              <button class="btn btn-success m-r-xs">Add New Person</button>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

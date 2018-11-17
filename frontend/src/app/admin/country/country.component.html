@@ -1,0 +1,96 @@
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+  <div class="row">
+    <div class="col-md-10">
+      <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="input-group">
+              <input type="text" class="form-control" [(ngModel)]="searchTerm" placeholder="Search By Name...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+
+
+      <button [routerLink]="['/administrateur/formCountry/0']" class="btn btn-info dim btn-large btn-block  btn-outline"
+        type="button">
+        <h3>New <br>Country</h3>
+      </button>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class=row *ngIf="countries.length === 0">
+    <div class="alert alert-warning col-12">
+      No Countries.
+    </div>
+
+  </div>
+
+
+  <div class="row" *ngIf="countries.length > 1">
+
+
+    <div *ngFor="let cntry of filtredCountries  | paginate: { itemsPerPage: 4, currentPage: p }" class="col-md-3">
+
+
+
+      <div class="ibox">
+        <div class="ibox-content product-box">
+
+
+          <app-country-map *ngIf="cntry" [country]="cntry"></app-country-map>
+
+          <a (click)="gotoCountryDetails(cntry.properties.id)">
+            <div class="product-desc">
+              <span class="product-price">
+                {{ cntry?.properties.iso_a3}}
+              </span>
+              <span class="product-name"> {{ cntry?.properties.name}}</span>
+              <small class="text-muted">Subregion : {{ cntry?.properties.region}} </small>
+
+
+            </div>
+          </a>
+
+        </div>
+        <div class="ibox-footer">
+
+          <button (click)="editCountry()" class="btn btn-block btn-warning">Edit
+          </button>
+          <button class="btn btn-block btn-danger">Delete
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row" *ngIf="countries.length > 1">
+    <div class="pagination float-right">
+
+
+      <pagination-controls class="my-pagination float-right" (pageChange)="p = $event"></pagination-controls>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="row">
+
+  <div class="col-lg-8">
+    <div class="ibox">
+      <div class="ibox-content bg-white">
+        <div style="height: 900px" id="map">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+
+    <app-ibox [title]="title" [hideTitle]="hideTitle" [hideFooter]="hideFooter" [hideBody]="hideBody">
+      <div class="iBoxBody">
+      </div>
+    </app-ibox>
+    <div class="d-flex justify-content-between flex-wrap">
+
+      <span *ngFor="let country of countriesList ; let i = index" class="btn btn-white  m-b-xs" [ngClass]=" i == countryHover ? 'set_en active' : ''"
+        (mouseenter)="omMouseEnterCountry(country.properties.name  , i)" (mouseleave)="onMouseLeaveCountry(country.properties.name)">
+        <!-- <img src='assets/img/flags/16/{{country.properties.name.replace(" " ,"-")}}.png'> -->
+        {{country.properties.name }}</span>
+
+    </div>
+
+  </div>
+</div>

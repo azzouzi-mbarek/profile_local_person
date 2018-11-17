@@ -1,0 +1,24 @@
+<div class="ibox">
+
+
+
+  <div [hidden]="hideTitle" class="ibox-title     pointerCursor" (click)="hideBody = !hideBody ; hideFooter = !hideFooter">
+    <h2>{{ title | uppercase}}</h2>
+    <ng-content select=".iBoxTitle"></ng-content>
+  </div>
+
+
+
+
+  <div class="ibox-content " [hidden]="hideBody">
+
+    <ng-content select=".iBoxBody"></ng-content>
+
+  </div>
+
+  <div class="ibox-footer" [hidden]="hideFooter">
+
+    <ng-content select=".iBoxFooter"></ng-content>
+
+  </div>
+</div>

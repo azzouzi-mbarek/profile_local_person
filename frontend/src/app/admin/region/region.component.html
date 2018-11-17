@@ -1,0 +1,110 @@
+<!-- <div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-9">
+    <h2>Regions</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/administrateur/home">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a #h1Variable></a>
+      </li>
+    </ol>
+  </div>
+</div> -->
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <!-- liste des regions -->
+  <div *ngIf="!showFormAddJson" class="row">
+    <div class="col-md-6">
+
+
+
+    </div>
+    <div class="col-md-6">
+
+      <!-- barre de recherche -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ibox">
+            <div class="ibox-content">
+              <div class="input-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" placeholder="Recherche par Nom">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin barre de recherche -->
+
+      <div class="col-lg-12" *ngFor="let region of filteredRegions">
+        <app-display-region [region]="region" [searchTerm]="searchTerm" (notifyEdit)="onEditRegion($event)"
+          (notifyDelete)="onDeleteRegion($event)">
+
+        </app-display-region>
+
+      </div>
+
+
+      <div class="col-lg-12">
+
+        <a (click)=creatRegion()>
+          <div class="widget lazur-bg p-lg text-center">
+            <div class="m-b-md">
+              <i class="fa fa-plus-circle fa-4x"></i>
+              <h1 class="m-xs">Nouvelle Region</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div *ngIf="showFormAddJson" class="row">
+
+
+    <div class="col-lg-12">
+      <div class="ibox">
+        <div class="ibox-content">
+          <form #geojsonFrom="ngForm" (ngSubmit)="OnSubmit()">
+
+            <div class="row">
+              <div class="col-12">
+
+                <div class="btn-group col-12">
+                  <label title="Upload json file" for="inputFile" class="btn btn-default btn-block">
+                    <input type="file" id="inputFile" class="hide pull-left" (change)="handleFileInput($event.target.files ) ">
+                    Upload new Json/Geojson file
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+
+                <div *ngIf="errorFile != null" class="alert alert-danger ">
+                  {{ errorFile}}
+                </div>
+              </div>
+              <div *ngIf="hideButtonSubmit" class="col-12">
+                <button type="submit" title="Download image" id="download" class="btn btn-block btn-primary">Download</button>
+              </div>
+            </div>
+
+
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <app-africa-map [geojson]="geoJsonFile"></app-africa-map>
+    </div>
+
+
+
+  </div>
+
+</div>

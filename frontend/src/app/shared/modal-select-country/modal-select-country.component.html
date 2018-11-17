@@ -1,0 +1,37 @@
+<div class="modal-header bg-primary  ">
+  <h3 class="modal-title pull-left">{{title}}</h3>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="onCancel()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+
+
+  <ng-container *ngFor="let region of regions">
+
+    <h3 class="text-info"> <strong>{{region.name}} </strong></h3>
+
+    <div class="row">
+      <ng-container *ngFor="let country of countries">
+
+        <div class="col-lg-3" *ngIf='region.name == country.properties.region'>
+          <ul class="folder-list m-b-md" style="padding: 0">
+            <li>
+              <a (click)="gotoCountryDetails(country.properties.id)">
+                {{ country.properties.name }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </ng-container>
+    </div>
+    <div class="hr-line-dashed"></div>
+  </ng-container>
+
+
+</div>
+<!-- <div class="modal-footer">
+
+  <button type="button" class="btn btn-secondary" (click)="onCancel()">Fermer</button>
+  <button class="btn btn-block" type="button" (click)="onConfirm()">Sauvegarder</button>
+</div> -->

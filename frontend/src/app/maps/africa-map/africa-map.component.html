@@ -1,0 +1,63 @@
+<section class="maps">
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-8  ">
+        <br>
+        <div class="panel panel-primary">
+
+          <div class="panel-body">
+
+
+
+            <div id="map"></div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <app-ibox [title]="title" [hideTitle]="hideTitle" [hideFooter]="hideFooter" [hideBody]="hideBody">
+
+
+          <div class="iBoxBody ">
+
+            <accordion [closeOthers]="oneAtATime">
+              <accordion-group *ngFor="let region of regionsList | keyvalue" (mouseenter)="omMouseEnterRegion(region.key)"
+                (mouseleave)="onMouseLeaveRegion(region.key)">
+                <span accordion-heading>
+                  <i class='fas fa-globe-africa'></i> &nbsp; {{region.key }}
+
+                  <span class="label label-success float-right">{{ region.value.length }}</span>
+                </span>
+                <ul class="tag-list text-center" style="padding:0">
+                  <li class="list-group-item col-xs-6 col-sm-4   " [ngClass]=" i == countryHover ? 'active' : ''"
+                    *ngFor="let country of region.value ; let i = index" (mouseenter)=" omMouseEnterRegion(region.key) ; omMouseEnterCountry(country.properties.name  , i)"
+                    (mouseleave)="onMouseLeaveCountry(country.properties.name)"> {{ country.properties.name }}
+                  </li>
+                </ul>
+
+              </accordion-group>
+
+            </accordion>
+          </div>
+
+
+
+
+
+
+        </app-ibox>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+</section>

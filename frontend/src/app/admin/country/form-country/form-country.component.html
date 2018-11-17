@@ -1,0 +1,135 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <form #CountryForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <app-ibox [title]="title">
+
+
+      <div class="iBoxBody">
+        <div class="row">
+          <div class="col-md-6 border-right">
+
+            <div class="form-group {{ errors.name ? 'has-error' : '' }} ">
+              <label for="name">Name</label>
+              <input id="name" type="text" class="form-control" name="name" [(ngModel)]="country.name">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.name">
+              {{errors.name}}
+            </div>
+
+            <div class="form-group {{ errors.iso_a3 ? 'has-error' : '' }} ">
+              <label for="iso_a3">Iso A3</label>
+              <input id="iso_a3" type="text" class="form-control" name="iso_a3" [(ngModel)]="country.iso_a3">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.iso_a3">
+              {{errors.iso_a3}}
+            </div>
+
+
+            <div class="form-group {{ errors.iso_a2 ? 'has-error' : '' }} ">
+              <label for="iso_a2">Iso A2</label>
+              <input id="iso_a2" type="text" class="form-control" name="iso_a2" [(ngModel)]="country.iso_a2">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.iso_a2">
+              {{errors.iso_a2}}
+            </div>
+
+
+            <div class="form-group {{ errors.iso_n3 ? 'has-error' : '' }} ">
+              <label for="iso_n3">Iso N3</label>
+              <input id="iso_n3" type="text" class="form-control" name="iso_n3" [(ngModel)]="country.iso_n3">
+            </div>
+            <div class=" alert alert-danger" [hidden]="!errors.iso_n3">
+              {{errors.iso_n3}}
+            </div>
+
+            <div class="form-group {{ errors.capital ? 'has-error' : '' }} ">
+              <label for="capital">Capital</label>
+              <input id="capital" type="text" class="form-control" name="capital" [(ngModel)]="country.capital">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.capital">
+              {{errors.capital}}
+            </div>
+
+
+            <div class="form-group {{ errors.devise ? 'has-error' : '' }} ">
+              <label for="devise">Currency</label>
+              <input id="devise" type="text" class="form-control" name="devise" [(ngModel)]="country.devise">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.devise">
+              {{errors.devise}}
+            </div>
+
+            <div class="form-group {{ errors.indicatif_tele ? 'has-error' : '' }} ">
+              <label for="indicatif_tele">indicatif_tele</label>
+              <input id="indicatif_tele" type="text" class="form-control" name="indicatif_tele" [(ngModel)]="country.indicatif_tele">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.indicatif_tele">
+              {{errors.indicatif_tele}}
+            </div>
+            <div class="form-group {{ errors.description ? 'has-error' : '' }} ">
+              <label for="description">Description</label>
+              <textarea id="description" rows="6" class="form-control" name="description" [(ngModel)]="country.description"></textarea>
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.description">
+              {{errors.description}}
+            </div>
+
+          </div>
+
+
+          <!-- right side  -->
+          <div class="col-md-6">
+            <label>Preview image</label>
+
+            <div class="col-12 text-center">
+              <img [src]="imageUrl" style="width:350px;height:160px">
+
+            </div>
+            <div class="col-12 text-center">
+              <div class="custom-file m-t-xs">
+                <input id="logo" type="file" accept="image/*" class="custom-file-input" (change)="
+                  handleFlagInput($event.target.files)">
+                <label for="logo" class="custom-file-label">Choose file...</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div *ngIf="errorFlag != null" class="alert alert-danger ">
+                {{ errorFlag }}
+              </div>
+            </div>
+            <div class="hr-line-dashed"></div>
+            <label>Preview Map</label>
+            <app-upload-shape [geoJsonInput]="geoJsonFile"></app-upload-shape>
+            <div class="col-12 text-center">
+              <div class="custom-file m-t-xs">
+                <input (change)="handleGeojsonFileInput($event.target.files)" id="logo" type="file" class="custom-file-input">
+                <label for="logo" class="custom-file-label">Choose file...</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div *ngIf="errorFile != null" class="alert alert-danger ">
+                {{ errorFile}}
+              </div>
+            </div>
+            <div class="hr-line-dashed"></div>
+            <div class="col-12  ">
+
+              <button type="submit" class="btn btn-primary btn-block">Save</button>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+    </app-ibox>
+  </form>
+</div>

@@ -1,0 +1,79 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+
+
+  <div class="row">
+
+
+    <div class="col-lg-8 offset-2">
+      <div class="ibox-content">
+        <div class="col-lg-12">
+          <div class="tabs-container">
+            <ul class="nav nav-tabs" role="tablist">
+              <li><a class="nav-link " [ngClass]="tab1.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab1')"> POPULATION</a></li>
+              <li><a class="nav-link" [ngClass]="tab2.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab2')">HEALTH</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" id="tab1" #tab1 class="tab-pane" [ngClass]="tab1.id == tabHover ? 'active show' : ''">
+                <div class="panel-body">
+
+                  <div class="row">
+
+
+                    <div class="col-sm-12 ">
+                      <div class="bg-warning   p-xxs b-r-lg m-b-xs">
+                        <div class="icheck-default">
+                          <input type="radio" id="someRadioId1" name="someGroupName1" checked />
+                          <label for="someRadioId1">tab 1</label>
+                        </div>
+                      </div>
+
+                      <div class="bg-warning p-xxs b-r-lg  ">
+                        <div class="icheck-default">
+                          <input type="radio" id="someRadioId2" name="someGroupName1" />
+                          <label for="someRadioId2">Percentage of women aged 20-24 who were married before age 18 or 15</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div role="tabpanel" #tab2 id="tab2" class="tab-pane" [ngClass]="tab2.id == tabHover ? 'active show' : ''">
+                <div class="panel-body">
+                  <div class="row">
+
+
+                    <div class="col-sm-12 ">
+                      <div class="bg-info   p-xxs b-r-lg m-b-xs">
+                        <div class="icheck-default">
+                          <input type="radio" id="someRadioId1" name="someGroupName5" checked />
+                          <label for="someRadioId1">tab 2</label>
+                        </div>
+                      </div>
+
+                      <div class="bg-info p-xxs b-r-lg  ">
+                        <div class="icheck-default">
+                          <input type="radio" id="someRadioId2" name="someGroupName5" />
+                          <label for="someRadioId2">Percentage of women aged 20-24 who were married before age 18 or
+                            15</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,134 @@
+<div class="row wrapper border-bottom white-bg page-heading col-lg-12">
+  <div class="col-lg-6">
+    <h2>{{ region.id + ' ' + region.name }}</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/administrateur/home">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a> country</a>
+      </li>
+    </ol>
+  </div>
+
+
+  <div class="col-lg-6">
+    <div>
+      <div class="ibox-content">
+        <div class="btn-group pull-right">
+
+          <button (click)="retour()" class="btn btn-dark ">Retour</button>
+          <!--<button class="btn btn-white" (click)="viewPrevRegion()">Precedent</button>-->
+          <!--<button class="btn btn-white" (click)="viewNextRegion()">suivant</button>-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class=col-lg-8>
+
+  <div class="col-lg-12 ">
+    <div class="ibox ">
+      <div class="ibox-title ">
+        <h5>Situation actuelle</h5>
+        <div class="ibox-tools ">
+          <a class="collapse-link ">
+            <i class="fa fa-chevron-up "></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="ibox-content table-responsive ">
+        <table class="table table-hover no-margins ">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Grade</th>
+              <th>Échelle</th>
+              <th>Echelon</th>
+              <th>Groupe</th>
+              <th>IGR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><small>02/01/2015</small></td>
+              <td><small>Cadre</small></td>
+              <td><i class="fa fa-clock-o "></i> 11:20pm</td>
+              <td>Samantha</td>
+              <td class="text-navy "> <i class="fa fa-level-up "></i> 24% </td>
+              <td class="text-navy "> <i class="fa fa-level-up "></i> 24% </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12 ">
+    <div class="ibox ">
+      <div class="ibox-title ">
+        <h5>Indemnités</h5>
+        <div class="ibox-tools ">
+          <a class="collapse-link ">
+            <i class="fa fa-chevron-up "></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="ibox-content table-responsive ">
+        <div class=row>
+
+          <div class=col-lg-6>
+            <table class="table table-hover table-bordered no-margins ">
+              <thead>
+                <tr>
+                  <th>Déjeuner</th>
+                  <th>Diner</th>
+                  <th>Découcher</th>
+                  <th>Total</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><small>75</small></td>
+                  <td><small>80</small></td>
+                  <td><small>80</small></td>
+
+                  <td class="text-navy "> <i class="fa fa-level-up "></i> 300 </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class=col-lg-6>
+            <table class="table table-hover table-bordered no-margins ">
+              <thead>
+                <tr>
+                  <th>Heure de vol</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-navy "> 300 </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- situation panel -->

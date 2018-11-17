@@ -1,0 +1,30 @@
+<div class="row">
+
+  <div class="col-lg-8">
+    <div class="ibox">
+      <div class="ibox-content bg-white">
+        <div style="height: 900px" id="map">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-4">
+
+    <app-ibox [title]="title">
+      <div class="iBoxBody">
+      </div>
+    </app-ibox>
+    <div class="d-flex justify-content-between flex-wrap">
+
+      <span *ngFor="let level of levelList ; let i = index" class="btn btn-white  m-b-xs" [ngClass]=" i == levelHover ? 'set_en active' : ''"
+        (mouseenter)="omMouseEnterLevel(level.properties.ADM1 , i)" (mouseleave)="onMouseLeaveLevel(level.properties.ADM1)">
+        <!-- <img src='assets/img/flags/16/{{country.properties.name.replace(" " ,"-")}}.png'> -->
+        {{ level.properties.ADM1 }}</span>
+
+    </div>
+
+  </div>
+</div>

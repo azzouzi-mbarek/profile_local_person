@@ -1,0 +1,95 @@
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+  <div class="row">
+    <div class="col-md-10">
+      <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="input-group">
+              <input type="text" class="form-control" [(ngModel)]="searchTerm" placeholder="Search By Name...">
+            </div>
+          </div>
+        </div>Level
+      </div>
+    </div>
+
+    <div class="col-md-2">
+
+
+      <button class="btn btn-info dim btn-large btn-block  btn-outline" type="button">
+        <h3>New <br>Level</h3>
+      </button>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class=row *ngIf="levels.length === 0">
+    <div class="alert alert-warning col-12">
+      No Levels.
+    </div>
+
+  </div>
+
+
+  <div class="row" *ngIf="levels.length > 1">
+
+
+    <div *ngFor="let level of filtredLevels  | paginate: { itemsPerPage: 15, currentPage: p }" class="col-md-3">
+
+
+
+      <div class="ibox">
+        <div class="ibox-content product-box">
+
+
+          <app-maps-levels *ngIf="level" [level]="level"></app-maps-levels>
+
+          <a (click)="gotoLevelDetails(level.properties.id)">
+            <div class="product-desc">
+              <span class="product-price">
+                {{ level?.properties.name}}
+              </span>
+              <span class="product-name"> {{ level?.properties.name}}</span>
+              <!-- <small class="text-muted"> {{ level?.name}} </small> -->
+
+
+            </div>
+          </a>
+
+        </div>
+        <div class="ibox-footer">
+
+          <button (click)="editLevel()" class="btn btn-block btn-warning">Edit
+          </button>
+          <button class="btn btn-block btn-danger">Delete
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row" *ngIf="levels.length > 1">
+    <div class="pagination float-right">
+
+
+      <pagination-controls class="my-pagination float-right" (pageChange)="p = $event"></pagination-controls>
+    </div>
+
+  </div>
+
+</div>
