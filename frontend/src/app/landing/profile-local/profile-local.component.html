@@ -18,7 +18,7 @@
   <div class="container">
     <div class="row">
         <!-- profile details -->
-      <div class="col-md-4">
+      <div class="col-lg-4">
           <div class="ibox border">
               <div class="ibox-title">
                   <h3>{{level?.properties.category}} {{ level?.properties.name }}</h3>
@@ -123,12 +123,49 @@
                          
               <!-- statistiques profile-->
 
-          
-                <div class="panel-body d-flex justify-content-center" style="height: 350px">
-                    <ngx-charts-pie-grid  [scheme]="colorScheme" [results]="single">
-                    </ngx-charts-pie-grid>
-                  </div> 
+              <div class="row">
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Nombre de collectivités inclus</h5>
+                            <h2>{{level?.properties.levels_count}}</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 68%;" class="progress-bar"></div>
+                            </div>
 
+                            <div class="m-t-sm small">date de mise a jour des donnees: .</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Nombre d’élus locaux  </h5>
+                            <h2>{{level?.properties.N_of_person_elu}}</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 78%;" class="progress-bar"></div>
+                            </div>
+
+                            <div class="m-t-sm small">date de mise a jour des donnees: .</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h5>Nombres d’associations nationales </h5>
+                            <h2>3</h2>
+                            <div class="progress progress-mini">
+                                <div style="width: 38%;" class="progress-bar progress-bar-danger"></div>
+                            </div>
+
+                            <div class="m-t-sm small">date de mise a jour des donnees: .</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                   <div class="row">
                     <div class="col-lg-6">
                         <div class="panel panel-info">
