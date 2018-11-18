@@ -14,8 +14,7 @@ import { utf8Encode } from '@angular/compiler/src/util';
   styleUrls: ['./upload-level-map.component.css']
 })
 export class UploadLevelMapComponent implements OnInit, OnChanges {
-  @Input()
-  geoJsonInput: any;
+  @Input() geoJsonInput: any;
   title = 'Levels 1 ';
   levelList = [];
 

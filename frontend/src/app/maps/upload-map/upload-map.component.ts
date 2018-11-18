@@ -22,12 +22,11 @@ import { style } from '@angular/animations';
 })
 export class UploadMapComponent implements OnInit, OnChanges {
   // le fichier geoJsonInput charger
-  @Input()
-  geoJsonInput: any;
+  @Input() geoJsonInput: any;
 
   // variable map pour instancier la carte
-  map: any;
-  height = null;
+  map = null;
+  mapId = null;
   // la couche geoson
   geoJsonLayer: any = null;
   countriesList = [];
@@ -47,16 +46,17 @@ export class UploadMapComponent implements OnInit, OnChanges {
 
   ngOnInit() {
 
+    this.map = this._mapService.initMap('map', 4);
 
     // initialiser la carte et la mettre dans un variable map
-    this.map = this._mapService.initMap('map', 4, 'white');
+
   }
 
-  // test(layer) { return layer.properties.name; }
-
   ngOnChanges(changes: SimpleChanges) {
+
     if (this.geoJsonInput !== null) {
       const change = changes['geoJsonInput'];
+
       if (change.currentValue !== change.previousValue) {
         this.countriesList = this.geoJsonInput.features;
 
@@ -65,6 +65,7 @@ export class UploadMapComponent implements OnInit, OnChanges {
         }
         const styleDefault = this._mapService.styleUploadCountries;
         const styleHover = this._mapService.styleHover;
+
         this.geoJsonLayer = L.geoJSON(this.geoJsonInput, {
           style: styleDefault,
           onEachFeature: function (feature, layer) {
@@ -84,9 +85,9 @@ export class UploadMapComponent implements OnInit, OnChanges {
             });
           }
         });
-
+        // console.log(this.geoJsonLayer);
         this.geoJsonLayer.addTo(this.map);
-
+        this.map.fitBounds(this.geoJsonLayer.getBounds());
         const countriesCount = this.countriesList.length;
         this.title =
           countriesCount === 0

@@ -101,7 +101,7 @@
         <div class="tabs-container">
           <ul class="nav nav-tabs" role="tablist">
             <!-- Levels -->
-            <li><a class="nav-link active show" data-toggle="tab" href="#tab-1">Levels</a></li>
+            <li><a class="nav-link active show" data-toggle="tab" href="#tab-1">{{ levelCategoryName}}</a></li>
             <!-- fin  -->
             <!-- Persons -->
             <li><a class="nav-link" data-toggle="tab" href="#tab-2">Persons </a></li>
@@ -125,11 +125,13 @@
                       <div class="ibox">
                         <div class="ibox-title">
                           <div class="d-flex justify-content-between col-12">
-                            <h2>{{title | uppercase}}</h2>
+                            <h2>{{levelCategoryName | uppercase}}</h2>
 
-                            <button class="btn btn-info" [routerLink]="['/administrateur/levels/' , level?.properties.id  , 2 ]"
-                              [queryParams]="{ c :level?.properties.country_id}">Maps
-                              Levels</button>
+
+
+                            <button *ngIf="levels.length > 0" class="btn btn-info" (click)="gotToLevelsMaps(level.properties.stage)">{{levelCategoryName
+                              }} Maps
+                            </button>
                           </div>
                         </div>
                         <div class="ibox-content">
@@ -157,7 +159,7 @@
                             <div class="col-md-12">
 
                               <button class="btn btn-success m-r-xs">Add New Level By From</button>
-                              <button [routerLink]="['/administrateur/addLevelByFile/' , level?.properties.id  , 2]"
+                              <button [routerLink]="['/administrateur/addLevelByFile/' , level?.properties.id  ,  level?.properties.stage+1]"
                                 [queryParams]="{ c :level?.properties.country_id}" class="
                                 btn btn-primary">Add
                                 Level By GeoJson File

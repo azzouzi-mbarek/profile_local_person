@@ -27,7 +27,7 @@ class CountryCollection extends Resource
                 'region' => $this->region->name,
                 'population' => $this->population,
                 'population_year' => $this->population_year,
-                'levels1_count' => Level::where('country_id', $this->id)->where('level_id', null)->count(),
+                'levels_count' => Level::where('country_id', $this->id)->where('level_id', null)->count(),
                 'partie_genre_male' => Country::find($this->id)->Persons->where('sex', 'male')->count(),
                 'partie_genre_female' => Country::find($this->id)->Persons->where('sex', 'female')->count(),
                 'N_of_person_elu' => CountryPerson::where('country_id', $this->id)->where('status', 'élu')->count(),

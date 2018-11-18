@@ -20,6 +20,7 @@ export class CountryDetailsComponent implements OnInit {
   dtTriggerLevels: Subject<any> = new Subject();
   dtTriggerPersons: Subject<any> = new Subject();
   title = 'Level 1';
+  levelCategoryName = 'level';
 
   optionsSurface = {
     view: [],
@@ -106,7 +107,10 @@ export class CountryDetailsComponent implements OnInit {
       (levelApi: any) => {
 
         this.levels = levelApi.data;
+        this.levelCategoryName = this.levels[0].properties.category;
+
         this.dtTriggerLevels.next();
+
       },
       error => {
         console.log(error);
@@ -150,6 +154,13 @@ export class CountryDetailsComponent implements OnInit {
 
   gotoAddLevelByFile(id) {
     this._router.navigate([id], {
+      relativeTo: this._route
+    });
+  }
+
+
+  goToLevels1() {
+    this._router.navigate(['levels'], {
       relativeTo: this._route
     });
   }

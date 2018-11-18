@@ -3,7 +3,6 @@ import { LevelService } from './../../services/level.service';
 import { MapService } from './../../maps/map.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { Route } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-level',
@@ -35,7 +34,7 @@ export class LevelComponent implements OnInit {
     } else {
       return this.levels.filter(
         level =>
-          level.name.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
+          level.properties.name.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
       );
     }
   }
@@ -46,47 +45,62 @@ export class LevelComponent implements OnInit {
     private _levelService: LevelService) { }
 
   ngOnInit() {
-    this._route.paramMap.subscribe(params => this.level_stage = +params.get('level'));
-    if (this.level_stage === 1) {
 
-      console.log('ok');
-      this._route.paramMap.subscribe(
-        params => {
-          this.country_id = +params.get('id');
+    this._route.queryParamMap.subscribe(paramsQ => {
 
-
-          this._levelService.getLevels(this.country_id).subscribe(
+      if (paramsQ.has('s')) {
+        this.level_stage = +paramsQ.get('s');
+        this._route.paramMap.subscribe(paramsM => {
+          this.country_id = +paramsM.get('id');
+          this.level_id = +paramsM.get('l_id');
+          this._levelService.getLevels(this.country_id, this.level_id).subscribe(
             (levelsApi: any) => {
               this.levels = levelsApi.data;
               this.filtredLevels = this.levels;
-              console.log(this.levels);
             },
             error => console.log(error)
           );
-        }
-      );
-    } else {
-      this._route.queryParamMap.subscribe(params => this.country_id = +params.get('c'));
-      this._route.paramMap.subscribe(params => { this.level_id = +params.get('id'); });
-      this._levelService.getLevel(this.country_id, this.level_id).subscribe(
-        (level: any) => {
-          this.level = level.data;
-          this.levels = this.level.levels;
-          this.filtredLevels = this.levels;
-          console.log(this.levels);
-        },
-        (error) => { console.log(error); }
-      )
+        });
+        // console.log(this.country_id, this.level_id);
+      } else {
+        this._route.paramMap.subscribe(
+          params => {
+            this.country_id = +params.get('id');
+            this._levelService.getLevels(this.country_id).subscribe(
+              (levelsApi: any) => {
+                this.levels = levelsApi.data;
+                this.filtredLevels = this.levels;
+              },
+              error => console.log(error)
+            );
+          });
+      }
+    });
 
-    }
+
+
 
 
   }
 
-  gotoLevelDetails(id) {
-    this._router.navigate([id], {
-      relativeTo: this._route
+
+  gotoLevelDetails(level) {
+    this._router.navigate(['administrateur/countries', level.properties.country_id, 'levels', level.properties.id], {
+
+      queryParams: { s: level.properties.stage + 1 }
     });
+  }
+  gotoLevelDektails(level) {
+    // console.log(level.properties.stage);
+    // if (level.properties.stage > 1) {
+    //   this._route.navigate('l', {
+    //     relativeTo: this._route,
+    //     queryParams: { s: level.properties.stage + 1 }
+    //   });
+    // }
+    // this._router.navigate([level.properties.id], {
+    //   relativeTo: this._route
+    // });
   }
 
 

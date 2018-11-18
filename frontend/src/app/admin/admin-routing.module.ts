@@ -16,6 +16,7 @@ import { FormCountryComponent } from './country/form-country/form-country.compon
 import { MapsLevelsComponent } from '../maps/maps-levels/maps-levels.component';
 import { LevelComponent } from './level/level.component';
 import { LeveldetailsComponent } from './level/leveldetails/leveldetails.component';
+import { CountryListResolverService } from '../resolvers/country-resolver.service';
 
 const routes: Routes = [
   {
@@ -23,6 +24,15 @@ const routes: Routes = [
     component: AdminComponent,
     canActivate: [AfterLoginService],
     children: [
+      { path: 'countries', component: CountryComponent, resolve: { countriesList: CountryListResolverService } },
+      { path: 'countries/:id', component: CountryDetailsComponent },
+      { path: 'countries/:id/levels', component: LevelComponent },
+      { path: 'countries/:id/levels/:l_id', component: LeveldetailsComponent },
+      { path: 'countries/:id/levels/:l_id/levels', component: LevelComponent },
+
+
+
+      // { path: 'levels/:id/:level', component: LevelComponent },
 
       { path: 'shape', component: UploadShapeComponent },
 
@@ -30,13 +40,9 @@ const routes: Routes = [
       { path: 'regions', component: RegionComponent },
       { path: 'tabs', component: TabsComponent },
       { path: 'regions/:id', component: DetailsRegionComponent },
-      { path: 'countries', component: CountryComponent },
       { path: 'addCountries', component: AddCountryComponent },
-      { path: 'countries/:id', component: CountryDetailsComponent },
       { path: 'formCountry/:id', component: FormCountryComponent },
       { path: 'addLevelByFile/:id/:level', component: AddLevelByFileComponent },
-      { path: 'levels/:id/:level', component: LevelComponent },
-      { path: 'levels/:id/:level/:id_level', component: LeveldetailsComponent }
     ]
   },
 

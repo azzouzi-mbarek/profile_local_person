@@ -36,16 +36,22 @@
 
 
 
-
-  <div class=row *ngIf="countries.length === 0">
+  <div class=row *ngIf="filtredCountries.length === 0 && !errors">
     <div class="alert alert-warning col-12">
       No Countries.
     </div>
 
   </div>
 
+  <div class=row *ngIf="errors">
+    <div class="alert alert-danger col-12">
+      {{ errors.message}}
+    </div>
 
-  <div class="row" *ngIf="countries.length > 1">
+  </div>
+
+
+  <div class="row" *ngIf="filtredCountries.length >= 1">
 
 
     <div *ngFor="let cntry of filtredCountries  | paginate: { itemsPerPage: 4, currentPage: p }" class="col-md-3">

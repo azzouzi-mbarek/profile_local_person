@@ -1,4 +1,4 @@
-import { EventEmitter } from '@angular/core';
+import { EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { Output } from '@angular/core';
 import { style } from '@angular/animations';
 import { Router } from '@angular/router';
@@ -15,7 +15,7 @@ import { LevelService } from 'src/app/services/level.service';
   templateUrl: './statistc-map.component.html',
   styleUrls: ['./statistc-map.component.css']
 })
-export class StatistcMapComponent implements OnInit {
+export class StatistcMapComponent implements OnInit, OnChanges {
   map = null;
   bsModalRef: BsModalRef;
   countries = [];
@@ -23,7 +23,9 @@ export class StatistcMapComponent implements OnInit {
   panel = null;
   countriesLayer = null;
   levelsLayer = null;
-  zoom = null;
+  zoomStart = null;
+  zoomInit = 4;
+  zoomClick = null;
   layerObject = null;
 
   @Output() messageEvent = new EventEmitter<number>();
@@ -40,6 +42,10 @@ export class StatistcMapComponent implements OnInit {
   sendMessage() {
     this.messageEvent.emit(this.layerObject);
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+
+  }
   ngOnInit() {
 
 
@@ -47,12 +53,13 @@ export class StatistcMapComponent implements OnInit {
 
     // initialiser la map
     this.map = this._mapService.initMap('map', 4, 'white');
+
     //  get countries
     this._countryservice.getCountries().subscribe(
       (countriesApi: any) => {
         this.countries = countriesApi.data;
         this.addCountriesLayer(countriesApi.data);
-
+        // this.zoomInit = this.map.getZoom();
 
 
 
@@ -67,8 +74,89 @@ export class StatistcMapComponent implements OnInit {
 
 
 
-  addLevelsLayer(country_id, level_id = null) {
 
+
+  addCountriesLayer(countriesGeojson) {
+    const styleRegion = this._mapService.styleRegion;
+    const styleHover = this._mapService.styleHover;
+
+    // this.map.on('zoomstart', () => {
+    //   this.zoomStart = this.map.getZoom();
+    //   console.log('start ' + this.zoomStart);
+    //   if (this.zoomStart < 4) {
+    //     this.countriesLayer.setStyle(this._mapService.styleRegion);
+    //     legend.addTo(this.map);
+    //     this.layerObject = null;
+    //     this.sendMessage();
+    //     if (this.levelsLayer !== null) {
+    //       this.levelsLayer.removeFrom(this.map);
+    //     }
+    //   }
+    //   // else if (this.zoomStart > 4) {
+    //   //   this.countriesLayer.setStyle(this._mapService.styleHide);
+    //   // }
+    // });
+
+
+    this.countriesLayer = L.geoJSON(countriesGeojson, {
+      style: styleRegion,
+      onEachFeature: (feature, layer) => {
+        layer.bindPopup(feature.properties.name);
+
+
+        layer.on({
+          'click': e => {
+            legend.remove();
+
+            if (this.levelsLayer !== null) {
+              this.levelsLayer.removeFrom(this.map);
+              this.levelsLayer = null;
+            }
+
+            const l = e.target;
+            this.layerObject = feature.properties;
+            this.sendMessage();
+
+
+            this.map.fitBounds(l.getBounds());
+            this.addLevelsLayer(feature.properties.id);
+
+
+          },
+          'dblclick': e => {
+            const l = e.target;
+          },
+          mouseover: e => {
+            // tslint:disable-next-line:no-shadowed-variable
+            const layer = e.target;
+            if (this.levelsLayer === null) {
+              layer.openPopup();
+            }
+            layer.setStyle(styleHover(feature));
+
+          },
+          mouseout: e => {
+            // tslint:disable-next-line:no-shadowed-variable
+            const layer = e.target;
+            layer.setStyle(styleRegion(layer.feature));
+          }
+        });
+      }
+    });
+
+    // create legend of region
+    const legend = this._mapService.createDiv('bottomleft');
+    this._mapService.getDiv(legend);
+    this._mapService.updateLegendRegion(legend);
+    legend.addTo(this.map);
+
+
+    this.map.fitBounds(this.countriesLayer.getBounds());
+    this.countriesLayer.addTo(this.map);
+
+  }
+
+  addLevelsLayer(country_id, level_id = null) {
 
     const styleLevels = this._mapService.styleLevels;
     const styleUploadCountries = this._mapService.styleUploadCountries;
@@ -78,15 +166,21 @@ export class StatistcMapComponent implements OnInit {
         this.levels = levelsApi;
         // console.log(this.levels);
         this.levelsLayer = L.geoJSON(levelsApi.data, {
-          style: styleLevels,
+          style: styleUploadCountries,
           onEachFeature: (feature, layer) => {
             layer.bindTooltip(feature.properties.name);
 
             layer.on({
               'click': e => {
+
+                if (this.levelsLayer !== null) {
+                  this.levelsLayer.removeFrom(this.map);
+                }
+
                 const l = e.target;
                 this.map.fitBounds(l.getBounds());
                 this.layerObject = feature.properties;
+                this.addLevelsLayer(feature.properties.country_id, feature.properties.id);
                 this.sendMessage();
               },
               'dblclick': e => {
@@ -131,101 +225,6 @@ export class StatistcMapComponent implements OnInit {
       }
     );
   }
-
-
-  addCountriesLayer(countriesGeojson) {
-    const styleRegion = this._mapService.styleRegion;
-    const styleHover = this._mapService.styleHover;
-
-
-
-    this.map.on('zoomstart', () => {
-      const zoom = this.map.getZoom();
-      if (zoom < this.zoom) {
-        this.countriesLayer.setStyle(this._mapService.styleRegion);
-        legend.addTo(this.map);
-        this.layerObject = null;
-        this.sendMessage();
-        if (this.levelsLayer !== null) {
-          this.levelsLayer.removeFrom(this.map);
-        }
-      }
-    });
-
-
-    this.countriesLayer = L.geoJSON(countriesGeojson, {
-      style: styleRegion,
-      onEachFeature: (feature, layer) => {
-        layer.bindPopup(feature.properties.name);
-
-
-        layer.on({
-          'click': e => {
-            legend.remove();
-            this.zoom = this.map.getZoom();
-            this.countriesLayer.setStyle(this._mapService.styleHide());
-
-            if (this.levelsLayer !== null) {
-              this.levelsLayer.removeFrom(this.map);
-            }
-
-            const l = e.target;
-            this.layerObject = feature.properties;
-            this.sendMessage();
-
-            // l.setStyle(styleHover(l.feature));
-            this.map.fitBounds(l.getBounds());
-            this.addLevelsLayer(feature.properties.id);
-
-
-          },
-          'dblclick': e => {
-            const l = e.target;
-
-
-
-            this.addLevelsLayer(feature.properties.id);
-
-
-          },
-          mouseover: e => {
-            // tslint:disable-next-line:no-shadowed-variable
-            const layer = e.target;
-
-            layer.openPopup();
-
-            layer.setStyle(styleHover(feature));
-
-
-
-
-
-          },
-          mouseout: e => {
-            // tslint:disable-next-line:no-shadowed-variable
-            const layer = e.target;
-            const zoom = this.map.getZoom();
-
-            layer.setStyle(styleRegion(layer.feature));
-
-
-          }
-        });
-      }
-    });
-
-    // create legend of region
-    const legend = this._mapService.createDiv('bottomleft');
-    this._mapService.getDiv(legend);
-    this._mapService.updateLegendRegion(legend);
-    legend.addTo(this.map);
-
-
-    this.map.fitBounds(this.countriesLayer.getBounds());
-    this.countriesLayer.addTo(this.map);
-
-  }
-
 
 
 

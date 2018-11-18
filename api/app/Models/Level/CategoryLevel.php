@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CategoryLevel extends Model
 {
-    public  function  Level(){
+    public  function  Levels(){
         return $this->hasMany(Level::class);
     }
 }

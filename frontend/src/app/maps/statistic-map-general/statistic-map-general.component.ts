@@ -56,7 +56,7 @@ export class StatisticMapGeneralComponent implements OnInit, OnChanges {
     this._countriesService.getCountries().subscribe(
       (countriesApi: any) => {
         this.countries = countriesApi.data;
-        console.log(this.countries);
+
 
         this.addCountriesLayer();
       },
@@ -68,7 +68,7 @@ export class StatisticMapGeneralComponent implements OnInit, OnChanges {
     this._levelsService.getLevels(country_id, level_id).subscribe(
       (levelsApi: any) => {
         this.levels = levelsApi.data;
-        console.log(this.levels);
+
       },
       error => { console.log(error); }
     );
@@ -247,7 +247,7 @@ export class StatisticMapGeneralComponent implements OnInit, OnChanges {
         this.levels = levelsApi.data;
         // this.geoJsonLayer.removeFrom(this.map);
         this.geoJsonLevel = this._mapService.formatGeoJsonFeatures(this.levels);
-        console.log(this.geoJsonLevel);
+
         this.geojsonLevelLayer = L.geoJSON(this.geoJsonLevel, {
           // style: styleHover,
 

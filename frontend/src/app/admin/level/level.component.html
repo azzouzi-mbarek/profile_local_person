@@ -9,7 +9,7 @@
               <input type="text" class="form-control" [(ngModel)]="searchTerm" placeholder="Search By Name...">
             </div>
           </div>
-        </div>Level
+        </div>
       </div>
     </div>
 
@@ -44,7 +44,7 @@
   </div>
 
 
-  <div class="row" *ngIf="levels.length > 1">
+  <div class="row" *ngIf="levels.length >= 1">
 
 
     <div *ngFor="let level of filtredLevels  | paginate: { itemsPerPage: 15, currentPage: p }" class="col-md-3">
@@ -57,7 +57,7 @@
 
           <app-maps-levels *ngIf="level" [level]="level"></app-maps-levels>
 
-          <a (click)="gotoLevelDetails(level.properties.id)">
+          <a (click)="gotoLevelDetails(level)">
             <div class="product-desc">
               <span class="product-price">
                 {{ level?.properties.name}}

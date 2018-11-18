@@ -101,8 +101,8 @@ export class StatisticComponent implements OnInit {
     }];
 // statistique generals
     this.singleGenaral =[{
-      name: 'Nombre de collectivités',
-      value: this.layerObject.levels1_count
+      name: 'Nombre de collectivités inclus',
+      value: this.layerObject.levels_count
     },
     {
       name: 'Nombre d’élus locaux ',

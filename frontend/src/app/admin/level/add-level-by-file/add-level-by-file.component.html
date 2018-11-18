@@ -21,7 +21,7 @@
         <div class="ibox-content">
           <form #geojsonFrom="ngForm" (ngSubmit)="OnSubmit()">
             <div class="row">
-              <div class="col-12">
+              <div class="col-6 offset-3">
                 <div class="btn-group col-12  ">
                   <label title="Upload json file" for="inputFile" class="btn btn-default btn-block">
                     <input type="file" id="inputFile" class="hide pull-left" (change)="handleFileInput($event.target.files ) ">
@@ -29,7 +29,22 @@
                   </label>
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-6 offset-3">
+                <div class="form-group">
+
+                  <!-- <label class="col-sm-2 col-form-label">Select</label> -->
+
+                  <div class="col-sm-12">
+                    <select class="form-control m-b" name="levelCategory" [(ngModel)]="levelCategoryId">
+                      <option *ngFor="let levelCategory of levelCategories" [value]="levelCategory.id">{{
+                        levelCategory.name }}</option>
+
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-6 offset-3">
                 <div *ngIf="errorFile != null" class="alert alert-danger ">
                   {{ errorFile}}
                 </div>

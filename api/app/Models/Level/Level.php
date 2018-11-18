@@ -19,7 +19,7 @@ class Level extends Model
     {
         return $this->belongsTo(Country::class);
     }
-    public function CategoryLevel()
+    public function category_level()
     {
         return $this->belongsTo(CategoryLevel::class);
     }

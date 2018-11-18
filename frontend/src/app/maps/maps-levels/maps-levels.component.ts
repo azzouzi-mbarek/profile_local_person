@@ -19,20 +19,18 @@ export class MapsLevelsComponent implements OnInit, OnChanges {
   constructor(private _mapService: MapService) { }
 
   ngOnChanges() {
+
+
     this.mapId = this.level.id;
     this.map = this._mapService.initMap(this.mapContainer.nativeElement, 4);
-    this.addCountryLayer();
 
-  }
-
-  addCountryLayer() {
-    this.geojson = this._mapService.formatGeoJson(this.level.shape);
-
-    this.levelLayer = L.geoJSON(this.geojson, {
+    this.levelLayer = L.geoJSON(this.level, {
       style: this._mapService.styleUploadCountries
     }).addTo(this.map);
     this.map.fitBounds(this.levelLayer.getBounds());
   }
+
+
 
   ngOnInit() {
   }

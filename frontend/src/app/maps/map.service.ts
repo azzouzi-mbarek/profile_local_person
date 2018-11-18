@@ -24,13 +24,12 @@ export class MapService {
   });
   // tslint:disable-next-line:max-line-length
 
+  googleSrc = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
 
-  openTopoUrl = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
 
 
   // imageryLayer = L.tileLayer(this.mapBoxUrl);
 
-  OpenTopoMapLayer = L.tileLayer(this.openTopoUrl);
 
   // OSMLayer = L.tileLayer(this.osmUrl);
 
@@ -84,22 +83,27 @@ export class MapService {
     // tslint:disable-next-line:max-line-length
     const mapBoxUrl = 'https://api.tiles.mapbox.com/v4/mapbox.streets-satellite/{z}/{x}/{y}.png?access_token=sk.eyJ1IjoiamVtbWxtZWQiLCJhIjoiY2puY2wxMG91MGJ1ajNwc2Z5aHRpaXcwZiJ9.PihyI84-WjzwYTp_WKDf_A';
 
-    const topo = this.OpenTopoMapLayer;
+    const googleMapsUrl = 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}';
+    const osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const openTopoUrl = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
+    const googleMaps = L.tileLayer(googleMapsUrl);
+    const osm = L.tileLayer(osmUrl);
+    const topoLayer = L.tileLayer(openTopoUrl);
     const imagery = L.tileLayer(mapBoxUrl);
     // const osm = L.tileLayer(this.osmUrl);
     const white = L.tileLayer('');
 
     const baseLayers = {
-      // Satellite: imagery,
-
-      'Topo Maps': topo,
-      White: white
+      // Satellite: googleMaps,
+      Blank: white,
+      'Topo Maps': topoLayer
     };
     // creation de la carte avec layer de base + zoom minimum sur afrique de 4
     const map = L.map(divId, {
-      layers: [mainLayer === 'white' ? white : topo],
-      zoomDelta: 0.25,
-      zoomSnap: 0
+      layers: [mainLayer === 'white' ? white : topoLayer],
+
+      zoomDelta: 0.5,
+      zoomSnap: 0.25
       // maxBounds: this.africaMapBounds,
       // maxBoundsViscosity: 0.5
     });

@@ -1,3 +1,4 @@
+import { ResolvedCountryList } from './../../resolvers/resolved-countryList.model';
 import { Country } from './../../models/country.model';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CountryService } from '../../services/country.service';
@@ -16,7 +17,7 @@ export class CountryComponent implements OnInit {
   countries = [];
   country = new Country();
   filtredCountries = [];
-  errors = [];
+  errors: any = null;
   p = 1;
   bsModalRef: BsModalRef;
   // dtTrigger: Subject = new Subject();
@@ -49,11 +50,35 @@ export class CountryComponent implements OnInit {
 
     private _router: Router,
     private _route: ActivatedRoute
-  ) { }
+  ) {
+    const resolvedData: Country[] | any = this._route.snapshot.data['countriesList'];
+
+
+    if (Array.isArray(resolvedData.data)) {
+
+      this.countries = resolvedData.data;
+      this.filtredCountries = this.countries;
+
+    } else {
+      this.errors = resolvedData;
+      console.log(this.errors);
+    }
+
+
+  }
 
 
   ngOnInit() {
-    this.getCountries();
+    // this._countryService.getCountries().subscribe(
+    //   (countriesApi: any) => {
+    //     this.countries = countriesApi.data;
+    //     this.filtredCountries = this.countries;
+    //   },
+    //   error => {
+    //     this.errors = error;
+    //   }
+    // );
+
   }
   gotoCountryDetails(id) {
     this._router.navigate([id], {
@@ -61,15 +86,7 @@ export class CountryComponent implements OnInit {
     });
   }
   getCountries() {
-    this._countryService.getCountries().subscribe(
-      (countriesApi: any) => {
-        this.countries = countriesApi.data;
-        this.filtredCountries = this.countries;
-      },
-      error => {
-        this.errors = error;
-      }
-    );
+
   }
 
   createCountry() {

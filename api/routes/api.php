@@ -22,7 +22,7 @@ Route::group([
     Route::apiResource('/countries', 'CountryController');
 
     Route::group(['prefix' => 'countries'], function () {
-        route::apiResource('/{country}/levels', 'LevelController');
+        Route::apiResource('/{country}/levels', 'LevelController');
         Route::apiResource('/{country}/persons', 'PersonController');
 
         Route::group(['prefix' => '/{country}/levels'], function () {
@@ -32,6 +32,8 @@ Route::group([
         });
 
     });
+    
+    Route::apiResource('levelCategory', 'CategoryLevelController');
 
     // Route::group(['prefix' => 'regions'], function () {
     //     Route::apiResource('/{region}/countries', 'CountryController');

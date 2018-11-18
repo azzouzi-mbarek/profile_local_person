@@ -2,6 +2,8 @@ import { Level } from './../../../models/level.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LevelService } from '../../../services/level.service';
 import { Component, OnInit } from '@angular/core';
+import { LevelCategory } from 'src/app/models/levelCategory.model';
+import { LevelCategoryService } from 'src/app/services/level-category.service';
 
 @Component({
   selector: 'app-add-level-by-file',
@@ -17,28 +19,46 @@ export class AddLevelByFileComponent implements OnInit {
   level_id = null;
   level = Level;
   level_stage = null;
+  levelCategories = [];
+  levelCategoryId = null;
   constructor(
     private _levelService: LevelService,
     private _route: ActivatedRoute,
-    private _router: Router
+    private _router: Router,
+    private _levelCategoryService: LevelCategoryService
   ) { }
 
   ngOnInit() {
     this._route.paramMap.subscribe(params => {
-      // this.level_id = +params.get('id');
-      this.country_id = +params.get('id');
       this.level_stage = +params.get('level');
-      // console.log(this.country_id);
-    });
-    this._route.queryParamMap.subscribe(params => {
-      if (params.has('c')) {
-        this.country_id = +params.get('c');
+      if (this.level_stage === 1) {
+        this.country_id = +params.get('id');
+
+      } else {
         this.level_id = +params.get('id');
-        console.log(this.country_id);
 
       }
 
     });
+    this._route.queryParamMap.subscribe(params => {
+      if (params.has('c')) {
+        this.country_id = +params.get('c');
+      }
+
+    });
+    // console.log('c ' + this.country_id);
+    // console.log('l ' + this.level_id);
+    // console.log('leve stage' + this.level_stage);
+
+    // get level Categories
+    this._levelCategoryService.getLevelCategories().subscribe(
+      (levelCategoriesApi: any) => {
+        this.levelCategories = levelCategoriesApi.data;
+        console.log(this.levelCategories);
+      },
+      (error) => { console.log(error); }
+    );
+
   }
 
   handleFileInput(file: FileList) {
@@ -74,10 +94,9 @@ export class AddLevelByFileComponent implements OnInit {
     formData.append('geojson', this.fileToUpload, this.fileToUpload.name);
 
     formData.append('level_id', this.level_id);
-    // this._levelService.getLevel
     formData.append('country_id', this.country_id);
     formData.append('level_stage', this.level_stage);
-    // formData.append("single_shape", "false");
+    formData.append('level_category', this.levelCategoryId);
 
     this._levelService.save(formData).subscribe(
       data => {

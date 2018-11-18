@@ -27,6 +27,7 @@ class CountryResource extends Resource
                 'description' => $this->description,
                 'capital' => $this->capital,
                 'devise' => $this->devise,
+                'levels_count' => Level::where('country_id', $this->id)->where('level_id', null)->count(),
                 'indicatif_tele' => $this->indicatif_tele,
                 'drapeau_url' => $this->drapeau_url,
                 'population' => $this->population,

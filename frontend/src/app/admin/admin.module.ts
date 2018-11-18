@@ -1,3 +1,4 @@
+import { CountryListResolverService } from './../resolvers/country-resolver.service';
 import { NgModule, PlatformRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -43,13 +44,15 @@ import { AddLevelByFileComponent } from './level/add-level-by-file/add-level-by-
 import { DataTablesModule } from 'angular-datatables';
 import { LevelComponent } from './level/level.component';
 import { LeveldetailsComponent } from './level/leveldetails/leveldetails.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { CategoryLevelComponent } from './level/category-level/category-level.component';
 
 @NgModule({
   imports: [
     CommonModule,
     AdminRoutingModule,
     FormsModule,
-
+    NgxSpinnerModule,
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
@@ -86,7 +89,9 @@ import { LeveldetailsComponent } from './level/leveldetails/leveldetails.compone
     CountryDetailsComponent,
     AddLevelByFileComponent,
     LevelComponent,
-    LeveldetailsComponent
+    LeveldetailsComponent,
+    CategoryLevelComponent,
+
   ],
   exports: [EasyPieDirective],
   entryComponents: [
@@ -94,6 +99,8 @@ import { LeveldetailsComponent } from './level/leveldetails/leveldetails.compone
     FormCountryComponent,
     FormRegionComponent
   ],
-  providers: [UploadFileService]
+  providers: [
+    UploadFileService,
+    CountryListResolverService]
 })
 export class AdminModule { }

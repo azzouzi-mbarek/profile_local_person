@@ -15,10 +15,12 @@ import { CountryService } from '../../country/country.service';
   styleUrls: ['./leveldetails.component.css']
 })
 export class LeveldetailsComponent implements OnInit {
+
   public dtOptions: DataTables.Settings = {};
   dtTriggerLevels: Subject<any> = new Subject();
   dtTriggerPersons: Subject<any> = new Subject();
   title = 'Level 2';
+  levelCategoryName = 'level';
 
   optionsSurface = {
     view: [],
@@ -63,17 +65,19 @@ export class LeveldetailsComponent implements OnInit {
 
 
   ngOnInit() {
+
+
+
+    // get params from route country id and level one id
     this._route.paramMap.subscribe(params => {
+
       this.country_id = +params.get('id');
       this._countryService.getCountry(this.country_id).subscribe((country: any) => { this.country = country.data; });
-      this.level_id = +params.get('id_level');
-      this.level_stage = +params.get('level');
+      this.level_id = +params.get('l_id');
 
       this._levelService.getLevel(this.country_id, this.level_id).subscribe(
         (levelApi: any) => {
           this.level = levelApi.data;
-          // this.levels = this.level.levels;
-          console.log(this.level);
           this.title = this.level.properties.name + ' Levels 2';
           this.getGraphSurface(this.level, this.country);
           this.getGraphPopulation(this.level, this.country);
@@ -82,13 +86,19 @@ export class LeveldetailsComponent implements OnInit {
           console.log(error);
         }
       );
+
+
     });
+
+
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10
     };
+
+
     this.getLevels(this.country_id, this.level_id);
-    // this.getPersons(this._id);
+
 
   }
 
@@ -105,12 +115,13 @@ export class LeveldetailsComponent implements OnInit {
     );
   }
 
-  getLevels(level_id, country_id) {
+  getLevels(country_id, level_id) {
+
     this._levelService.getLevels(country_id, level_id).subscribe(
       (levelApi: any) => {
 
         this.levels = levelApi.data;
-        console.log(this.levels);
+        this.levelCategoryName = this.levels[0].properties.category;
         this.dtTriggerLevels.next();
       },
       error => {
@@ -159,4 +170,17 @@ export class LeveldetailsComponent implements OnInit {
       relativeTo: this._route
     });
   }
+
+
+  gotToLevelsMaps(stage) {
+    console.log(stage);
+    // console.log(this._route.fr);
+    // this._router.navigate([], { queryParams: { c: stage } });
+    this._router.navigate(['levels'], {
+      relativeTo: this._route,
+      queryParams: { s: stage + 1 }
+    });
+
+  }
+
 }

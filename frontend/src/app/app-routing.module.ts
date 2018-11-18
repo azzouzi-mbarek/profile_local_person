@@ -1,6 +1,6 @@
 
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { LandingRoutingModule } from './landing/landing-routing.module';
 import { PageNotFoundComponent } from './error/page-not-found/page-not-found.component';
 import { AuthRoutingModule } from './auth/auth-routing.module';
@@ -22,7 +22,9 @@ const appRoutes: Routes = [
     LandingRoutingModule,
     AuthRoutingModule,
     AdminRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {
+      preloadingStrategy: PreloadAllModules
+    })
   ],
   exports: [RouterModule]
 })

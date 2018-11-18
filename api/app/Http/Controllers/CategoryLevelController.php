@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\Level\CategoryLevelCollection;
+use App\Http\Resources\Level\CategoryLevelResource;
 use App\Models\Level\CategoryLevel;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,9 @@ class CategoryLevelController extends Controller
      */
     public function index()
     {
-        //
+        $categoryLevel = CategoryLevel::all();
+
+        return CategoryLevelCollection::collection($categoryLevel);
     }
 
     /**
@@ -22,10 +26,6 @@ class CategoryLevelController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -44,9 +44,11 @@ class CategoryLevelController extends Controller
      * @param  \App\Models\Level\CategoryLevel  $categoryLevel
      * @return \Illuminate\Http\Response
      */
-    public function show(CategoryLevel $categoryLevel)
+    public function show($categoryLevel)
     {
-        //
+        $category = CategoryLevel::find($categoryLevel)->first();
+
+        return new CategoryLevelResource($category);
     }
 
     /**

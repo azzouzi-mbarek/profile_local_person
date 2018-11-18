@@ -34,7 +34,7 @@ export class LevelService {
     let url = null;
     if (level_id !== null) {
 
-      url = this.url + '/countries/' + country_id + '/levels/' + level_id;
+      url = this.url + '/countries/' + country_id + '/levels?id=' + level_id;
 
     } else {
 
@@ -44,9 +44,9 @@ export class LevelService {
   }
 
   getLevel(country_id, level_id = null): Observable<Level> {
-    console.log('c_id ' + country_id);
+
     const url = this.url + '/countries/' + country_id + '/levels/' + level_id;
-    console.log('url ' + url);
+
     return this._http.get<Level>(url).pipe(catchError(this.errorHandler));
   }
 }

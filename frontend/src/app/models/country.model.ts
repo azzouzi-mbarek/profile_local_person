@@ -1,5 +1,5 @@
 export class Country {
-  [x: string]: any;
+
   public id: number;
   public name: string;
   public iso_a3: string;
