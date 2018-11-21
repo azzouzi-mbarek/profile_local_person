@@ -26,7 +26,8 @@ class LevelCollection extends JsonResource
                 'country_id' => $this->country_id,
                 'level_id' => $this->level_id,
                 'category' => $this->category_level->name,
-
+                'stage' => $this->stage,
+                'st' => $this->levels->count(),
                 'population' => $this->population,
                 // 'population_year' => 2005,
                 'date_population' => $this->census_date_population,
@@ -39,15 +40,15 @@ class LevelCollection extends JsonResource
                 'N_of_person_nomme' => LevelPerson::where('level_id', $this->id)->where('status', 'nommé')->count(),
 
                 'N_academic' => [
-                    'sans_bac' =>  $this->Persons->where('academic_level', 'bac+0')->count(),
+                    'sans_bac' => $this->Persons->where('academic_level', 'bac+0')->count(),
                     'bac_1' => $this->Persons->where('academic_level', 'bac+1')->count(),
                     'bac_2' => $this->Persons->where('academic_level', 'bac+2')->count(),
-                    'bac_3' =>  $this->Persons->where('academic_level', 'bac+3')->count(),
+                    'bac_3' => $this->Persons->where('academic_level', 'bac+3')->count(),
                     'bac_4' => $this->Persons->where('academic_level', 'bac+4')->count(),
-                    'bac_5' =>  $this->Persons->where('academic_level', 'bac+5')->count(),
+                    'bac_5' => $this->Persons->where('academic_level', 'bac+5')->count(),
                     'bac_6' => $this->Persons->where('academic_level', 'bac+6')->count(),
-                    'bac_7' =>  $this->Persons->where('academic_level', 'bac+7')->count(),
-                    'bac_8' =>  $this->Persons->where('academic_level', 'bac+8')->count(),
+                    'bac_7' => $this->Persons->where('academic_level', 'bac+7')->count(),
+                    'bac_8' => $this->Persons->where('academic_level', 'bac+8')->count(),
 
                 ],
 

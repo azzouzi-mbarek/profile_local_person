@@ -3,6 +3,8 @@
 namespace App\Http\Resources\Person;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Models\Person\LevelPerson;
+
 
 class PersonResource extends JsonResource
 {
@@ -21,11 +23,11 @@ class PersonResource extends JsonResource
             'last_name' => $this->last_name,
             'birthday' => $this->birthday,
             'nationality' => $this->nationality,
-            'academic-level' => $this->academic_level,
+            'academic_level' => $this->academic_level,
             'study_area' => $this->study_area,
             'email' => $this->email,
+            'short_biography'=>$this->short_biography,
             'number_phone' => $this->number_phone,
-            'levels' =>$this->Levels,
 //                [
 //                function () {
 //                    foreach ($this->Levels as $level) {

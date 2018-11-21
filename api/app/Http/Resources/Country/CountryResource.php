@@ -3,6 +3,7 @@
 namespace App\Http\Resources\Country;
 
 use App\Models\Country;
+use App\Models\Level\Level;
 use Illuminate\Http\Resources\Json\Resource;
 
 class CountryResource extends Resource
@@ -26,6 +27,17 @@ class CountryResource extends Resource
                 'region' => $this->region->name,
                 'description' => $this->description,
                 'capital' => $this->capital,
+                'last_stage' => (function () {
+                    $LastStage = 0;
+                    $levels = Level::where('country_id', $this->id)->get();
+                    foreach ($levels as $value) {
+                        if ($value->stage > $LastStage) {
+                            $LastStage = $value->stage;
+                        }
+
+                    }
+                    return $LastStage;
+                })(),
                 'devise' => $this->devise,
                 'levels_count' => Level::where('country_id', $this->id)->where('level_id', null)->count(),
                 'indicatif_tele' => $this->indicatif_tele,

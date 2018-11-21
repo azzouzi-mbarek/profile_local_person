@@ -98,7 +98,7 @@ export class LeveldetailsComponent implements OnInit {
 
 
     this.getLevels(this.country_id, this.level_id);
-
+    this.getPersons(this.level_id);
 
   }
 

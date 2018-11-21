@@ -25,7 +25,8 @@ class Person extends Model
     protected $table = 'persons';
 
     public  function  Levels(){
-        return $this->belongsToMany(Level::class);
+        return $this->belongsToMany(Level::class)
+        ->withPivot('function','level_id','person_id','status','start_date','end_date');
     }
 
     public  function  Institutions(){

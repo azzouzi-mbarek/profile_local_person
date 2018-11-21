@@ -5,7 +5,7 @@ import { LevelService } from 'src/app/services/level.service';
 import { PersonService } from 'src/app/services/person.service';
 import { CountryService } from 'src/app/services/country.service';
 import { MapService } from 'src/app/maps/map.service';
-import { single,singleType,singleDomaine,singleSiege} from './dataProfile';
+import { single, singleType, singleDomaine, singleSiege } from './dataProfile';
 
 @Component({
   selector: 'app-profile-local',
@@ -13,8 +13,8 @@ import { single,singleType,singleDomaine,singleSiege} from './dataProfile';
   styleUrls: ['./profile-local.component.css']
 })
 export class ProfileLocalComponent implements OnInit {
-  single=[];
-  
+  single = [];
+
 
   public dtOptions: DataTables.Settings = {};
   dtTriggerLevels: Subject<any> = new Subject();
@@ -38,12 +38,12 @@ export class ProfileLocalComponent implements OnInit {
   doughnut = false;
 
   view: any[] = [400, 200];
-   //  domaine d’interventions
-   xAxisLabeldomaine = 'Nombre';
-   yAxisLabeldomaine = ' domaine d’interventions';
-   // Par type d’institutions 
-   xAxisLabelinst = ' type d’institutions ';
-   yAxisLabelinst = 'Nombre';
+  //  domaine d’interventions
+  xAxisLabeldomaine = 'Nombre';
+  yAxisLabeldomaine = ' domaine d’interventions';
+  // Par type d’institutions
+  xAxisLabelinst = ' type d’institutions ';
+  yAxisLabelinst = 'Nombre';
 
   // bar chart Population
   showXAxis = true;
@@ -78,7 +78,7 @@ export class ProfileLocalComponent implements OnInit {
   };
 
   dataGraphe = [];
-  singleParite=[];
+  singleParite = [];
   country_id: number;
   level: any;
   levels = [];
@@ -86,6 +86,7 @@ export class ProfileLocalComponent implements OnInit {
   level_id: number;
   country: any;
   level_stage = null;
+  levelHoverName = null;
   constructor(
     private _route: ActivatedRoute,
     private _levelService: LevelService,
@@ -95,41 +96,40 @@ export class ProfileLocalComponent implements OnInit {
     private _router: Router,
     private _mapService: MapService
   ) {
-    Object.assign(this, {singleType,singleDomaine,singleSiege });
-   }
+    Object.assign(this, { singleType, singleDomaine, singleSiege });
+  }
 
 
   ngOnInit() {
-    this._route.queryParamMap.subscribe(params => {
 
-      this.country_id = +params.get('c');
-      this._route.paramMap.subscribe(params2 => {
-        this.level_id = +params2.get('id');
-        this._levelService.getLevel(this.country_id, this.level_id).subscribe(
-          (levelApi: any) => {
-            this.level = levelApi.data;
 
-            // console.log(this.level);
-            // this.title = this.level.properties.name + ' Levels 2';
-            // this.getGraphSurface(this.level, this.country);
-            // this.getGraphPopulation(this.level, this.country);
-          },
-          error => {console.log(error);}
-        );
+    this._route.paramMap.subscribe(params => {
+      this.level_id = +params.get('id');
+      console.log(this.country_id);
+      this._levelService.getLevel(this.country_id, this.level_id).subscribe(
+        (levelApi: any) => {
+          this.level = levelApi.data;
+          this.getLevels(this.level.properties.country_id, this.level_id);
+          console.log(this.levels);
+          this.getPersons(this.level_id);
 
-      });
+        },
+        error => { console.log(error); }
+      );
+
     });
 
-// parite genre 
-this.singleParite = [{
-  name: 'male',
-  value: 10
-},
-{
-  name: 'female',
-  value: 9
-}];
-    this.single =[{
+
+    // parite genre 
+    this.singleParite = [{
+      name: 'male',
+      value: 10
+    },
+    {
+      name: 'female',
+      value: 9
+    }];
+    this.single = [{
       name: 'Nombre de collectivités inclus ',
       value: 66
     },
@@ -141,7 +141,7 @@ this.singleParite = [{
       name: 'Nombres d’associations Nationales',
       value: 33
     }
-  ]
+    ]
 
 
 
@@ -150,8 +150,8 @@ this.singleParite = [{
       pagingType: 'full_numbers',
       pageLength: 10
     };
-    // this.getLevels(this.country_id, this.level_id);
-    // this.getPersons(this._id);
+
+
 
   }
 
@@ -168,12 +168,15 @@ this.singleParite = [{
     );
   }
 
-  getLevels(level_id, country_id) {
+  getLevels(country_id, level_id) {
     this._levelService.getLevels(country_id, level_id).subscribe(
       (levelApi: any) => {
 
         this.levels = levelApi.data;
-        console.log(this.levels);
+
+
+
+
         this.dtTriggerLevels.next();
       },
       error => {
@@ -221,5 +224,27 @@ this.singleParite = [{
     this._router.navigate([id], {
       relativeTo: this._route
     });
+  }
+
+
+
+
+  onMouseEnterTR(name, i) {
+
+    this.levelHoverName = name;
+    console.log(name);
+
+  }
+
+  onMouseLeaveTR(country) {
+    this.levelHoverName = null;
+
+  }
+  onSelect(id){
+    const country_id = this.level.properties.country_id;
+    const level_id= this.level_id;
+    console.log('profil local',id,level_id,country_id);
+    this._router.navigate(['landing/profile-person', id],{ queryParams: { c: country_id, l:level_id } });
+
   }
 }

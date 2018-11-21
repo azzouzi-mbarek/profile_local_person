@@ -27,7 +27,7 @@ const landingRoutes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'directory', component: DirectoryComponent },
       { path: 'profile-local-government/:id', component: ProfileLocalComponent },
-      { path: 'profile-person', component: ProfilPersonComponent },
+      { path: 'profile-person/:id', component: ProfilPersonComponent },
       { path: 'transparency', component: TransparencyComponent }
 
     ]

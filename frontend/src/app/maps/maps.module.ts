@@ -15,6 +15,7 @@ import { UploadLevelMapComponent } from './upload-level-map/upload-level-map.com
 import { StatisticMapGeneralComponent } from './statistic-map-general/statistic-map-general.component';
 import { MapsLevelsComponent } from './maps-levels/maps-levels.component';
 import { StatistcMapComponent } from './statistc-map/statistc-map.component';
+import { LevelMapComponent } from './level-map/level-map.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { StatistcMapComponent } from './statistc-map/statistc-map.component';
     UploadLevelMapComponent,
     StatisticMapGeneralComponent,
     MapsLevelsComponent,
-    StatistcMapComponent
+    StatistcMapComponent,
+    LevelMapComponent
   ],
 
   declarations: [
@@ -46,7 +48,8 @@ import { StatistcMapComponent } from './statistc-map/statistc-map.component';
     UploadLevelMapComponent,
     StatisticMapGeneralComponent,
     MapsLevelsComponent,
-    StatistcMapComponent
+    StatistcMapComponent,
+    LevelMapComponent
   ]
 })
 export class MapsModule { }

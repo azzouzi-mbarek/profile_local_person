@@ -101,7 +101,7 @@ export class MapService {
     // creation de la carte avec layer de base + zoom minimum sur afrique de 4
     const map = L.map(divId, {
       layers: [mainLayer === 'white' ? white : topoLayer],
-
+      doubleClickZoom: false,
       zoomDelta: 0.5,
       zoomSnap: 0.25
       // maxBounds: this.africaMapBounds,

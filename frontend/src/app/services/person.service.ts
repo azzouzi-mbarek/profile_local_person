@@ -32,4 +32,8 @@ export class PersonService {
     const url = this.url + '/countries/' + country_id + '/persons';
     return this._http.get<Person[]>(url).pipe(catchError(this.errorHandler));
   }
+  getPersonLevel(country_id=null,level_id=null,person_id=null): Observable<Person[]> {
+    const url = this.url + '/countries/' + country_id +'/levels/'+level_id+ '/persons/'+person_id;
+    return this._http.get<Person[]>(url).pipe(catchError(this.errorHandler));
+  }
 }

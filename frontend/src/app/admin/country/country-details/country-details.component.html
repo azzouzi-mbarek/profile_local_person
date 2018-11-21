@@ -129,7 +129,8 @@
 
 
 
-                            <button class="btn btn-info" (click)='goToLevels1()'>{{ levelCategoryName }} Maps
+                            <button *ngIf="levels.length > 0" class="btn btn-info" (click)='goToLevels1()'>{{
+                              levelCategoryName }} Maps
                             </button>
                           </div>
                         </div>

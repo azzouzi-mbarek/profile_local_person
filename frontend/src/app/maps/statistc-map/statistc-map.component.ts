@@ -1,4 +1,4 @@
-import { EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { EventEmitter, OnChanges, AfterViewInit, AfterContentInit, ElementRef } from '@angular/core';
 import { Output } from '@angular/core';
 import { style } from '@angular/animations';
 import { Router } from '@angular/router';
@@ -10,12 +10,16 @@ import { MapService } from '../map.service';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import * as L from 'leaflet';
 import { LevelService } from 'src/app/services/level.service';
+
+declare let $: any;
+
+
 @Component({
   selector: 'app-statistc-map',
   templateUrl: './statistc-map.component.html',
   styleUrls: ['./statistc-map.component.css']
 })
-export class StatistcMapComponent implements OnInit, OnChanges {
+export class StatistcMapComponent implements OnInit, AfterContentInit {
   map = null;
   bsModalRef: BsModalRef;
   countries = [];
@@ -27,6 +31,8 @@ export class StatistcMapComponent implements OnInit, OnChanges {
   zoomInit = 4;
   zoomClick = null;
   layerObject = null;
+  level_layers_ids = [];
+  lastStage = null;
 
   @Output() messageEvent = new EventEmitter<number>();
 
@@ -35,7 +41,8 @@ export class StatistcMapComponent implements OnInit, OnChanges {
     private _modalService: BsModalService,
     private _countryservice: CountryService,
     private _levelsService: LevelService,
-    private _router: Router
+    private _router: Router,
+    private el: ElementRef
   ) { }
 
 
@@ -43,9 +50,16 @@ export class StatistcMapComponent implements OnInit, OnChanges {
     this.messageEvent.emit(this.layerObject);
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
 
+  ngAfterContentInit() {
+    $('div').on('click', '.sidebar-open-button', (e) => {
+      const id = e.target.getAttribute('data');
+      this.gotToLevelDetails(id);
+
+    });
   }
+
+
   ngOnInit() {
 
 
@@ -73,10 +87,17 @@ export class StatistcMapComponent implements OnInit, OnChanges {
   }
 
 
+  gotToLevelDetails(id) {
+    console.log(id);
+    this._router.navigate(['landing/profile-local-government', id]);
+    // this._router.navigate(['landing/profile-local-government', props.id], { queryParams: { c: props.country_id } });
 
+  }
 
 
   addCountriesLayer(countriesGeojson) {
+
+
     const styleRegion = this._mapService.styleRegion;
     const styleHover = this._mapService.styleHover;
 
@@ -105,10 +126,29 @@ export class StatistcMapComponent implements OnInit, OnChanges {
 
 
         layer.on({
+          'dblclick': e9 => { },
           'click': e => {
-            legend.remove();
+            this.lastStage = feature.properties.last_stage;
 
+            const layers = [];
+            this.map.eachLayer(function (layert) {
+              if (layert instanceof L.LayerGroup) {
+                layers.push(layert);
+              }
+            });
+
+            layers.forEach(element => {
+              this.level_layers_ids.forEach(groupID => {
+                if (groupID === element._leaflet_id) {
+                  element.removeFrom(this.map);
+                }
+              });
+
+            });
+            legend.remove();
             if (this.levelsLayer !== null) {
+
+
               this.levelsLayer.removeFrom(this.map);
               this.levelsLayer = null;
             }
@@ -119,13 +159,13 @@ export class StatistcMapComponent implements OnInit, OnChanges {
 
 
             this.map.fitBounds(l.getBounds());
+
+
             this.addLevelsLayer(feature.properties.id);
 
 
           },
-          'dblclick': e => {
-            const l = e.target;
-          },
+
           mouseover: e => {
             // tslint:disable-next-line:no-shadowed-variable
             const layer = e.target;
@@ -163,45 +203,72 @@ export class StatistcMapComponent implements OnInit, OnChanges {
     const styleHover = this._mapService.styleHover;
     this._levelsService.getLevels(country_id, level_id).subscribe(
       (levelsApi: any) => {
-        this.levels = levelsApi;
-        // console.log(this.levels);
+        this.levels = levelsApi.data;
+
         this.levelsLayer = L.geoJSON(levelsApi.data, {
           style: styleUploadCountries,
           onEachFeature: (feature, layer) => {
-            layer.bindTooltip(feature.properties.name);
+            layer.bindPopup(
+
+
+
+
+              '<div class="col-lg-12">  ' +
+              '                       <div class="widget lazur-bg text-center ">  ' +
+
+              '                                   <h4>  ' +
+              feature.properties.name +
+              '                                   </h4>  ' +
+              // tslint:disable-next-line:max-line-length
+              '<button type="button" class="btn btn-outline btn-default sidebar-open-button" data = "' +
+              feature.properties.id +
+              '" ' + '>Details</button>' +
+
+
+
+              '</div>  ' +
+
+              '</div>  '
+
+
+              //    feature.properties.name
+            );
+
+
 
             layer.on({
-              'click': e => {
+              // 'dblclick': (e2) => {
 
-                if (this.levelsLayer !== null) {
+              //   const id = e2.target.feature.properties.id;
+              //   const country_i = e2.target.feature.properties.country_id;
+              //   const name = e2.target.feature.properties.name;
+              //   console.log(name);
+              //   this._router.navigate(['landing/profile-local-government', id], { queryParams: { c: country_i } });
+
+
+              // },
+              'click': e1 => {
+
+                if (this.level_layers_ids.length < this.lastStage) {
                   this.levelsLayer.removeFrom(this.map);
                 }
 
-                const l = e.target;
-                this.map.fitBounds(l.getBounds());
+                const l1 = e1.target;
+                this.map.fitBounds(l1.getBounds());
                 this.layerObject = feature.properties;
+                // this.addLevelsLayer(feature.properties.country_id, feature.properties.id);
                 this.addLevelsLayer(feature.properties.country_id, feature.properties.id);
+
+                // console.log(this.addLevelsLayer(feature.properties.country_id, feature.properties.id));
                 this.sendMessage();
-              },
-              'dblclick': e => {
-                const l = e.target;
-                const id = e.target.feature.properties.id;
-                const country_i = e.target.feature.properties.country_id;
-
-                this._router.navigate(['landing/profile-local-government', id], { queryParams: { c: country_i } });
-                // this._router.navigate(['landing/profile-local-government'], id);
-                // // legend.remove();
-                // // this.map.fitBounds(l.getBounds());
-                // this.levelsLayer.removeFrom(this.map);
-                // this.addLevelsLayer(feature.properties.country_id, id);
-                // this.map.fiBounds(this.levelsLayer.getBounds());
 
               },
+
               mouseover: e => {
                 // tslint:disable-next-line:no-shadowed-variable
                 const layer = e.target;
 
-                layer.openTooltip();
+                layer.openPopup();
                 layer.setStyle(styleHover(layer.feature));
                 // info.update(layer.feature.properties);
 
@@ -209,6 +276,7 @@ export class StatistcMapComponent implements OnInit, OnChanges {
               mouseout: e => {
                 // tslint:disable-next-line:no-shadowed-variable
                 const layer = e.target;
+                // layer.closePopup();
                 layer.setStyle(styleUploadCountries(layer.feature));
                 // this.geojsonLevelLayer.removeFrom(this.map);
               }
@@ -216,15 +284,22 @@ export class StatistcMapComponent implements OnInit, OnChanges {
           }
         });
 
-
         this.levelsLayer.bringToFront();
+        if (this.levels.length > 0) {
 
-        this.levelsLayer.addTo(this.map);
+
+          this.levelsLayer.addTo(this.map);
+          this.level_layers_ids.push(this.levelsLayer._leaflet_id);
+
+        }
+
+
 
 
       }
     );
   }
+
 
 
 
@@ -240,4 +315,13 @@ export class StatistcMapComponent implements OnInit, OnChanges {
       class: 'modal-lg'
     });
   }
+
+
+
+
+
+
 }
+
+
+

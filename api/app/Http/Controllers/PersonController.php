@@ -66,7 +66,7 @@ class PersonController extends Controller
      * @param  \App\Models\Person\Person $person
      * @return \Illuminate\Http\Response
      */
-    public function show($region_id, $country_id, $level_id, $id)
+    public function show($country_id, $level_id, $id)
     {
         $person = Person::find($id);
 //        dd($person->Levels);

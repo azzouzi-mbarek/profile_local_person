@@ -64,6 +64,7 @@ export class CountryDetailsComponent implements OnInit {
   ngOnInit() {
     this._route.paramMap.subscribe(params => {
       this._id = +params.get('id');
+      console.log(this._id);
       this._countryService.getCountry(this._id).subscribe(
         (countryApi: any) => {
           this.country = countryApi.data;

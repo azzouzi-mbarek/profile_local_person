@@ -59,7 +59,7 @@ class Level extends Model
     public function Persons()
     {
         return $this->belongsToMany(Person::class)
-            ->withPivot('category_person_id', 'level_id');
+        ->withPivot('function','level_id','person_id','status','start_date','end_date');
     }
     public function Institutions()
     {

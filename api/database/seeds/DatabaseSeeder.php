@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 
         // factory(App\Models\Region::class, 5)->create();
         // factory(App\Models\Country::class, 54)->create();
-        // factory(App\Models\Level\CategoryLevel::class, 37)->create();
+        factory(App\Models\Level\CategoryLevel::class, 37)->create();
         // factory(App\Models\Level\Level::class, 100)->create();
         // $this->call(LevelSeeder::class);
 

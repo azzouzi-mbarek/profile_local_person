@@ -3,9 +3,8 @@
 namespace App\Http\Resources\Level;
 
 use App\Models\Level\Level;
-use Illuminate\Http\Resources\Json\JsonResource;
 use App\Models\Person\LevelPerson;
-
+use Illuminate\Http\Resources\Json\JsonResource;
 
 class LevelResource extends JsonResource
 {
@@ -24,19 +23,20 @@ class LevelResource extends JsonResource
                 'id' => $this->id,
                 'name' => $this->name,
                 'country_id' => $this->country_id,
-                'country'=>$this->Country->name,
-                'region'=>$this->Country->Region->name,
+                'country' => $this->Country->name,
+                'region' => $this->Country->Region->name,
+                'stage' => $this->stage,
                 'category' => $this->category_level->name,
                 'level_id' => $this->level_id,
                 'population' => $this->population,
                 'date_population' => $this->census_date_population,
                 'levels_count' => Level::all()->where('level_id', $this->id)->count(),
-                'web_site'=> $this->web_site,
-                'email'=> $this->email,
-                'number_phone'=>$this->number_phone,
-                'address'=>$this->address,
-                'date_population'=>$this->census_date_population,
-                'Maire'=>LevelPerson::where('level_id', $this->id)->where('function', 'Maire')->count(),
+                'web_site' => $this->web_site,
+                'email' => $this->email,
+                'number_phone' => $this->number_phone,
+                'address' => $this->address,
+                'date_population' => $this->census_date_population,
+                'Maire' => LevelPerson::where('level_id', $this->id)->where('function', 'Maire')->count(),
             ],
             'geometry' => $this->shape,
 
