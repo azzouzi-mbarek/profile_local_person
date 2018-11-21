@@ -85,15 +85,21 @@
                             <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerLevels" class="table table-hover">
                               <thead>
                                 <tr>
-                                  <th>ID</th>
-                                  <th> name</th>
+                                  <th> Name</th>
+                                  <th> Categorie</th>
+                                  <th> Email</th>
+                                  <th> Tél</th>
+
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr *ngFor="let level of levels ; let i = index" (mouseenter)="onMouseEnterTR(level.properties.name  , i)"
                                   (mouseleave)="onMouseLeaveTR(level.properties.id)">
-                                  <td>{{ level?.properties.id }}</td>
                                   <td>{{level?.properties.name}}</td>
+                                  <td>{{level?.properties.category}}</td>
+                                  <td>{{level?.properties.email}}</td>
+                                  <td>{{level?.properties.number_phone}}</td>
+
                                 </tr>
                               </tbody>
                             </table>

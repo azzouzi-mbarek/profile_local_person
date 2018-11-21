@@ -17,7 +17,7 @@ class PersonResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'image' => $this->image,
+            'image' => $this->image_url,
             'sex' => $this->sex,
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,

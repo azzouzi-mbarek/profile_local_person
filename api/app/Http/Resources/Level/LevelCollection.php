@@ -26,6 +26,8 @@ class LevelCollection extends JsonResource
                 'country_id' => $this->country_id,
                 'level_id' => $this->level_id,
                 'category' => $this->category_level->name,
+                'email'=>$this->email,
+                'number_phone'=>$this->number_phone,
                 'stage' => $this->stage,
                 'st' => $this->levels->count(),
                 'population' => $this->population,

@@ -25,7 +25,7 @@ class PersonCollection extends JsonResource
             'first_name' => $this->first_name,
             'birthday' => $this->birthday,
             'nationality' => $this->nationality,
-            'academic-level' => $this->academic_level,
+            'academic_level' => $this->academic_level,
             'study_area' => $this->study_area,
             'email' => $this->email,
             'number_phone' => $this->number_phone,
@@ -35,7 +35,6 @@ class PersonCollection extends JsonResource
            'status'=>$this->pivot->status,
            'mandat_start'=> $this->pivot->start_date,
            'mandat_fin'=> $this->pivot->end_date,
-           'level_name' => Level::find($this->pivot->level_id)->country->id,
 
 //            'created_at' => $this->pivot->created_at,
 //            'country_id' => Level::find($this->pivot->level_id)->country->id,
