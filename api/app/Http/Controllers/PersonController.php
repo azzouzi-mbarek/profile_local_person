@@ -17,14 +17,18 @@ class PersonController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Country $country, Level $level = null)
+    public function index(Country $country=null, Level $level = null)
     {
-        if ($level != null) {
+        if ($level != null & $country!=null) {
             return PersonCollection::collection($level->Persons);
         }
-        if ($level == null) {
+        if ($level == null& $country!=null) {
             return PersonCollection::collection($country->Persons);
-        }
+        }else 
+            return Person::all();
+            
+            
+        
 //        $level=Level::find(1);
         //        dd($level->Persons);
     }

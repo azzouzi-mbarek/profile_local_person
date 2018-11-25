@@ -17,6 +17,7 @@ import { MapsLevelsComponent } from '../maps/maps-levels/maps-levels.component';
 import { LevelComponent } from './level/level.component';
 import { LeveldetailsComponent } from './level/leveldetails/leveldetails.component';
 import { CountryListResolverService } from '../resolvers/country-resolver.service';
+import { PersonComponent } from './person/person.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: 'countries/:id/levels', component: LevelComponent },
       { path: 'countries/:id/levels/:l_id', component: LeveldetailsComponent },
       { path: 'countries/:id/levels/:l_id/levels', component: LevelComponent },
+      { path: 'persons', component: PersonComponent },
 
 
 

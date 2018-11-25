@@ -46,6 +46,7 @@ import { LevelComponent } from './level/level.component';
 import { LeveldetailsComponent } from './level/leveldetails/leveldetails.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CategoryLevelComponent } from './level/category-level/category-level.component';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   imports: [
@@ -91,6 +92,7 @@ import { CategoryLevelComponent } from './level/category-level/category-level.co
     LevelComponent,
     LeveldetailsComponent,
     CategoryLevelComponent,
+    PersonComponent,
 
   ],
   exports: [EasyPieDirective],
