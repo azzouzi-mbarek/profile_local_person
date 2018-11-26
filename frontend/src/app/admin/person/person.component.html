@@ -1,48 +1,187 @@
-<h2>
-  Add New Product
-</h2>
-
-<form id = "formNewPerson" name = "formNewPerson" #PersonData = "ngForm" (ngSubmit) = "addPerson(person.value)">
-  <label>First Name: </label><input type = "text" name="first_name" id="first_name" placeholder="First Name" ngModel><br>
-  <label>last Name: </label><input type = "text" name="last_name" id="last_name" placeholder="last Name" ngModel><br>
-  <input type="submit" value = "Add Product">
-</form>
-
-<br>
-<h3 *ngIf = "isAdded" >{{confirmationString}}</h3>
-
-
-
-<div class="col-md-12">
-  <div class="ibox">
-    <div class="ibox-content">
-      <h2>Membres et Employés</h2>
-  <div class="row">
-    <div class="col-md-12" >
-      <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerPerson" class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Niveau Academique</th>
-            <th>Domaine d'etude</th>
-            <th>Email</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let person of person" >
-            <td>{{person.first_name}}</td>
-            <td>{{person.last_name}}</td>
-            <td>{{person.academic_level}}</td>
-            <td>{{person.study_area}}</td>
-            <td>{{person.email}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-9">
+    <h2>Personnes</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/administrateur/home">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a #h1Variable></a>
+      </li>
+    </ol>
   </div>
 </div>
-</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <div class="row">
+    <div class="col-md-5">
+      <div class="ibox ">
+        <form #PersonForm="ngForm">
+          <div class="ibox-content">
+
+
+
+            <div class="form-group {{ errors.first_name ? 'has-error' : '' }} ">
+
+              <input id="first_name" type="text" class="form-control" name="first_name" [(ngModel)]="person.first_name"
+                placeholder="Nom">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.first_name">
+              {{errors.first_name}}
+            </div>
+
+
+
+            <div class="form-group {{ errors.last_name ? 'has-error' : '' }} ">
+
+              <input id="last_name" type="text" class="form-control" name="last_name" [(ngModel)]="person.last_name"
+                placeholder="Prenom">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.last_name">
+              {{errors.last_name}}
+            </div>
+
+
+            <div class="form-group {{ errors.nationality ? 'has-error' : '' }} ">
+
+              <input id="nationality" type="text" class="form-control" name="nationality" [(ngModel)]="person.nationality"
+                placeholder="Nationalite">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.nationality">
+              {{errors.nationality}}
+            </div>
+
+            <div class="form-group {{ errors.birthday ? 'has-error' : '' }}  ">
+
+              <input id="birthday" type="text" class="form-control" name="birthday" [(ngModel)]="person.birthday"
+                placeholder="Date de naissance" bsDatepicker>
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.birthday">
+              {{errors.birthday}}
+            </div>
+
+            <div class="form-group {{ errors.sex ? 'has-error' : '' }} ">
+              <label class="radio-inline">
+                <input type="radio" required #gender="ngModel" value="Male" name="sex" [(ngModel)]="person.sex">
+                Male
+              </label>
+              &nbsp;
+              &nbsp;
+
+              <label class="radio-inline">
+                <input type="radio" required #gender="ngModel" value="Female" name="sex" [(ngModel)]="person.sex">
+                Female
+              </label>
+
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.sex">
+              {{errors.sex}}
+            </div>
+
+
+            <div class="form-group {{ errors.academic_level ? 'has-error' : '' }} ">
+              <select id="academic_level" appSelectValidator="select" name="academic_level" [(ngModel)]="person.academic_level"
+                class="form-control" #academic_level="ngModel">
+                <option value="select">Niveau academique</option>
+                <option value="bac">bac</option>
+                <option value="bac+1">bac+1</option>
+                <option value="bac+2">Bac+2 </option>
+                <option value="bac+3">Bac+3 </option>
+                <option value="bac+4">Bac+4 </option>
+                <option value="bac+5">Bac+5</option>
+                <option value="bac+8">Bac+8</option>
+
+
+
+              </select>
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.academic_level">
+              {{errors.academic_level}}
+            </div>
+
+
+
+            <div class="form-group {{ errors.email ? 'has-error' : '' }} ">
+              <input id="v" type="email" class="form-control" name="email" [(ngModel)]="person.email" placeholder="Email">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.email">
+              {{errors.email}}
+            </div>
+
+            <div class="form-group {{ errors.study_area ? 'has-error' : '' }} ">
+              <input id="study_area" type="text" class="form-control" name="study_area" [(ngModel)]="person.study_area"
+                placeholder="Domaine d'etude">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.study_area">
+              {{errors.study_area}}
+            </div>
+
+
+            <div class="form-group {{ errors.number_phone ? 'has-error' : '' }} ">
+              <input id="number_phone" type="text" class="form-control" name="number_phone" [(ngModel)]="person.number_phone"
+                placeholder="Telephone">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.number_phone">
+              {{errors.number_phone}}
+            </div>
+
+            <div class="form-group {{ errors.short_biography ? 'has-error' : '' }} ">
+              <input id="short_biography" type="text" class="form-control" name="short_biography" [(ngModel)]="person.short_biography"
+                placeholder="Bref Biographie">
+            </div>
+            <div class="alert alert-danger" [hidden]="!errors.short_biography">
+              {{errors.short_biography}}
+            </div>
+
+
+
+
+          </div>
+          <div class=ibox-footer>
+            <button type="button" class="btn btn-block  btn-primary">Sauvgarder</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+
+    <div class="col-md-7">
+      <div class="ibox">
+        <div class="ibox-content">
+          <h2>Membres et Employés</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerPerson" class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Niveau Academique</th>
+                    <th>Domaine d'etude</th>
+                    <th>Email</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let person of person">
+                    <td>{{person.first_name}}</td>
+                    <td>{{person.last_name}}</td>
+                    <td>{{person.academic_level}}</td>
+                    <td>{{person.study_area}}</td>
+                    <td>{{person.email}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
 </div>

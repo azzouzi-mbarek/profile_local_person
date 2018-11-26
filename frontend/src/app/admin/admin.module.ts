@@ -1,3 +1,4 @@
+import { ConfirmModalComponent } from './../shared/confirm-modal/confirm-modal.component';
 import { CountryListResolverService } from './../resolvers/country-resolver.service';
 import { NgModule, PlatformRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -47,6 +48,9 @@ import { LeveldetailsComponent } from './level/leveldetails/leveldetails.compone
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CategoryLevelComponent } from './level/category-level/category-level.component';
 import { PersonComponent } from './person/person.component';
+import { BsDatepickerModule } from 'ngx-bootstrap';
+import { AcademicLevelComponent } from './person/academic-level/academic-level.component';
+
 
 @NgModule({
   imports: [
@@ -54,6 +58,7 @@ import { PersonComponent } from './person/person.component';
     AdminRoutingModule,
     FormsModule,
     NgxSpinnerModule,
+    BsDatepickerModule.forRoot(),
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
@@ -93,11 +98,12 @@ import { PersonComponent } from './person/person.component';
     LeveldetailsComponent,
     CategoryLevelComponent,
     PersonComponent,
+    AcademicLevelComponent,
 
   ],
   exports: [EasyPieDirective],
   entryComponents: [
-
+    ConfirmModalComponent,
     FormCountryComponent,
     FormRegionComponent
   ],

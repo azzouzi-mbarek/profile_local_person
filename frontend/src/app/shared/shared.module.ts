@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IboxComponent } from './ibox/ibox.component';
 
 import { ModalSelectCountryComponent } from './modal-select-country/modal-select-country.component';
+import { ConfirmModalComponent } from './confirm-modal/confirm-modal.component';
 
 @NgModule({
   imports: [
@@ -11,11 +12,14 @@ import { ModalSelectCountryComponent } from './modal-select-country/modal-select
   declarations: [
     IboxComponent,
 
-    ModalSelectCountryComponent
+    ModalSelectCountryComponent,
+
+    ConfirmModalComponent
   ],
   exports: [
     IboxComponent,
-    ModalSelectCountryComponent
+    ModalSelectCountryComponent,
+    ConfirmModalComponent
 
   ]
 })

@@ -1,3 +1,4 @@
+import { AcademicLevelComponent } from './person/academic-level/academic-level.component';
 import { AddLevelByFileComponent } from './level/add-level-by-file/add-level-by-file.component';
 import { CountryDetailsComponent } from './country/country-details/country-details.component';
 import { NgModule } from '@angular/core';
@@ -31,6 +32,8 @@ const routes: Routes = [
       { path: 'countries/:id/levels/:l_id', component: LeveldetailsComponent },
       { path: 'countries/:id/levels/:l_id/levels', component: LevelComponent },
       { path: 'persons', component: PersonComponent },
+      { path: 'academic_level', component: AcademicLevelComponent },
+      { path: 'academic_level', component: AcademicLevelComponent },
 
 
 

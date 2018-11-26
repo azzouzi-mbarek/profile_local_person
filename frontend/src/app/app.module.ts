@@ -13,15 +13,18 @@ import { MapsModule } from './maps/maps.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BsDatepickerModule } from 'ngx-bootstrap';
 import { StatisticComponent } from './landing/statistic/statistic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+
   ],
   imports: [
-   BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule,
     NgxChartsModule,
     BrowserModule,
     FormsModule,

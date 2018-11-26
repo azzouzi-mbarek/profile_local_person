@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreatePersonsTable extends Migration
 {
@@ -21,14 +21,17 @@ class CreatePersonsTable extends Migration
             $table->date('birthday')->nullable();
             $table->string('nationality')->nullable();
             $table->string('sex')->nullable();
-            $table->string('academic_level')->nullable();
+            $table->integer('academic_level_id')->nullable()->unsigned()->index();
             $table->string('study_area')->nullable();
             $table->longText('short_biography')->nullable();
             $table->string('email')->nullable();
             $table->string('number_phone')->nullable();
-
-
             $table->timestamps();
+
+        });
+
+        Schema::table('persons', function (Blueprint $table) {
+            $table->foreign('academic_level_id')->references('id')->on('academic_levels');
         });
     }
 

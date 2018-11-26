@@ -108,7 +108,19 @@
 
         </ul>
       </li>
-      <li><a [routerLink]="['persons']" ><i class="fas fa-globe-africa"></i>Persons</a></li>
+
+      <li class="">
+        <a aria-expanded="true"><i class="fas fa-users"></i> <span class="nav-label">Personnes</span>
+          <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse" style="" aria-expanded="true">
+          <li><a [routerLink]="['persons']"><i class="fas fa-users"></i>Personnes</a></li>
+          <li><a [routerLink]="['academic_level']"><i class="fas fa-graduation-cap"></i>Niveau Academique</a></li>
+
+
+
+        </ul>
+      </li>
+
 
 
 

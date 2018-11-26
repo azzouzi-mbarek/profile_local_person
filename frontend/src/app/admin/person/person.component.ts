@@ -11,15 +11,16 @@ import { ActivatedRoute } from '@angular/router';
 
 export class PersonComponent implements OnInit {
   person = [];
+  errors: any = [];
   public dtOptions: DataTables.Settings = {};
   dtTriggerPerson: Subject<any> = new Subject();
   id: number;
-  confirmationString:string = "New Person has been added";
-  isAdded: boolean = false;
+  confirmationString = 'New Person has been added';
+  isAdded = false;
 
 
 
-  constructor(private _personService:PersonService,private _route: ActivatedRoute) { }
+  constructor(private _personService: PersonService, private _route: ActivatedRoute) { }
 
   ngOnInit() {
     this._route.paramMap.subscribe(params => {
@@ -38,19 +39,19 @@ export class PersonComponent implements OnInit {
   }
   onDeletePerson(id: Number) {
     this._personService.deletePerson(id).subscribe(
- 
+
       error => console.log(error)
     );
   }
 
-  addPerson(Person){
+  addPerson(Person) {
     this._personService.save(Person).subscribe(
-      (res:any) => {
-      this.isAdded = true
-    },
+      (res: any) => {
+        this.isAdded = true
+      },
       error => console.log(error)
     )
-  
+
   }
 
 
