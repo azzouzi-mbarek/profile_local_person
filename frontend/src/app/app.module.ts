@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { StatisticComponent } from './landing/statistic/statistic.component';
+import { SlickModule } from 'ngx-slick';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { StatisticComponent } from './landing/statistic/statistic.component';
     HttpClientModule,
     AuthModule,
     AdminModule,
-    MapsModule
+    MapsModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

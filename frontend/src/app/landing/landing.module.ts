@@ -42,6 +42,7 @@ import { LandingNavComponent } from './landing-nav/landing-nav.component';
 import { ModalSelectCountryComponent } from '../shared/modal-select-country/modal-select-country.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { CountryStatisticComponent } from './statistic/country-statistic/country-statistic.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -83,6 +84,7 @@ import { CountryStatisticComponent } from './statistic/country-statistic/country
     GeneralStatisticsComponent,
     DevelopmentPartnersComponent,
     CountryStatisticComponent,
+    ContactUsComponent,
 
   ],
   entryComponents: [

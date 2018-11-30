@@ -13,9 +13,8 @@ import { single, singleType, singleDomaine, singleSiege } from './dataProfile';
   styleUrls: ['./profile-local.component.css']
 })
 export class ProfileLocalComponent implements OnInit {
+  
   single = [];
-
-
   public dtOptions: DataTables.Settings = {};
   dtTriggerLevels: Subject<any> = new Subject();
   dtTriggerPersons: Subject<any> = new Subject();
