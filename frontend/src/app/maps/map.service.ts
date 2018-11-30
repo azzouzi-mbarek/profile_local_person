@@ -95,12 +95,12 @@ export class MapService {
 
     const baseLayers = {
       // Satellite: googleMaps,
-      Blank: white,
-      'Topo Maps': topoLayer
+      'Topo Maps': topoLayer,
+      Blank: white
     };
     // creation de la carte avec layer de base + zoom minimum sur afrique de 4
     const map = L.map(divId, {
-      layers: [mainLayer === 'white' ? white : topoLayer],
+      layers: [mainLayer === 'Topo Maps' ? topoLayer: white ],
       doubleClickZoom: false,
       zoomDelta: 0.5,
       zoomSnap: 0.25

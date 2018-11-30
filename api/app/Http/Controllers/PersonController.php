@@ -20,10 +20,10 @@ class PersonController extends Controller
     public function index(Country $country = null, Level $level = null)
     {
 
-        if ($level != null & $country != null) {
+        if ($level != null) {
             return PersonCollection::collection($level->Persons);
         }
-        if ($level == null & $country != null) {
+        if ($level == null) {
             return PersonCollection::collection($country->Persons);
         } else {
             return Person::all();

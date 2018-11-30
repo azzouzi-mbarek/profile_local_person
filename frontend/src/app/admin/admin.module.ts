@@ -50,10 +50,13 @@ import { CategoryLevelComponent } from './level/category-level/category-level.co
 import { PersonComponent } from './person/person.component';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { AcademicLevelComponent } from './person/academic-level/academic-level.component';
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
   imports: [
+    ToastrModule.forRoot(),
     CommonModule,
     AdminRoutingModule,
     FormsModule,

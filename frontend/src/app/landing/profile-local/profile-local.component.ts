@@ -105,13 +105,11 @@ export class ProfileLocalComponent implements OnInit {
 
     this._route.paramMap.subscribe(params => {
       this.level_id = +params.get('id');
-      console.log(this.country_id);
       this._levelService.getLevel(this.country_id, this.level_id).subscribe(
         (levelApi: any) => {
           this.level = levelApi.data;
           this.getLevels(this.level.properties.country_id, this.level_id);
-          console.log(this.levels);
-          this.getPersons(this.level_id);
+          this.getPersons(this.level.properties.country_id,this.level_id);
 
         },
         error => { console.log(error); }
@@ -155,11 +153,12 @@ export class ProfileLocalComponent implements OnInit {
 
   }
 
-  getPersons(level_id) {
-    this._personService.getPersons(level_id).subscribe(
+  getPersons(country_id,level_id) {
+    this._personService.getPersonsLevel(country_id,level_id).subscribe(
       (personApi: any) => {
 
         this.persons = personApi.data;
+        console.log('persons',this.persons);
         this.dtTriggerPersons.next();
       },
       error => {
@@ -173,10 +172,6 @@ export class ProfileLocalComponent implements OnInit {
       (levelApi: any) => {
 
         this.levels = levelApi.data;
-
-
-
-
         this.dtTriggerLevels.next();
       },
       error => {

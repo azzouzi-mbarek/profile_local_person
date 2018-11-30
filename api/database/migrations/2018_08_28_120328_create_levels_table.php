@@ -18,7 +18,7 @@ class CreateLevelsTable extends Migration
             $table->string('name');
             $table->integer('country_id')->nullable()->unsigned()->index();
             $table->integer('stage')->nullable()->unsigned();
-            $table->integer('category_level_id')->nullable()->unsigned()->index();
+            $table->integer('category_level_id')->nullable();
             $table->integer('level_id')->nullable()->unsigned()->index();
             $table->geometry('shape')->default(null)->nullable();
             $table->string('image_url')->nullable();

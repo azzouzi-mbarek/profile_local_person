@@ -11,16 +11,16 @@
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbar">
         <ul class="nav navbar-nav ">
-          <li><a class="nav-link" pageScroll routerLink="/landing/home" routerLinkActive="active" href="#home">HOME</a></li>
-          <li><a class="nav-link" pageScroll routerLink="/landing/home" href="#maps">MAPS</a></li>
-          <li><a class="nav-link" pageScroll routerLink="/landing/directory" routerLinkActive="active">DIRECTORY</a></li>
-          <li><a class="nav-link" pageScroll routerLink="/landing/transparency" routerLinkActive="active">TRANSPARENCY</a></li>
-          <li><a class="nav-link" pageScroll routerLink="/landing/statistic" routerLinkActive="active" href="#statistic">STATISTICS</a></li>
-          <li><a class="nav-link" pageScroll routerLinkActive="active" href="#partners">Partners</a></li>
-          <li><a class="nav-link" pageScroll routerLinkActive="active" href="#contact">Contact</a></li>
-          <li *ngIf="loggedIn"><a class="nav-link page-scroll" (click)="goToAdmin()">Admin</a></li>
-          <li *ngIf="!loggedIn"><a class="nav-link page-scroll" (click)="goToLogin()">Login</a></li>
-          <li *ngIf="!loggedIn"><a class="nav-link page-scroll" (click)="goToSignup()">SignUp</a></li>
+          <li><a class="nav-link text-uppercase" pageScroll routerLink="/landing/home" routerLinkActive="active" href="#home">HOME</a></li>
+          <li><a class="nav-link text-uppercase" pageScroll routerLink="/landing/home" href="#maps">MAPS</a></li>
+          <li><a class="nav-link text-uppercase" pageScroll routerLink="/landing/directory" routerLinkActive="active">répertoire</a></li>
+          <li><a class="nav-link text-uppercase" pageScroll routerLink="/landing/transparency" routerLinkActive="active">TRANSPARENCE</a></li>
+          <li><a class="nav-link text-uppercase" pageScroll routerLink="/landing/statistic" routerLinkActive="active" href="#statistic">STATISTIQUES</a></li>
+          <!-- <li><a class="nav-link" pageScroll routerLinkActive="active" href="#partners">Partners</a></li> -->
+          <li><a class="nav-link text-uppercase" pageScroll routerLinkActive="active" href="#contact">Contact</a></li>
+          <li *ngIf="loggedIn"><a class="nav-link page-scroll text-uppercase" (click)="goToAdmin()">Admin</a></li>
+          <li *ngIf="!loggedIn"><a class="nav-link page-scroll text-uppercase" (click)="goToLogin()">Login</a></li>
+          <li *ngIf="!loggedIn"><a class="nav-link page-scroll text-uppercase" (click)="goToSignup()">SignUp</a></li>
 
         </ul>
       </div>

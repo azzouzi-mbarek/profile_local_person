@@ -71,7 +71,7 @@
 
           </div>
           <div class=ibox-footer>
-            <button type="submit" class="btn btn-block  btn-primary" [disabled]="AcademicLevelForm.invalid">Sauvgarder</button>
+            <button type="submit" class="btn btn-block  btn-primary" [disabled]="AcademicLevelForm.invalid" (click)="createNavigateur()">Sauvgarder</button>
           </div>
         </form>
       </div>
@@ -98,6 +98,7 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let level of aca_levels">
+                 
                     <td>{{level.name}}</td>
                     <td>{{level.bac_level}}</td>
 
@@ -117,6 +118,8 @@
       </div>
 
     </div>
+    {{aca_levels|json}}
+    {{aca_levels.length}}
   </div>
 
 
