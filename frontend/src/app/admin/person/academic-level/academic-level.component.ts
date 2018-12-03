@@ -207,8 +207,9 @@ export class AcademicLevelComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
+
     // Do not forget to unsubscribe the event
-    this.dtTriggerALevel.unsubscribe();
+    this.rerender();
   }
 
 

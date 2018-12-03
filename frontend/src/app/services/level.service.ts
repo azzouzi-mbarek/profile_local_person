@@ -13,6 +13,8 @@ import { Level } from '../models/level.model';
 })
 export class LevelService {
   url = environment.baseUrl;
+  private level: Level[];
+
 
   // private baseUrl = this.url + "/" + this.country_id + "/levels/";
 

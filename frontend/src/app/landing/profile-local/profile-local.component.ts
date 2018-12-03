@@ -127,7 +127,7 @@ export class ProfileLocalComponent implements OnInit {
         (levelApi: any) => {
           this.level = levelApi.data;
           this.getLevels(this.level.properties.country_id, this.level_id);
-          // this.getPersons(this.level.properties.country_id, this.level_id);
+          this.getPersons(this.level.properties.country_id, this.level_id);
 
         },
         error => { console.log(error); }
@@ -138,11 +138,11 @@ export class ProfileLocalComponent implements OnInit {
 
     // parite genre
     this.singleParite = [{
-      name: 'male',
+      name: 'Hommes',
       value: 10
     },
     {
-      name: 'female',
+      name: 'Femmes',
       value: 9
     }];
     this.single = [{

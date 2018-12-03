@@ -23,7 +23,7 @@ class PersonController extends Controller
         if ($level != null) {
             return PersonCollection::collection($level->Persons);
         }
-        if ($level == null) {
+        if ($level == null & $country != null) {
             return PersonCollection::collection($country->Persons);
         } else {
             return Person::all();

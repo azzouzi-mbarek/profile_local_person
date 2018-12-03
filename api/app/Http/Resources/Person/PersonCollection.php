@@ -25,7 +25,7 @@ class PersonCollection extends JsonResource
             'first_name' => $this->first_name,
             'birthday' => $this->birthday,
             'nationality' => $this->nationality,
-            'academic_level' => $this->academic_level,
+            'academic_level' => $this->academic_level->name,
             'study_area' => $this->study_area,
             'email' => $this->email,
             'number_phone' => $this->number_phone,

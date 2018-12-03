@@ -23,7 +23,7 @@ class PersonResource extends JsonResource
             'last_name' => $this->last_name,
             'birthday' => $this->birthday,
             'nationality' => $this->nationality,
-            'academic_level' => $this->academic_level,
+            'academic_level' => $this->academic_level->name,
             'study_area' => $this->study_area,
             'email' => $this->email,
             'short_biography'=>$this->short_biography,
