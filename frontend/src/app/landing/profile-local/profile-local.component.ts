@@ -1,19 +1,19 @@
 import { Subject } from 'rxjs';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LevelService } from 'src/app/services/level.service';
 import { PersonService } from 'src/app/services/person.service';
 import { CountryService } from 'src/app/services/country.service';
 import { MapService } from 'src/app/maps/map.service';
 import { single, singleType, singleDomaine, singleSiege } from './dataProfile';
-
+import { DataTableDirective } from 'angular-datatables';
 @Component({
   selector: 'app-profile-local',
   templateUrl: './profile-local.component.html',
   styleUrls: ['./profile-local.component.css']
 })
 export class ProfileLocalComponent implements OnInit {
-  
+  @ViewChild(DataTableDirective) dtElementLevel: DataTableDirective;
   single = [];
   public dtOptions: DataTables.Settings = {};
   dtTriggerLevels: Subject<any> = new Subject();
@@ -98,8 +98,27 @@ export class ProfileLocalComponent implements OnInit {
     Object.assign(this, { singleType, singleDomaine, singleSiege });
   }
 
+  gotToLevelDetails(id) {
+
+
+    this._router.navigate(['landing/profile-local-government', id]);
+    // this._router.navigate(['landing/profile-local-government', props.id], { queryParams: { c: props.country_id } });
+
+  }
+  rerenderTablesLevels(): void {
+
+
+    this.dtElementLevel.dtInstance.then((dtInstance: DataTables.Api) => {
+      // Destroy the table first
+      dtInstance.destroy();
+      // Call the dtTrigger to rerender again
+      this.dtTriggerLevels.next();
+    });
+
+  }
 
   ngOnInit() {
+
 
 
     this._route.paramMap.subscribe(params => {
@@ -108,7 +127,7 @@ export class ProfileLocalComponent implements OnInit {
         (levelApi: any) => {
           this.level = levelApi.data;
           this.getLevels(this.level.properties.country_id, this.level_id);
-          this.getPersons(this.level.properties.country_id,this.level_id);
+          // this.getPersons(this.level.properties.country_id, this.level_id);
 
         },
         error => { console.log(error); }
@@ -117,7 +136,7 @@ export class ProfileLocalComponent implements OnInit {
     });
 
 
-    // parite genre 
+    // parite genre
     this.singleParite = [{
       name: 'male',
       value: 10
@@ -138,26 +157,37 @@ export class ProfileLocalComponent implements OnInit {
       name: 'Nombres d’associations Nationales',
       value: 33
     }
-    ]
+    ];
 
 
 
 
     this.dtOptions = {
       pagingType: 'full_numbers',
-      pageLength: 10
+      pageLength: 10,
+      rowCallback: (row: Node, data: any[] | Object, index: number) => {
+        const self = this;
+        // Unbind first in order to avoid any duplicate handler
+        // (see https://github.com/l-lin/angular-datatables/issues/87)
+        $('td', row).unbind('click');
+        $('td', row).bind('click', () => {
+          console.log(data);
+          // self.someClickHandler(data);
+        });
+        return row;
+      }
     };
 
 
 
   }
 
-  getPersons(country_id,level_id) {
-    this._personService.getPersonsLevel(country_id,level_id).subscribe(
+  getPersons(country_id, level_id) {
+    this._personService.getPersonsLevel(country_id, level_id).subscribe(
       (personApi: any) => {
 
         this.persons = personApi.data;
-        console.log('persons',this.persons);
+        this.rerenderTablesLevels();
         this.dtTriggerPersons.next();
       },
       error => {
@@ -171,7 +201,9 @@ export class ProfileLocalComponent implements OnInit {
       (levelApi: any) => {
 
         this.levels = levelApi.data;
+        this.rerenderTablesLevels();
         this.dtTriggerLevels.next();
+        this.dtTriggerPersons.next();
       },
       error => {
         console.log(error);
@@ -226,7 +258,6 @@ export class ProfileLocalComponent implements OnInit {
   onMouseEnterTR(name, i) {
 
     this.levelHoverName = name;
-    console.log(name);
 
   }
 
@@ -234,11 +265,11 @@ export class ProfileLocalComponent implements OnInit {
     this.levelHoverName = null;
 
   }
-  onSelect(id){
+  onSelect(id) {
     const country_id = this.level.properties.country_id;
-    const level_id= this.level_id;
-    console.log('profil local',id,level_id,country_id);
-    this._router.navigate(['landing/profile-person', id],{ queryParams: { c: country_id, l:level_id } });
+    const level_id = this.level_id;
+    // console.log('profil local', id, level_id, country_id);
+    this._router.navigate(['landing/profile-person', id], { queryParams: { c: country_id, l: level_id } });
 
   }
 }
