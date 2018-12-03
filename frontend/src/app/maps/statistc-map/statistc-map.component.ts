@@ -126,7 +126,7 @@ export class StatistcMapComponent implements OnInit, AfterContentInit {
 
 
         layer.on({
-          'dblclick': e9 => { },
+
           'click': e => {
             this.lastStage = feature.properties.last_stage;
 
