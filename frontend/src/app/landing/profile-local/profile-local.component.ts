@@ -203,7 +203,7 @@ export class ProfileLocalComponent implements OnInit {
         this.levels = levelApi.data;
         this.rerenderTablesLevels();
         this.dtTriggerLevels.next();
-        this.dtTriggerPersons.next();
+        // this.dtTriggerPersons.next();
       },
       error => {
         console.log(error);
