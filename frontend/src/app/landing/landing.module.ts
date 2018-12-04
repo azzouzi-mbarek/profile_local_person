@@ -28,7 +28,7 @@ import { AccordionComponent } from './statistic/accordion/accordion.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { NavsearchComponent } from './directory/navsearch/navsearch.component';
 import { TransparencyComponent } from './transparency/transparency.component';
-
+import { FormsModule } from '@angular/forms';
 
 // import { MapsModule } from '../maps/maps.module';
 import { NavfilterComponent } from './directory/navfilter/navfilter.component';
@@ -51,7 +51,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AccordionModule.forRoot(),
     NgxChartsModule,
     MapsModule,
-    DataTablesModule
+    DataTablesModule,
+    FormsModule
   ],
   declarations: [
     LandingComponent,

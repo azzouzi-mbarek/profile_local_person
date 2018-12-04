@@ -33,7 +33,9 @@
   border-style: solid solid none;
 }
 
-
+.no-border-top {
+  border-top: 0px
+}
 
 .onoffswitch-label-warning {
   border: 2px solid #FFAA5A;

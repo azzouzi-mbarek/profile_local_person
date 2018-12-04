@@ -208,6 +208,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Geo' => Spinen\Geometry\GeometryFacade::class,
+        'GraphQL' => Nuwave\Lighthouse\Support\Facades\GraphQLFacade::class,
     ],
 
 ];
