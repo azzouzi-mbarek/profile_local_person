@@ -29,6 +29,8 @@ import { DirectoryComponent } from './directory/directory.component';
 import { NavsearchComponent } from './directory/navsearch/navsearch.component';
 import { TransparencyComponent } from './transparency/transparency.component';
 import { FormsModule } from '@angular/forms';
+import { NgxSelectModule } from 'ngx-select-ex';
+
 
 // import { MapsModule } from '../maps/maps.module';
 import { NavfilterComponent } from './directory/navfilter/navfilter.component';
@@ -45,6 +47,7 @@ import { CountryStatisticComponent } from './statistic/country-statistic/country
 import { ContactUsComponent } from './contact-us/contact-us.component';
 @NgModule({
   imports: [
+    NgxSelectModule,
     CommonModule,
     LandingRoutingModule,
     NgxPageScrollModule,

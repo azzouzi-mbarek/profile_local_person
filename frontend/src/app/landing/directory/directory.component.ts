@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { DirectoryService } from 'src/app/services/directory.service';
+import { INgxSelectOption } from 'ngx-select-ex';
 
 @Component({
   selector: 'app-directory',
@@ -16,6 +17,44 @@ export class DirectoryComponent implements OnInit {
 
   counts = 0;
   searchTerm: string;
+
+
+
+// input elements
+  public itemsRegion: string[] = ['Afrique du nord',
+    'Afrique de l\'est',
+    'Afrique centrale',
+    'Afrique occidentale',
+    'Afrique du sud'];
+    public itemsPays: string[] = [];
+    public itemsCategoryLevel: string[] = ['province','region','commun'];
+// public ngxValue: any = [];
+public ngxDisabled = false;
+
+
+
+
+filtredCategory= [];
+private _Category: String;
+
+  get Category(): String {
+    return this._Category;
+  }
+  set Category(value: String) {
+    this._Category = value;
+   this.filtredCategory = this.filterbyCategory(value);
+  }
+  filterbyCategory(searchString: String) {
+    if (searchString === null) {
+      this.filtredCategory = this.results['levels'];
+    } else {
+      return this.results['levels'].filter(
+        levels =>
+          levels.properties.category.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
+      );
+    }
+  }
+
 
 
 
