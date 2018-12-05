@@ -8,11 +8,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="input-group">
-<<<<<<< HEAD
                 <input [(ngModel)]="searchTerm" type="text" class="form-control" placeholder="Recherche...">
-=======
-                <input [(ngModel)]="searchTerm" type="text" class="form-control" placeholder="Recherche .....">
->>>>>>> 50fd888c1b7e2013aa891f4a360b86109053c2ac
                 <span class="input-group-append">
                   <button (click)="search()" type="button" class="btn btn-primary" style="padding-bottom: 0px ;padding-top: 0px">Recherche</button>
                 </span>
@@ -23,10 +19,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 ">
         <div class="col-lg-12 m-b-md">
 
-          <small>Affiner votre recherche :</small>
+          <small><i class="fas fa-search"></i> Affiner votre recherche par :</small>
         </div>
 
 
@@ -35,11 +31,11 @@
         padding-left: 0px;
         padding-right: 0px;">
           <div class="panel panel-primary">
-            <div class="panel-heading">
-              Collectivite locales :
+            <div class="panel-heading" (click)="isCollapsed1 = !isCollapsed1"
+            [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseBasic1"><i class="fas fa-landmark"></i>
+              Collectivité locale :
             </div>
-            <div class="panel-body">
-<<<<<<< HEAD
+            <div class="panel-body" id="collapseBasic1" [collapse]="isCollapsed1" >
                 <div class="form-group row">
                     <label class="col-sm-4 col-form-label">Categorie</label>
                     <div class="col-sm-8">
@@ -73,16 +69,117 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-4 col-form-label">Population</label>
+                    <label class="col-sm-4 col-form-label">Nombre des Femmes élus</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="...">
                     </div>
                 </div>
-=======
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices
-                accumsan.
-                Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
->>>>>>> 50fd888c1b7e2013aa891f4a360b86109053c2ac
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">N mambres du conseil</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="...">
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 no-paddings no-margins" style="
+        padding-left: 0px;
+        padding-right: 0px;">
+          <div class="panel panel-info">
+              <div class="panel-heading" (click)="isCollapsed2 = !isCollapsed2"
+              [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseBasic2"><i class="fas fa-user-circle"></i>
+              Personne :
+            </div>
+            <div class="panel-body" id="collapseBasic2" [collapse]="isCollapsed2">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Profile</label>
+                    <div class="col-sm-8">
+                        <ngx-select [allowClear]="true"
+                        [items]="itemsProfil"
+                       [disabled]="ngxDisabled"
+                        [(ngModel)]="Category"
+                       placeholder="ex: Ministre ...">
+                       </ngx-select>
+                      
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">L'institution d'appartenance</label>
+                    <div class="col-sm-8">
+                        <ngx-select [allowClear]="true"
+                        [items]="itemsInstitution"
+                       [disabled]="ngxDisabled"
+                        [(ngModel)]="Category"
+                       placeholder="ex: uclga ...">
+                       </ngx-select>
+                      
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Age</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="ex: 29 ans ...">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Genre</label>
+                    <div class="col-sm-8">
+                        <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect02">
+                              <option selected></option>
+                              <option value="1">Femme</option>
+                              <option value="2">Homme</option>
+                            </select>
+                          </div>
+                   </div>                        
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Status</label>
+                    <div class="col-sm-8">
+                        <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect02">
+                              <option selected></option>
+                              <option value="1">Nommé</option>
+                              <option value="2">Elu</option>
+                            </select>
+                          </div>
+                   </div>                        
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Fonction</label>
+                    <div class="col-sm-8">
+                        <ngx-select [allowClear]="true"
+                        [items]="itemsFonction"
+                       [disabled]="ngxDisabled"
+                        [(ngModel)]="Category"
+                       placeholder="ex: Directeur Technique ...">
+                       </ngx-select>
+                      
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Region</label>
+                    <div class="col-sm-8">
+                      <ngx-select [allowClear]="true"
+                                  [items]="itemsRegion"
+                                 [disabled]="ngxDisabled"
+                                 placeholder="Regions d'afrique ...">
+                     </ngx-select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Pays</label>
+                    <div class="col-sm-8">
+                      <ngx-select [allowClear]="true"
+                                  [items]="itemsPays"
+                                 [disabled]="ngxDisabled"
+                                 placeholder="Choisir une pays ...">
+                     </ngx-select>
+                    </div>
+                </div>
+
 
             </div>
           </div>
@@ -91,14 +188,44 @@
         <div class="col-lg-12 no-paddings no-margins" style="
         padding-left: 0px;
         padding-right: 0px;">
-          <div class="panel panel-info">
-            <div class="panel-heading">
+          <div class="panel panel-default">
+              <div class="panel-heading" (click)="isCollapsed3 = !isCollapsed3"
+              [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseBasic3"><i class="fas fa-building"></i>
               Institution
             </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices
-                accumsan.
-                Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+            <div class="panel-body" id="collapseBasic3" [collapse]="isCollapsed3" >
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Categorie</label>
+                    <div class="col-sm-8">
+                        <ngx-select [allowClear]="true"
+                        [items]="itemsCategoryLevel"
+                       [disabled]="ngxDisabled"
+                        [(ngModel)]="Category"
+                       placeholder="ex: Organisation x ...">
+                       </ngx-select>
+                      
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Region</label>
+                    <div class="col-sm-8">
+                      <ngx-select [allowClear]="true"
+                                  [items]="itemsRegion"
+                                 [disabled]="ngxDisabled"
+                                 placeholder="Regions d'afrique ...">
+                     </ngx-select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Pays</label>
+                    <div class="col-sm-8">
+                      <ngx-select [allowClear]="true"
+                                  [items]="itemsPays"
+                                 [disabled]="ngxDisabled"
+                                 placeholder="Choisir une pays ...">
+                     </ngx-select>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -117,24 +244,23 @@
             </h2>
             <!-- <small *ngIf="results.length > 0">Request time (0.23 seconds)</small> -->
 
-            <h2 *ngIf="!resultsCounts">
+            <h2 *ngIf="!resultsCounts ">
               Pas résultats trouvés pour: <span class="text-navy">“ {{ searchTerm }}”</span>
             </h2>
 
             <!-- levels -->
-            <div *ngFor="let level of levelsResults">
+            <div *ngFor="let level of levelsResults ">
 
 
               <div class="hr-line-dashed"></div>
               <div class="search-result">
-<<<<<<< HEAD
+
                 <h3><a>{{level.properties.category}} {{ level.properties.name}}</a></h3>
                 <a href="#" class="search-link">www.inspinia.com/inspinia</a>
-=======
+
                 <h3><a (click)="goToLevelProfil( level.properties.id)">{{ level.properties.category +' '+
                     level.properties.name}}</a></h3>
                 <a class="search-link">{{ level.properties.name }}</a>
->>>>>>> 50fd888c1b7e2013aa891f4a360b86109053c2ac
                 <p>
                   Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
                   text,
@@ -144,7 +270,7 @@
                 </p>
 
 
-                <app-country-map *ngIf="level" [country]="level"></app-country-map>
+                <app-country-map *ngIf="level" [country]="level" ></app-country-map>
 
               </div>
 

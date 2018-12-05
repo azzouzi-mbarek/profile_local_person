@@ -3,11 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { DirectoryService } from 'src/app/services/directory.service';
-<<<<<<< HEAD
 import { INgxSelectOption } from 'ngx-select-ex';
-=======
 import { Router } from '@angular/router';
->>>>>>> 50fd888c1b7e2013aa891f4a360b86109053c2ac
 
 @Component({
   selector: 'app-directory',
@@ -15,6 +12,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
+  isCollapsed1 = false;
+  isCollapsed2 = true;
+  isCollapsed3 = true;
+
+
   results = [];
   levelsResults = [];
   personsResults = [];
@@ -32,6 +34,7 @@ export class DirectoryComponent implements OnInit {
 
 
 // input elements
+  public itemsProfil:string[]=['directeur','Maire','secretaire','adjoint','Technicien'];
   public itemsRegion: string[] = ['Afrique du nord',
     'Afrique de l\'est',
     'Afrique centrale',
@@ -45,26 +48,26 @@ public ngxDisabled = false;
 
 
 
-filtredCategory= [];
-private _Category: String;
+// filtredCategory= [];
+// private _Category: String;
 
-  get Category(): String {
-    return this._Category;
-  }
-  set Category(value: String) {
-    this._Category = value;
-   this.filtredCategory = this.filterbyCategory(value);
-  }
-  filterbyCategory(searchString: String) {
-    if (searchString === null) {
-      this.filtredCategory = this.results['levels'];
-    } else {
-      return this.results['levels'].filter(
-        levels =>
-          levels.properties.category.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
-      );
-    }
-  }
+//   get Category(): String {
+//     return this._Category;
+//   }
+//   set Category(value: String) {
+//     this._Category = value;
+//    this.filtredCategory = this.filterbyCategory(value);
+//   }
+//   filterbyCategory(searchString: String) {
+//     if (searchString === null) {
+//       this.filtredCategory = this.results['levels'];
+//     } else {
+//       return this.results['levels'].filter(
+//         levels =>
+//           levels.properties.category.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
+//       );
+//     }
+//   }
 
 
 

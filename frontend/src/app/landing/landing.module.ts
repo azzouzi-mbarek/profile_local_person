@@ -30,6 +30,9 @@ import { NavsearchComponent } from './directory/navsearch/navsearch.component';
 import { TransparencyComponent } from './transparency/transparency.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSelectModule } from 'ngx-select-ex';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+
+
 
 
 // import { MapsModule } from '../maps/maps.module';
@@ -45,8 +48,10 @@ import { ModalSelectCountryComponent } from '../shared/modal-select-country/moda
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { CountryStatisticComponent } from './statistic/country-statistic/country-statistic.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CollapseModule } from 'ngx-bootstrap';
 @NgModule({
   imports: [
+    CollapseModule.forRoot(),
     NgxSelectModule,
     CommonModule,
     LandingRoutingModule,
@@ -55,7 +60,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NgxChartsModule,
     MapsModule,
     DataTablesModule,
-    FormsModule
+    FormsModule,
+    PaginationModule
   ],
   declarations: [
     LandingComponent,
