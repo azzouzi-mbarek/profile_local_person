@@ -3,6 +3,8 @@
 namespace App\Http\Resources\Person;
 
 use App\Models\Person\Person;
+use App\Models\Person\CategoryPerson;
+use App\Models\Person\LevelPerson;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PersonCollection extends JsonResource
@@ -25,7 +27,7 @@ class PersonCollection extends JsonResource
             'study_area' => $this->study_area,
             'email' => $this->email,
             'number_phone' => $this->number_phone,
-////            'category_person' => CategoryPerson::find(LevelPerson::find($this->id)->category_person_id)->name,
+        //    'category_person' => CategoryPerson::find(LevelPerson::find($this->id)->category_person_id)->name,
             //    'level_id' => $this->pivot->level_id,
             //    'function'=>$this->pivot->function,
             //    'status'=>$this->pivot->status,

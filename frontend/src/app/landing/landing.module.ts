@@ -49,6 +49,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { CountryStatisticComponent } from './statistic/country-statistic/country-statistic.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CollapseModule } from 'ngx-bootstrap';
+import { BrowserModule } from '@angular/platform-browser';
+import { ProfileUserComponent } from './profile-user/profile-user.component';
+import { ModifProfileComponent } from './profile-user/modif-profile/modif-profile.component';
 @NgModule({
   imports: [
     CollapseModule.forRoot(),
@@ -61,6 +64,7 @@ import { CollapseModule } from 'ngx-bootstrap';
     MapsModule,
     DataTablesModule,
     FormsModule,
+    BrowserModule,
     PaginationModule
   ],
   declarations: [
@@ -95,6 +99,8 @@ import { CollapseModule } from 'ngx-bootstrap';
     DevelopmentPartnersComponent,
     CountryStatisticComponent,
     ContactUsComponent,
+    ProfileUserComponent,
+    ModifProfileComponent,
 
   ],
   entryComponents: [

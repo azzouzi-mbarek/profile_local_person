@@ -1,3 +1,94 @@
-<p>
-  category-level works!
-</p>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+      <h2>categories de collectivités locals </h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a routerLink="/administrateur/home">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a #h1Variable></a>
+        </li>
+      </ol>
+    </div>
+  </div>
+  
+  <div class="wrapper wrapper-content animated fadeInRight">
+  
+    <div class="row">
+      <div class="col-md-5">
+        <div class="ibox ">
+          <form #AcademicLevelForm="ngForm">
+            <div class="ibox-content">
+  
+  
+  
+              <div class="form-group {{ errors.name ? 'has-error' : '' }} ">
+  
+                <input type="text" class="form-control" required="" name="name"  placeholder="categorie">
+              </div>
+              <!-- <div class="alert alert-danger" [hidden]="!errors.name">
+                {{ errors.name }}
+              </div> -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+            </div>
+            <div class=ibox-footer>
+              <button type="submit" class="btn btn-block  btn-primary" [disabled]="AcademicLevelForm.invalid" (click)="createNavigateur()">Sauvgarder</button>
+            </div>
+          </form>
+        </div>
+  
+      </div>
+  
+  
+  
+      <div class="col-md-7">
+        <div class="ibox">
+          <div class="ibox-content">
+            <h2>categories des collectivités locals</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerALevel" class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th>categories</th>
+                      <th>Action</th>
+  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="">
+                   
+                      <td></td>  
+                      <td>
+                        <div class="btn-group float-right">
+                          <button (click)="editerAcademicLevel()" class="btn-warning btn btn-xs">Editer</button>
+                          <button (click)="deleteAcademicLevel()" class="btn-danger btn btn-xs">Supprimer</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+    </div>
+  
+  
+  </div>
+  

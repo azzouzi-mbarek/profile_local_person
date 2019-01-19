@@ -33,23 +33,24 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminRoutingModule", function() { return AdminRoutingModule; });
-/* harmony import */ var _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./level/add-level-by-file/add-level-by-file.component */ "./src/app/admin/level/add-level-by-file/add-level-by-file.component.ts");
-/* harmony import */ var _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./country/country-details/country-details.component */ "./src/app/admin/country/country-details/country-details.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _admin_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./admin.component */ "./src/app/admin/admin.component.ts");
-/* harmony import */ var _services_after_login_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/after-login.service */ "./src/app/services/after-login.service.ts");
-/* harmony import */ var _region_region_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./region/region.component */ "./src/app/admin/region/region.component.ts");
-/* harmony import */ var _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./region/details-region/details-region.component */ "./src/app/admin/region/details-region/details-region.component.ts");
-/* harmony import */ var _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./country/add-country/add-country.component */ "./src/app/admin/country/add-country/add-country.component.ts");
-/* harmony import */ var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tabs/tabs.component */ "./src/app/admin/tabs/tabs.component.ts");
-/* harmony import */ var _country_country_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./country/country.component */ "./src/app/admin/country/country.component.ts");
-/* harmony import */ var _maps_upload_shape_upload_shape_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../maps/upload-shape/upload-shape.component */ "./src/app/maps/upload-shape/upload-shape.component.ts");
-/* harmony import */ var _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./country/form-country/form-country.component */ "./src/app/admin/country/form-country/form-country.component.ts");
-/* harmony import */ var _level_level_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./level/level.component */ "./src/app/admin/level/level.component.ts");
-/* harmony import */ var _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./level/leveldetails/leveldetails.component */ "./src/app/admin/level/leveldetails/leveldetails.component.ts");
-/* harmony import */ var _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../resolvers/country-resolver.service */ "./src/app/resolvers/country-resolver.service.ts");
-/* harmony import */ var _person_person_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./person/person.component */ "./src/app/admin/person/person.component.ts");
+/* harmony import */ var _person_academic_level_academic_level_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person/academic-level/academic-level.component */ "./src/app/admin/person/academic-level/academic-level.component.ts");
+/* harmony import */ var _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./level/add-level-by-file/add-level-by-file.component */ "./src/app/admin/level/add-level-by-file/add-level-by-file.component.ts");
+/* harmony import */ var _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./country/country-details/country-details.component */ "./src/app/admin/country/country-details/country-details.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _admin_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _services_after_login_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/after-login.service */ "./src/app/services/after-login.service.ts");
+/* harmony import */ var _region_region_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./region/region.component */ "./src/app/admin/region/region.component.ts");
+/* harmony import */ var _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./region/details-region/details-region.component */ "./src/app/admin/region/details-region/details-region.component.ts");
+/* harmony import */ var _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./country/add-country/add-country.component */ "./src/app/admin/country/add-country/add-country.component.ts");
+/* harmony import */ var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./tabs/tabs.component */ "./src/app/admin/tabs/tabs.component.ts");
+/* harmony import */ var _country_country_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./country/country.component */ "./src/app/admin/country/country.component.ts");
+/* harmony import */ var _maps_upload_shape_upload_shape_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../maps/upload-shape/upload-shape.component */ "./src/app/maps/upload-shape/upload-shape.component.ts");
+/* harmony import */ var _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./country/form-country/form-country.component */ "./src/app/admin/country/form-country/form-country.component.ts");
+/* harmony import */ var _level_level_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./level/level.component */ "./src/app/admin/level/level.component.ts");
+/* harmony import */ var _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./level/leveldetails/leveldetails.component */ "./src/app/admin/level/leveldetails/leveldetails.component.ts");
+/* harmony import */ var _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../resolvers/country-resolver.service */ "./src/app/resolvers/country-resolver.service.ts");
+/* harmony import */ var _person_person_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./person/person.component */ "./src/app/admin/person/person.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -73,26 +74,29 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     {
         path: 'administrateur',
-        component: _admin_component__WEBPACK_IMPORTED_MODULE_4__["AdminComponent"],
-        canActivate: [_services_after_login_service__WEBPACK_IMPORTED_MODULE_5__["AfterLoginService"]],
+        component: _admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"],
+        canActivate: [_services_after_login_service__WEBPACK_IMPORTED_MODULE_6__["AfterLoginService"]],
         children: [
-            { path: 'countries', component: _country_country_component__WEBPACK_IMPORTED_MODULE_10__["CountryComponent"], resolve: { countriesList: _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_15__["CountryListResolverService"] } },
-            { path: 'countries/:id', component: _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_1__["CountryDetailsComponent"] },
-            { path: 'countries/:id/levels', component: _level_level_component__WEBPACK_IMPORTED_MODULE_13__["LevelComponent"] },
-            { path: 'countries/:id/levels/:l_id', component: _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_14__["LeveldetailsComponent"] },
-            { path: 'countries/:id/levels/:l_id/levels', component: _level_level_component__WEBPACK_IMPORTED_MODULE_13__["LevelComponent"] },
-            { path: 'persons', component: _person_person_component__WEBPACK_IMPORTED_MODULE_16__["PersonComponent"] },
+            { path: 'countries', component: _country_country_component__WEBPACK_IMPORTED_MODULE_11__["CountryComponent"], resolve: { countriesList: _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_16__["CountryListResolverService"] } },
+            { path: 'countries/:id', component: _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_2__["CountryDetailsComponent"] },
+            { path: 'countries/:id/levels', component: _level_level_component__WEBPACK_IMPORTED_MODULE_14__["LevelComponent"] },
+            { path: 'countries/:id/levels/:l_id', component: _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_15__["LeveldetailsComponent"] },
+            { path: 'countries/:id/levels/:l_id/levels', component: _level_level_component__WEBPACK_IMPORTED_MODULE_14__["LevelComponent"] },
+            { path: 'persons', component: _person_person_component__WEBPACK_IMPORTED_MODULE_17__["PersonComponent"] },
+            { path: 'academic_level', component: _person_academic_level_academic_level_component__WEBPACK_IMPORTED_MODULE_0__["AcademicLevelComponent"] },
+            { path: 'academic_level', component: _person_academic_level_academic_level_component__WEBPACK_IMPORTED_MODULE_0__["AcademicLevelComponent"] },
             // { path: 'levels/:id/:level', component: LevelComponent },
-            { path: 'shape', component: _maps_upload_shape_upload_shape_component__WEBPACK_IMPORTED_MODULE_11__["UploadShapeComponent"] },
-            { path: 'regions', component: _region_region_component__WEBPACK_IMPORTED_MODULE_6__["RegionComponent"] },
-            { path: 'tabs', component: _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_9__["TabsComponent"] },
-            { path: 'regions/:id', component: _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_7__["DetailsRegionComponent"] },
-            { path: 'addCountries', component: _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_8__["AddCountryComponent"] },
-            { path: 'formCountry/:id', component: _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_12__["FormCountryComponent"] },
-            { path: 'addLevelByFile/:id/:level', component: _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_0__["AddLevelByFileComponent"] },
+            { path: 'shape', component: _maps_upload_shape_upload_shape_component__WEBPACK_IMPORTED_MODULE_12__["UploadShapeComponent"] },
+            { path: 'regions', component: _region_region_component__WEBPACK_IMPORTED_MODULE_7__["RegionComponent"] },
+            { path: 'tabs', component: _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_10__["TabsComponent"] },
+            { path: 'regions/:id', component: _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_8__["DetailsRegionComponent"] },
+            { path: 'addCountries', component: _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_9__["AddCountryComponent"] },
+            { path: 'formCountry/:id', component: _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_13__["FormCountryComponent"] },
+            { path: 'addLevelByFile/:id/:level', component: _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_1__["AddLevelByFileComponent"] },
         ]
     },
 ];
@@ -100,9 +104,9 @@ var AdminRoutingModule = /** @class */ (function () {
     function AdminRoutingModule() {
     }
     AdminRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"]]
         })
     ], AdminRoutingModule);
     return AdminRoutingModule;
@@ -213,47 +217,50 @@ var AdminComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminModule", function() { return AdminModule; });
-/* harmony import */ var _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../resolvers/country-resolver.service */ "./src/app/resolvers/country-resolver.service.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/fesm5/ngx-bootstrap-modal.js");
-/* harmony import */ var _admin_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./admin-routing.module */ "./src/app/admin/admin-routing.module.ts");
-/* harmony import */ var _admin_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./admin.component */ "./src/app/admin/admin.component.ts");
-/* harmony import */ var _nav_bar_top_nav_bar_top_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./nav-bar-top/nav-bar-top.component */ "./src/app/admin/nav-bar-top/nav-bar-top.component.ts");
-/* harmony import */ var _nav_left_nav_left_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nav-left/nav-left.component */ "./src/app/admin/nav-left/nav-left.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/admin/footer/footer.component.ts");
-/* harmony import */ var _region_region_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./region/region.component */ "./src/app/admin/region/region.component.ts");
-/* harmony import */ var _region_display_region_display_region_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./region/display-region/display-region.component */ "./src/app/admin/region/display-region/display-region.component.ts");
-/* harmony import */ var _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./region/details-region/details-region.component */ "./src/app/admin/region/details-region/details-region.component.ts");
-/* harmony import */ var _admin_region_form_region_form_region_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../admin/region/form-region/form-region.component */ "./src/app/admin/region/form-region/form-region.component.ts");
-/* harmony import */ var _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./country/add-country/add-country.component */ "./src/app/admin/country/add-country/add-country.component.ts");
-/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ "./node_modules/ngx-bootstrap/dropdown/fesm5/ngx-bootstrap-dropdown.js");
-/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
-/* harmony import */ var _maps_maps_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../maps/maps.module */ "./src/app/maps/maps.module.ts");
-/* harmony import */ var _page_heading_page_heading_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./page-heading/page-heading.component */ "./src/app/admin/page-heading/page-heading.component.ts");
-/* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../shared/shared.module */ "./src/app/shared/shared.module.ts");
-/* harmony import */ var _services_upload_file_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../services/upload-file.service */ "./src/app/services/upload-file.service.ts");
-/* harmony import */ var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./tabs/tabs.component */ "./src/app/admin/tabs/tabs.component.ts");
-/* harmony import */ var _country_country_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./country/country.component */ "./src/app/admin/country/country.component.ts");
-/* harmony import */ var ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-bootstrap/pagination */ "./node_modules/ngx-bootstrap/pagination/fesm5/ngx-bootstrap-pagination.js");
-/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
-/* harmony import */ var _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./country/country-details/country-details.component */ "./src/app/admin/country/country-details/country-details.component.ts");
-/* harmony import */ var _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @swimlane/ngx-charts */ "./node_modules/@swimlane/ngx-charts/release/esm.js");
-/* harmony import */ var ngx_easypiechart__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ngx-easypiechart */ "./node_modules/ngx-easypiechart/fesm5/ngx-easypiechart.js");
-/* harmony import */ var ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ng2modules-easypiechart */ "./node_modules/ng2modules-easypiechart/index.js");
-/* harmony import */ var ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var _derectives_easy_pie_directive__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../derectives/easy-pie.directive */ "./src/app/derectives/easy-pie.directive.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var angular_morris_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! angular-morris-js */ "./node_modules/angular-morris-js/esm5/angular-morris-js.js");
-/* harmony import */ var _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./country/form-country/form-country.component */ "./src/app/admin/country/form-country/form-country.component.ts");
-/* harmony import */ var _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./level/add-level-by-file/add-level-by-file.component */ "./src/app/admin/level/add-level-by-file/add-level-by-file.component.ts");
-/* harmony import */ var angular_datatables__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! angular-datatables */ "./node_modules/angular-datatables/index.js");
-/* harmony import */ var _level_level_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./level/level.component */ "./src/app/admin/level/level.component.ts");
-/* harmony import */ var _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./level/leveldetails/leveldetails.component */ "./src/app/admin/level/leveldetails/leveldetails.component.ts");
-/* harmony import */ var ngx_spinner__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ngx-spinner */ "./node_modules/ngx-spinner/fesm5/ngx-spinner.js");
-/* harmony import */ var _level_category_level_category_level_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./level/category-level/category-level.component */ "./src/app/admin/level/category-level/category-level.component.ts");
-/* harmony import */ var _person_person_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./person/person.component */ "./src/app/admin/person/person.component.ts");
+/* harmony import */ var _shared_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../shared/confirm-modal/confirm-modal.component */ "./src/app/shared/confirm-modal/confirm-modal.component.ts");
+/* harmony import */ var _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../resolvers/country-resolver.service */ "./src/app/resolvers/country-resolver.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/fesm5/ngx-bootstrap-modal.js");
+/* harmony import */ var _admin_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./admin-routing.module */ "./src/app/admin/admin-routing.module.ts");
+/* harmony import */ var _admin_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _nav_bar_top_nav_bar_top_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nav-bar-top/nav-bar-top.component */ "./src/app/admin/nav-bar-top/nav-bar-top.component.ts");
+/* harmony import */ var _nav_left_nav_left_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./nav-left/nav-left.component */ "./src/app/admin/nav-left/nav-left.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/admin/footer/footer.component.ts");
+/* harmony import */ var _region_region_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./region/region.component */ "./src/app/admin/region/region.component.ts");
+/* harmony import */ var _region_display_region_display_region_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./region/display-region/display-region.component */ "./src/app/admin/region/display-region/display-region.component.ts");
+/* harmony import */ var _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./region/details-region/details-region.component */ "./src/app/admin/region/details-region/details-region.component.ts");
+/* harmony import */ var _admin_region_form_region_form_region_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../admin/region/form-region/form-region.component */ "./src/app/admin/region/form-region/form-region.component.ts");
+/* harmony import */ var _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./country/add-country/add-country.component */ "./src/app/admin/country/add-country/add-country.component.ts");
+/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ "./node_modules/ngx-bootstrap/dropdown/fesm5/ngx-bootstrap-dropdown.js");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+/* harmony import */ var _maps_maps_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../maps/maps.module */ "./src/app/maps/maps.module.ts");
+/* harmony import */ var _page_heading_page_heading_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./page-heading/page-heading.component */ "./src/app/admin/page-heading/page-heading.component.ts");
+/* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../shared/shared.module */ "./src/app/shared/shared.module.ts");
+/* harmony import */ var _services_upload_file_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../services/upload-file.service */ "./src/app/services/upload-file.service.ts");
+/* harmony import */ var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./tabs/tabs.component */ "./src/app/admin/tabs/tabs.component.ts");
+/* harmony import */ var _country_country_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./country/country.component */ "./src/app/admin/country/country.component.ts");
+/* harmony import */ var ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ngx-bootstrap/pagination */ "./node_modules/ngx-bootstrap/pagination/fesm5/ngx-bootstrap-pagination.js");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
+/* harmony import */ var _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./country/country-details/country-details.component */ "./src/app/admin/country/country-details/country-details.component.ts");
+/* harmony import */ var _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @swimlane/ngx-charts */ "./node_modules/@swimlane/ngx-charts/release/esm.js");
+/* harmony import */ var ngx_easypiechart__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ngx-easypiechart */ "./node_modules/ngx-easypiechart/fesm5/ngx-easypiechart.js");
+/* harmony import */ var ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ng2modules-easypiechart */ "./node_modules/ng2modules-easypiechart/index.js");
+/* harmony import */ var ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _derectives_easy_pie_directive__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../derectives/easy-pie.directive */ "./src/app/derectives/easy-pie.directive.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var angular_morris_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! angular-morris-js */ "./node_modules/angular-morris-js/esm5/angular-morris-js.js");
+/* harmony import */ var _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./country/form-country/form-country.component */ "./src/app/admin/country/form-country/form-country.component.ts");
+/* harmony import */ var _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./level/add-level-by-file/add-level-by-file.component */ "./src/app/admin/level/add-level-by-file/add-level-by-file.component.ts");
+/* harmony import */ var angular_datatables__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! angular-datatables */ "./node_modules/angular-datatables/index.js");
+/* harmony import */ var _level_level_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./level/level.component */ "./src/app/admin/level/level.component.ts");
+/* harmony import */ var _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./level/leveldetails/leveldetails.component */ "./src/app/admin/level/leveldetails/leveldetails.component.ts");
+/* harmony import */ var ngx_spinner__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ngx-spinner */ "./node_modules/ngx-spinner/fesm5/ngx-spinner.js");
+/* harmony import */ var _level_category_level_category_level_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./level/category-level/category-level.component */ "./src/app/admin/level/category-level/category-level.component.ts");
+/* harmony import */ var _person_person_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./person/person.component */ "./src/app/admin/person/person.component.ts");
+/* harmony import */ var _person_academic_level_academic_level_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./person/academic-level/academic-level.component */ "./src/app/admin/person/academic-level/academic-level.component.ts");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -300,62 +307,70 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+
 var AdminModule = /** @class */ (function () {
     function AdminModule() {
     }
     AdminModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-                _admin_routing_module__WEBPACK_IMPORTED_MODULE_5__["AdminRoutingModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-                ngx_spinner__WEBPACK_IMPORTED_MODULE_37__["NgxSpinnerModule"],
-                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_4__["ModalModule"].forRoot(),
-                ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_15__["BsDropdownModule"].forRoot(),
-                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_16__["CollapseModule"].forRoot(),
-                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_16__["AccordionModule"].forRoot(),
-                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_16__["TabsModule"].forRoot(),
-                ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_23__["PaginationModule"].forRoot(),
-                ngx_pagination__WEBPACK_IMPORTED_MODULE_24__["NgxPaginationModule"],
-                _shared_shared_module__WEBPACK_IMPORTED_MODULE_19__["SharedModule"],
-                _maps_maps_module__WEBPACK_IMPORTED_MODULE_17__["MapsModule"],
-                _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_26__["NgxChartsModule"],
-                ngx_easypiechart__WEBPACK_IMPORTED_MODULE_27__["NgxEasypiechartModule"],
-                ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_28__["EasyPieChartModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__["BrowserAnimationsModule"],
-                angular_morris_js__WEBPACK_IMPORTED_MODULE_31__["MorrisJsModule"],
-                angular_datatables__WEBPACK_IMPORTED_MODULE_34__["DataTablesModule"]
+                ngx_toastr__WEBPACK_IMPORTED_MODULE_42__["ToastrModule"].forRoot(),
+                _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
+                _admin_routing_module__WEBPACK_IMPORTED_MODULE_6__["AdminRoutingModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+                ngx_spinner__WEBPACK_IMPORTED_MODULE_38__["NgxSpinnerModule"],
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_17__["BsDatepickerModule"].forRoot(),
+                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_5__["ModalModule"].forRoot(),
+                ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_16__["BsDropdownModule"].forRoot(),
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_17__["CollapseModule"].forRoot(),
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_17__["AccordionModule"].forRoot(),
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_17__["TabsModule"].forRoot(),
+                ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_24__["PaginationModule"].forRoot(),
+                ngx_pagination__WEBPACK_IMPORTED_MODULE_25__["NgxPaginationModule"],
+                _shared_shared_module__WEBPACK_IMPORTED_MODULE_20__["SharedModule"],
+                _maps_maps_module__WEBPACK_IMPORTED_MODULE_18__["MapsModule"],
+                _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_27__["NgxChartsModule"],
+                ngx_easypiechart__WEBPACK_IMPORTED_MODULE_28__["NgxEasypiechartModule"],
+                ng2modules_easypiechart__WEBPACK_IMPORTED_MODULE_29__["EasyPieChartModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_31__["BrowserAnimationsModule"],
+                angular_morris_js__WEBPACK_IMPORTED_MODULE_32__["MorrisJsModule"],
+                angular_datatables__WEBPACK_IMPORTED_MODULE_35__["DataTablesModule"]
             ],
             declarations: [
-                _admin_component__WEBPACK_IMPORTED_MODULE_6__["AdminComponent"],
-                _nav_bar_top_nav_bar_top_component__WEBPACK_IMPORTED_MODULE_7__["NavBarTopComponent"],
-                _nav_left_nav_left_component__WEBPACK_IMPORTED_MODULE_8__["NavLeftComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"],
-                _derectives_easy_pie_directive__WEBPACK_IMPORTED_MODULE_29__["EasyPieDirective"],
-                _region_region_component__WEBPACK_IMPORTED_MODULE_10__["RegionComponent"],
-                _region_display_region_display_region_component__WEBPACK_IMPORTED_MODULE_11__["DisplayRegionComponent"],
-                _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_12__["DetailsRegionComponent"],
-                _admin_region_form_region_form_region_component__WEBPACK_IMPORTED_MODULE_13__["FormRegionComponent"],
-                _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_32__["FormCountryComponent"],
-                _page_heading_page_heading_component__WEBPACK_IMPORTED_MODULE_18__["PageHeadingComponent"],
-                _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_14__["AddCountryComponent"],
-                _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_21__["TabsComponent"],
-                _country_country_component__WEBPACK_IMPORTED_MODULE_22__["CountryComponent"],
-                _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_25__["CountryDetailsComponent"],
-                _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_33__["AddLevelByFileComponent"],
-                _level_level_component__WEBPACK_IMPORTED_MODULE_35__["LevelComponent"],
-                _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_36__["LeveldetailsComponent"],
-                _level_category_level_category_level_component__WEBPACK_IMPORTED_MODULE_38__["CategoryLevelComponent"],
-                _person_person_component__WEBPACK_IMPORTED_MODULE_39__["PersonComponent"],
+                _admin_component__WEBPACK_IMPORTED_MODULE_7__["AdminComponent"],
+                _nav_bar_top_nav_bar_top_component__WEBPACK_IMPORTED_MODULE_8__["NavBarTopComponent"],
+                _nav_left_nav_left_component__WEBPACK_IMPORTED_MODULE_9__["NavLeftComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"],
+                _derectives_easy_pie_directive__WEBPACK_IMPORTED_MODULE_30__["EasyPieDirective"],
+                _region_region_component__WEBPACK_IMPORTED_MODULE_11__["RegionComponent"],
+                _region_display_region_display_region_component__WEBPACK_IMPORTED_MODULE_12__["DisplayRegionComponent"],
+                _region_details_region_details_region_component__WEBPACK_IMPORTED_MODULE_13__["DetailsRegionComponent"],
+                _admin_region_form_region_form_region_component__WEBPACK_IMPORTED_MODULE_14__["FormRegionComponent"],
+                _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_33__["FormCountryComponent"],
+                _page_heading_page_heading_component__WEBPACK_IMPORTED_MODULE_19__["PageHeadingComponent"],
+                _country_add_country_add_country_component__WEBPACK_IMPORTED_MODULE_15__["AddCountryComponent"],
+                _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_22__["TabsComponent"],
+                _country_country_component__WEBPACK_IMPORTED_MODULE_23__["CountryComponent"],
+                _country_country_details_country_details_component__WEBPACK_IMPORTED_MODULE_26__["CountryDetailsComponent"],
+                _level_add_level_by_file_add_level_by_file_component__WEBPACK_IMPORTED_MODULE_34__["AddLevelByFileComponent"],
+                _level_level_component__WEBPACK_IMPORTED_MODULE_36__["LevelComponent"],
+                _level_leveldetails_leveldetails_component__WEBPACK_IMPORTED_MODULE_37__["LeveldetailsComponent"],
+                _level_category_level_category_level_component__WEBPACK_IMPORTED_MODULE_39__["CategoryLevelComponent"],
+                _person_person_component__WEBPACK_IMPORTED_MODULE_40__["PersonComponent"],
+                _person_academic_level_academic_level_component__WEBPACK_IMPORTED_MODULE_41__["AcademicLevelComponent"],
             ],
-            exports: [_derectives_easy_pie_directive__WEBPACK_IMPORTED_MODULE_29__["EasyPieDirective"]],
+            exports: [_derectives_easy_pie_directive__WEBPACK_IMPORTED_MODULE_30__["EasyPieDirective"]],
             entryComponents: [
-                _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_32__["FormCountryComponent"],
-                _admin_region_form_region_form_region_component__WEBPACK_IMPORTED_MODULE_13__["FormRegionComponent"]
+                _shared_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_0__["ConfirmModalComponent"],
+                _country_form_country_form_country_component__WEBPACK_IMPORTED_MODULE_33__["FormCountryComponent"],
+                _admin_region_form_region_form_region_component__WEBPACK_IMPORTED_MODULE_14__["FormRegionComponent"]
             ],
             providers: [
-                _services_upload_file_service__WEBPACK_IMPORTED_MODULE_20__["UploadFileService"],
-                _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_0__["CountryListResolverService"]
+                _services_upload_file_service__WEBPACK_IMPORTED_MODULE_21__["UploadFileService"],
+                _resolvers_country_resolver_service__WEBPACK_IMPORTED_MODULE_1__["CountryListResolverService"]
             ]
         })
     ], AdminModule);
@@ -1962,7 +1977,7 @@ module.exports = ".pointerCursur {\r\n    cursor: pointer;\r\n}\r\n\r\n/*# sourc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"sidebar-nav\">\r\n  <ul class=\"metismenu\" id=\"menu\" style=\"display:none;\">\r\n    <li class=\"active\">\r\n      <a href=\"?\" aria-expanded=\"true\">\r\n        <span class=\"sidebar-nav-item-icon fa fa-github fa-lg\"></span>\r\n        <span class=\"sidebar-nav-item\">metisMenu</span>\r\n        <span class=\"fa arrow\"></span>\r\n      </a>\r\n      <ul aria-expanded=\"true\">\r\n        <li>\r\n          <a href=\"https://github.com/onokumus/metisMenu\">\r\n            <span class=\"sidebar-nav-item-icon fa fa-code-fork\"></span>\r\n            Fork\r\n          </a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://github.com/onokumus/metisMenu\">\r\n            <span class=\"sidebar-nav-item-icon fa fa-star\"></span>\r\n            Star\r\n          </a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://github.com/onokumus/metisMenu/issues\">\r\n            <span class=\"sidebar-nav-item-icon fa fa-exclamation-triangle\"></span>\r\n            Issues\r\n          </a>\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <a href=\"?\" aria-expanded=\"false\">Menu 0 <span class=\"fa arrow\"></span></a>\r\n      <ul aria-expanded=\"false\">\r\n        <li><a href=\"?\">item 0.1</a></li>\r\n        <li><a href=\"?\">item 0.2</a></li>\r\n        <li><a href=\"http://onokumus.com\">onokumus</a></li>\r\n        <li><a href=\"?\">item 0.4</a></li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <a href=\"?\" aria-expanded=\"false\">Menu 1 <span class=\"glyphicon arrow\"></span></a>\r\n      <ul aria-expanded=\"false\">\r\n        <li><a href=\"?\">item 1.1</a></li>\r\n        <li><a href=\"?\">item 1.2</a></li>\r\n        <li>\r\n          <a href=\"?\" aria-expanded=\"false\">Menu 1.3 <span class=\"fa plus-times\"></span></a>\r\n          <ul aria-expanded=\"false\">\r\n            <li><a href=\"?\">item 1.3.1</a></li>\r\n            <li><a href=\"?\">item 1.3.2</a></li>\r\n            <li><a href=\"?\">item 1.3.3</a></li>\r\n            <li><a href=\"?\">item 1.3.4</a></li>\r\n          </ul>\r\n        </li>\r\n        <li><a href=\"?\">item 1.4</a></li>\r\n        <li>\r\n          <a href=\"?\" aria-expanded=\"false\">Menu 1.5 <span class=\"fa plus-minus\"></span></a>\r\n          <ul aria-expanded=\"false\">\r\n            <li><a href=\"?\">item 1.5.1</a></li>\r\n            <li><a href=\"?\">item 1.5.2</a></li>\r\n            <li><a href=\"?\">item 1.5.3</a></li>\r\n            <li><a href=\"?\">item 1.5.4</a></li>\r\n          </ul>\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <a href=\"?\" aria-expanded=\"false\">Menu 2 <span class=\"glyphicon arrow\"></span></a>\r\n      <ul aria-expanded=\"false\">\r\n        <li><a href=\"?\">item 2.1</a></li>\r\n        <li><a href=\"?\">item 2.2</a></li>\r\n        <li><a href=\"?\">item 2.3</a></li>\r\n        <li><a href=\"?\">item 2.4</a></li>\r\n      </ul>\r\n    </li>\r\n  </ul>\r\n</nav>\r\n\r\n<nav class=\"navbar-default navbar-static-side\" role=\"navigation\">\r\n  <div class=\"sidebar-collapse\">\r\n    <ul class=\"nav metismenu\" id=\"side-menu\">\r\n      <li class=\"nav-header\">\r\n        <div class=\"dropdown profile-element\"> <span>\r\n            <img alt=\"image\" class=\"img-circle\" src=\"assets/img/profile_small.jpg\">\r\n          </span>\r\n          <a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\">\r\n            <span class=\"clear\"> <span class=\"block m-t-xs\"> <strong class=\"font-bold\">David Williams</strong>\r\n              </span> <span class=\"text-muted text-xs block\">Art Director <b class=\"caret\"></b></span> </span> </a>\r\n          <ul class=\"dropdown-menu animated fadeInRight m-t-xs\">\r\n            <li><a href=\"profile.html\">Profile</a></li>\r\n            <li><a href=\"contacts.html\">Contacts</a></li>\r\n            <li><a href=\"mailbox.html\">Mailbox</a></li>\r\n            <li class=\"divider\"></li>\r\n            <li><a href=\"login.html\">Logout</a></li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"logo-element\">\r\n          IN+\r\n        </div>\r\n      </li>\r\n      <li class=\"\">\r\n        <a aria-expanded=\"true\"><i class=\"fas fa-globe-africa\"></i> <span class=\"nav-label\">Maps</span>\r\n          <span class=\"fa arrow\"></span></a>\r\n        <ul class=\"nav nav-second-level collapse\" style=\"\" aria-expanded=\"true\">\r\n          <li><a [routerLink]=\"['countries']\">Country</a></li>\r\n          <li><a [routerLink]=\"['addCountries']\">Add Country</a></li>\r\n          <li><a [routerLink]=\"['mapsManager']\">Maps</a></li>\r\n          <li><a [routerLink]=\"['regions']\">Regions</a></li>\r\n\r\n\r\n        </ul>\r\n      </li>\r\n      <li><a [routerLink]=\"['persons']\" ><i class=\"fas fa-globe-africa\"></i>Persons</a></li>\r\n\r\n\r\n\r\n\r\n\r\n    </ul>\r\n\r\n  </div>\r\n</nav>\r\n<!--\r\n<nav class=\"navbar-default navbar-static-side\" role=\"navigation\">\r\n    <div class=\"sidebar-collapse\">\r\n        <ul class=\"nav metismenu\" id=\"side-menu\">\r\n            <li class=\"nav-header\">\r\n                <div class=\"dropdown profile-element\">\r\n                    <a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\">\r\n                        <span class=\"block m-t-xs\"> <strong class=\"font-bold\">Example user</strong> </span>\r\n                        <span class=\"text-muted text-xs block\">Example <b class=\"caret\"></b> </span>\r\n                    </a>\r\n                    <ul class=\"dropdown-menu animated fadeInRight m-t-xs\">\r\n                        <li><a href=\"#\">Logout</a></li>\r\n                    </ul>\r\n                </div>\r\n                <div class=\"logo-element\">\r\n                    IN+\r\n                </div>\r\n            </li>\r\n            <li [ngClass]=\"{active: activeRoute('mainView')}\">\r\n                <a [routerLink]=\"['/mainView']\"><i class=\"fa fa-th-large\"></i> <span class=\"nav-label\">Main view</span></a>\r\n            </li>\r\n            <li [ngClass]=\"{active: activeRoute('minorView')}\">\r\n                <a [routerLink]=\"['/minorView']\"><i class=\"fa fa-desktop\"></i> <span class=\"nav-label\">Minor view</span> </a>\r\n            </li>\r\n            <li>\r\n                <a [routerLink]=\"['/login']\"><i class=\"fa fa-sign-in\"></i> <span class=\"nav-label\">Login</span> </a>\r\n            </li>\r\n            <li>\r\n                <a [routerLink]=\"['/register']\"><i class=\"fa fa-pencil\"></i> <span class=\"nav-label\">Register</span> </a>\r\n            </li>\r\n        </ul>\r\n\r\n    </div>\r\n</nav> -->\r\n"
+module.exports = "<nav class=\"sidebar-nav\">\r\n  <ul class=\"metismenu\" id=\"menu\" style=\"display:none;\">\r\n    <li class=\"active\">\r\n      <a href=\"?\" aria-expanded=\"true\">\r\n        <span class=\"sidebar-nav-item-icon fa fa-github fa-lg\"></span>\r\n        <span class=\"sidebar-nav-item\">metisMenu</span>\r\n        <span class=\"fa arrow\"></span>\r\n      </a>\r\n      <ul aria-expanded=\"true\">\r\n        <li>\r\n          <a href=\"https://github.com/onokumus/metisMenu\">\r\n            <span class=\"sidebar-nav-item-icon fa fa-code-fork\"></span>\r\n            Fork\r\n          </a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://github.com/onokumus/metisMenu\">\r\n            <span class=\"sidebar-nav-item-icon fa fa-star\"></span>\r\n            Star\r\n          </a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://github.com/onokumus/metisMenu/issues\">\r\n            <span class=\"sidebar-nav-item-icon fa fa-exclamation-triangle\"></span>\r\n            Issues\r\n          </a>\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <a href=\"?\" aria-expanded=\"false\">Menu 0 <span class=\"fa arrow\"></span></a>\r\n      <ul aria-expanded=\"false\">\r\n        <li><a href=\"?\">item 0.1</a></li>\r\n        <li><a href=\"?\">item 0.2</a></li>\r\n        <li><a href=\"http://onokumus.com\">onokumus</a></li>\r\n        <li><a href=\"?\">item 0.4</a></li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <a href=\"?\" aria-expanded=\"false\">Menu 1 <span class=\"glyphicon arrow\"></span></a>\r\n      <ul aria-expanded=\"false\">\r\n        <li><a href=\"?\">item 1.1</a></li>\r\n        <li><a href=\"?\">item 1.2</a></li>\r\n        <li>\r\n          <a href=\"?\" aria-expanded=\"false\">Menu 1.3 <span class=\"fa plus-times\"></span></a>\r\n          <ul aria-expanded=\"false\">\r\n            <li><a href=\"?\">item 1.3.1</a></li>\r\n            <li><a href=\"?\">item 1.3.2</a></li>\r\n            <li><a href=\"?\">item 1.3.3</a></li>\r\n            <li><a href=\"?\">item 1.3.4</a></li>\r\n          </ul>\r\n        </li>\r\n        <li><a href=\"?\">item 1.4</a></li>\r\n        <li>\r\n          <a href=\"?\" aria-expanded=\"false\">Menu 1.5 <span class=\"fa plus-minus\"></span></a>\r\n          <ul aria-expanded=\"false\">\r\n            <li><a href=\"?\">item 1.5.1</a></li>\r\n            <li><a href=\"?\">item 1.5.2</a></li>\r\n            <li><a href=\"?\">item 1.5.3</a></li>\r\n            <li><a href=\"?\">item 1.5.4</a></li>\r\n          </ul>\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <a href=\"?\" aria-expanded=\"false\">Menu 2 <span class=\"glyphicon arrow\"></span></a>\r\n      <ul aria-expanded=\"false\">\r\n        <li><a href=\"?\">item 2.1</a></li>\r\n        <li><a href=\"?\">item 2.2</a></li>\r\n        <li><a href=\"?\">item 2.3</a></li>\r\n        <li><a href=\"?\">item 2.4</a></li>\r\n      </ul>\r\n    </li>\r\n  </ul>\r\n</nav>\r\n\r\n<nav class=\"navbar-default navbar-static-side\" role=\"navigation\">\r\n  <div class=\"sidebar-collapse\">\r\n    <ul class=\"nav metismenu\" id=\"side-menu\">\r\n      <li class=\"nav-header\">\r\n        <div class=\"dropdown profile-element\"> <span>\r\n            <img alt=\"image\" class=\"img-circle\" src=\"assets/img/profile_small.jpg\">\r\n          </span>\r\n          <a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\">\r\n            <span class=\"clear\"> <span class=\"block m-t-xs\"> <strong class=\"font-bold\">David Williams</strong>\r\n              </span> <span class=\"text-muted text-xs block\">Art Director <b class=\"caret\"></b></span> </span> </a>\r\n          <ul class=\"dropdown-menu animated fadeInRight m-t-xs\">\r\n            <li><a href=\"profile.html\">Profile</a></li>\r\n            <li><a href=\"contacts.html\">Contacts</a></li>\r\n            <li><a href=\"mailbox.html\">Mailbox</a></li>\r\n            <li class=\"divider\"></li>\r\n            <li><a href=\"login.html\">Logout</a></li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"logo-element\">\r\n          IN+\r\n        </div>\r\n      </li>\r\n      <li class=\"\">\r\n        <a aria-expanded=\"true\"><i class=\"fas fa-globe-africa\"></i> <span class=\"nav-label\">Maps</span>\r\n          <span class=\"fa arrow\"></span></a>\r\n        <ul class=\"nav nav-second-level collapse\" style=\"\" aria-expanded=\"true\">\r\n          <li><a [routerLink]=\"['countries']\">Country</a></li>\r\n          <li><a [routerLink]=\"['addCountries']\">Add Country</a></li>\r\n          <li><a [routerLink]=\"['mapsManager']\">Maps</a></li>\r\n          <li><a [routerLink]=\"['regions']\">Regions</a></li>\r\n\r\n\r\n        </ul>\r\n      </li>\r\n\r\n      <li class=\"\">\r\n        <a aria-expanded=\"true\"><i class=\"fas fa-users\"></i> <span class=\"nav-label\">Personnes</span>\r\n          <span class=\"fa arrow\"></span></a>\r\n        <ul class=\"nav nav-second-level collapse\" style=\"\" aria-expanded=\"true\">\r\n          <li><a [routerLink]=\"['persons']\"><i class=\"fas fa-users\"></i>Personnes</a></li>\r\n          <li><a [routerLink]=\"['academic_level']\"><i class=\"fas fa-graduation-cap\"></i>Niveau Academique</a></li>\r\n\r\n\r\n\r\n        </ul>\r\n      </li>\r\n\r\n\r\n\r\n\r\n\r\n\r\n    </ul>\r\n\r\n  </div>\r\n</nav>\r\n<!--\r\n<nav class=\"navbar-default navbar-static-side\" role=\"navigation\">\r\n    <div class=\"sidebar-collapse\">\r\n        <ul class=\"nav metismenu\" id=\"side-menu\">\r\n            <li class=\"nav-header\">\r\n                <div class=\"dropdown profile-element\">\r\n                    <a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\">\r\n                        <span class=\"block m-t-xs\"> <strong class=\"font-bold\">Example user</strong> </span>\r\n                        <span class=\"text-muted text-xs block\">Example <b class=\"caret\"></b> </span>\r\n                    </a>\r\n                    <ul class=\"dropdown-menu animated fadeInRight m-t-xs\">\r\n                        <li><a href=\"#\">Logout</a></li>\r\n                    </ul>\r\n                </div>\r\n                <div class=\"logo-element\">\r\n                    IN+\r\n                </div>\r\n            </li>\r\n            <li [ngClass]=\"{active: activeRoute('mainView')}\">\r\n                <a [routerLink]=\"['/mainView']\"><i class=\"fa fa-th-large\"></i> <span class=\"nav-label\">Main view</span></a>\r\n            </li>\r\n            <li [ngClass]=\"{active: activeRoute('minorView')}\">\r\n                <a [routerLink]=\"['/minorView']\"><i class=\"fa fa-desktop\"></i> <span class=\"nav-label\">Minor view</span> </a>\r\n            </li>\r\n            <li>\r\n                <a [routerLink]=\"['/login']\"><i class=\"fa fa-sign-in\"></i> <span class=\"nav-label\">Login</span> </a>\r\n            </li>\r\n            <li>\r\n                <a [routerLink]=\"['/register']\"><i class=\"fa fa-pencil\"></i> <span class=\"nav-label\">Register</span> </a>\r\n            </li>\r\n        </ul>\r\n\r\n    </div>\r\n</nav> -->\r\n"
 
 /***/ }),
 
@@ -2112,6 +2127,218 @@ var PageHeadingComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/admin/person/academic-level/academic-level.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/admin/person/academic-level/academic-level.component.css ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3BlcnNvbi9hY2FkZW1pYy1sZXZlbC9hY2FkZW1pYy1sZXZlbC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/admin/person/academic-level/academic-level.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/person/academic-level/academic-level.component.html ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row wrapper border-bottom white-bg page-heading\">\r\n  <div class=\"col-lg-9\">\r\n    <h2>Niveaux Academiques </h2>\r\n    <ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a routerLink=\"/administrateur/home\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item\">\r\n        <a #h1Variable></a>\r\n      </li>\r\n    </ol>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"wrapper wrapper-content animated fadeInRight\">\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-md-5\">\r\n      <div class=\"ibox \">\r\n        <form #AcademicLevelForm=\"ngForm\">\r\n          <div class=\"ibox-content\">\r\n\r\n\r\n\r\n            <div class=\"form-group {{ errors.name ? 'has-error' : '' }} \">\r\n\r\n              <input type=\"text\" class=\"form-control\" required=\"\" name=\"name\" [(ngModel)]=\"aca_level.name\" placeholder=\"Nom\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.name\">\r\n              {{ errors.name }}\r\n            </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n            <div class=\"form-group {{ errors?.bac_level ? 'has-error' : '' }} \">\r\n              <select appSelectValidator=\"select\" required=\"\" id=\"bac_level\" name=\"bac_level\" [(ngModel)]=\"aca_level.bac_level\"\r\n                class=\"form-control\">\r\n\r\n                <option value=\"bac\">bac</option>\r\n                <option value=\"bac+1\">bac+1</option>\r\n                <option value=\"bac+2\">Bac+2 </option>\r\n                <option value=\"bac+3\">Bac+3 </option>\r\n                <option value=\"bac+4\">Bac+4 </option>\r\n                <option value=\"bac+5\">Bac+5</option>\r\n                <option value=\"bac+8\">Bac+8</option>\r\n\r\n              </select>\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.bac_level\">\r\n              {{errors.bac_level}}\r\n            </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n          </div>\r\n          <div class=ibox-footer>\r\n            <button type=\"submit\" class=\"btn btn-block  btn-primary\" [disabled]=\"AcademicLevelForm.invalid\" (click)=\"createNavigateur()\">Sauvgarder</button>\r\n          </div>\r\n        </form>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n    <div class=\"col-md-7\">\r\n      <div class=\"ibox\">\r\n        <div class=\"ibox-content\">\r\n          <h2>Niveaux acadeique </h2>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerALevel\" class=\"table table-striped table-hover\">\r\n                <thead>\r\n                  <tr>\r\n                    <th>Niveau Academique</th>\r\n                    <th>Baccalaureat</th>\r\n\r\n                    <th>Action</th>\r\n\r\n                  </tr>\r\n                </thead>\r\n                <tbody>\r\n                  <tr *ngFor=\"let level of aca_levels\">\r\n                 \r\n                    <td>{{level.name}}</td>\r\n                    <td>{{level.bac_level}}</td>\r\n\r\n                    <td>\r\n                      <div class=\"btn-group float-right\">\r\n                        <!-- <button (click)=\"goToAcademicLevelDetails(level.id)\" class=\"btn-info btn btn-xs\">Voir</button> -->\r\n                        <button (click)=\"editerAcademicLevel(level.id)\" class=\"btn-warning btn btn-xs\">Editer</button>\r\n                        <button (click)=\"deleteAcademicLevel(level.id)\" class=\"btn-danger btn btn-xs\">Supprimer</button>\r\n                      </div>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </table>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n    {{aca_levels|json}}\r\n    {{aca_levels.length}}\r\n  </div>\r\n\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/person/academic-level/academic-level.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/admin/person/academic-level/academic-level.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: AcademicLevelComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AcademicLevelComponent", function() { return AcademicLevelComponent; });
+/* harmony import */ var _shared_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../../shared/confirm-modal/confirm-modal.component */ "./src/app/shared/confirm-modal/confirm-modal.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _models_academicLevel_model__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../models/academicLevel.model */ "./src/app/models/academicLevel.model.ts");
+/* harmony import */ var _services_academic_level_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../services/academic_level.service */ "./src/app/services/academic_level.service.ts");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
+/* harmony import */ var angular_datatables__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-datatables */ "./node_modules/angular-datatables/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+var AcademicLevelComponent = /** @class */ (function () {
+    function AcademicLevelComponent(_AcademicLevelService, _route, _router, _modalService, _toastr) {
+        this._AcademicLevelService = _AcademicLevelService;
+        this._route = _route;
+        this._router = _router;
+        this._modalService = _modalService;
+        this._toastr = _toastr;
+        this.aca_levels = [];
+        this.aca_level = new _models_academicLevel_model__WEBPACK_IMPORTED_MODULE_4__["AcademicLevel"]();
+        this.errors = [];
+        this.selected = 'selected';
+        this.dtOptions = {};
+        this.dtTriggerALevel = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+    }
+    AcademicLevelComponent.prototype.ngOnInit = function () {
+        this.getAcademicLevels();
+    };
+    AcademicLevelComponent.prototype.getAcademicLevels = function () {
+        var _this = this;
+        this._AcademicLevelService.getAcademicLevels().subscribe(function (aca_levelApi) {
+            _this.aca_levels = aca_levelApi.data;
+            _this.dtTriggerALevel.next();
+        }, function (error) { console.log(error); });
+    };
+    AcademicLevelComponent.prototype.goToAcademicLevelDetails = function (id) {
+        this._router.navigate([id], { relativeTo: this._route });
+    };
+    AcademicLevelComponent.prototype.editerAcademicLevel = function (id) {
+        var _this = this;
+        console.log('edit', id);
+        this._AcademicLevelService.getAcademicLevel(id).subscribe(function (academicData) {
+            _this.aca_level = academicData;
+            _this.ModelFormAcademic(true);
+        }, function (error) {
+            _this.errors = error;
+        });
+    };
+    AcademicLevelComponent.prototype.createNavigateur = function () {
+        this.ModelFormAcademic(false);
+    };
+    AcademicLevelComponent.prototype.ModelFormAcademic = function (edit) {
+        var _this = this;
+        var initialState = {
+            title: edit ? 'Modifier Niveau Academique' : 'Nouveau Niveau Academique',
+            aca_level: edit ? this.aca_level : new _models_academicLevel_model__WEBPACK_IMPORTED_MODULE_4__["AcademicLevel"](),
+            errors: this.errors,
+            edit: edit
+        };
+        this.bsModalRef = this._modalService.show(_shared_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_0__["ConfirmModalComponent"], { initialState: initialState });
+        if (edit === false) {
+            this.bsModalRef.content.onClose.subscribe(function (data) { return _this._AcademicLevelService.save(data)
+                .subscribe(function (data) {
+                _this._toastr.success('<h3>Niveau Academique ajouté avec succès</h3>', ' ', {
+                    'timeOut': 3000,
+                    'progressBar': true,
+                    'enableHtml': true
+                });
+                // renitialiser la liste des Niveau acadimique
+                _this.getAcademicLevels();
+                // vider le Niveau academique
+                _this.aca_level = new _models_academicLevel_model__WEBPACK_IMPORTED_MODULE_4__["AcademicLevel"]();
+                _this.errors = [];
+                _this.bsModalRef.content.errors = _this.errors;
+                _this.bsModalRef.content.aca_level = _this.aca_level;
+                _this.bsModalRef.hide();
+            }, function (error) {
+                _this.errors = error.error.errors;
+                _this.bsModalRef.content.errors = _this.errors;
+                _this.errors = [];
+            }); });
+        }
+        else {
+            this.bsModalRef.content.onClose.subscribe(function (data) { return _this._AcademicLevelService.update(data)
+                .subscribe(function (data) {
+                _this._toastr.warning('<h3>Niveau Academique édité avec succès</h3>', ' ', {
+                    'timeOut': 3000,
+                    'progressBar': true,
+                    'enableHtml': true
+                });
+                _this.getAcademicLevels();
+                _this.aca_level = new _models_academicLevel_model__WEBPACK_IMPORTED_MODULE_4__["AcademicLevel"]();
+                _this.errors = [];
+                _this.bsModalRef.content.errors = _this.errors;
+                _this.bsModalRef.content.aca_level = _this.aca_level;
+                _this.bsModalRef.hide();
+            }, function (error) {
+                _this.errors = error.error.errors;
+                _this.bsModalRef.content.errors = _this.errors;
+                _this.errors = [];
+            }); });
+        }
+    };
+    AcademicLevelComponent.prototype.deleteAcademicLevel = function (id) {
+        var _this = this;
+        var initialState = {
+            message: 'etes vous sur ?',
+            confirmation: null
+        };
+        this.bsModalRef = this._modalService.show(_shared_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_0__["ConfirmModalComponent"], { initialState: initialState });
+        this.bsModalRef.content.onClose.subscribe(function (data) {
+            if (data) {
+                _this._AcademicLevelService.deleteAcademicLevel(id).subscribe(function (reponse) {
+                    var i = _this.aca_levels.findIndex(function (e) { return e.id === id; });
+                    if (i !== -1) {
+                        _this.aca_levels.splice(i, 1);
+                        console.log(_this.aca_levels);
+                        _this.rerender();
+                        _this._toastr.warning('<h3>Niveau Academique supprimé avec succès</h3>', ' ', {
+                            'timeOut': 3500,
+                            'progressBar': true,
+                            'enableHtml': true
+                        });
+                    }
+                }, function (error) { console.log(error); });
+            }
+        });
+    };
+    AcademicLevelComponent.prototype.rerender = function () {
+        var _this = this;
+        this.dtElement.dtInstance.then(function (dtInstance) {
+            // Destroy the table first
+            dtInstance.destroy();
+            // Call the dtTrigger to rerender again
+            _this.dtTriggerALevel.next();
+        });
+    };
+    AcademicLevelComponent.prototype.ngOnDestroy = function () {
+        // Do not forget to unsubscribe the event
+        this.rerender();
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"])(angular_datatables__WEBPACK_IMPORTED_MODULE_8__["DataTableDirective"]),
+        __metadata("design:type", angular_datatables__WEBPACK_IMPORTED_MODULE_8__["DataTableDirective"])
+    ], AcademicLevelComponent.prototype, "dtElement", void 0);
+    AcademicLevelComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+            selector: 'app-academic-level',
+            template: __webpack_require__(/*! ./academic-level.component.html */ "./src/app/admin/person/academic-level/academic-level.component.html"),
+            styles: [__webpack_require__(/*! ./academic-level.component.css */ "./src/app/admin/person/academic-level/academic-level.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_academic_level_service__WEBPACK_IMPORTED_MODULE_5__["AcademicLevelService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            ngx_bootstrap__WEBPACK_IMPORTED_MODULE_6__["BsModalService"],
+            ngx_toastr__WEBPACK_IMPORTED_MODULE_7__["ToastrService"]])
+    ], AcademicLevelComponent);
+    return AcademicLevelComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/admin/person/person.component.css":
 /*!***************************************************!*\
   !*** ./src/app/admin/person/person.component.css ***!
@@ -2130,7 +2357,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>\n  Add New Product\n</h2>\n\n<form id = \"formNewPerson\" name = \"formNewPerson\" #PersonData = \"ngForm\" (ngSubmit) = \"addPerson(person.value)\">\n  <label>First Name: </label><input type = \"text\" name=\"first_name\" id=\"first_name\" placeholder=\"First Name\" ngModel><br>\n  <label>last Name: </label><input type = \"text\" name=\"last_name\" id=\"last_name\" placeholder=\"last Name\" ngModel><br>\n  <input type=\"submit\" value = \"Add Product\">\n</form>\n\n<br>\n<h3 *ngIf = \"isAdded\" >{{confirmationString}}</h3>\n\n\n\n<div class=\"col-md-12\">\n  <div class=\"ibox\">\n    <div class=\"ibox-content\">\n      <h2>Membres et Employés</h2>\n  <div class=\"row\">\n    <div class=\"col-md-12\" >\n      <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerPerson\" class=\"table table-striped table-hover\">\n        <thead>\n          <tr>\n            <th>First name</th>\n            <th>Last name</th>\n            <th>Niveau Academique</th>\n            <th>Domaine d'etude</th>\n            <th>Email</th>\n\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let person of person\" >\n            <td>{{person.first_name}}</td>\n            <td>{{person.last_name}}</td>\n            <td>{{person.academic_level}}</td>\n            <td>{{person.study_area}}</td>\n            <td>{{person.email}}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>\n</div>\n\n</div>"
+module.exports = "<div class=\"row wrapper border-bottom white-bg page-heading\">\r\n  <div class=\"col-lg-9\">\r\n    <h2>Personnes</h2>\r\n    <ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a routerLink=\"/administrateur/home\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item\">\r\n        <a #h1Variable></a>\r\n      </li>\r\n    </ol>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"wrapper wrapper-content animated fadeInRight\">\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-md-5\">\r\n      <div class=\"ibox \">\r\n        <form #PersonForm=\"ngForm\">\r\n          <div class=\"ibox-content\">\r\n\r\n\r\n\r\n            <div class=\"form-group {{ errors.first_name ? 'has-error' : '' }} \">\r\n\r\n              <input id=\"first_name\" type=\"text\" class=\"form-control\" name=\"first_name\" [(ngModel)]=\"person.first_name\"\r\n                placeholder=\"Nom\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.first_name\">\r\n              {{errors.first_name}}\r\n            </div>\r\n\r\n\r\n\r\n            <div class=\"form-group {{ errors.last_name ? 'has-error' : '' }} \">\r\n\r\n              <input id=\"last_name\" type=\"text\" class=\"form-control\" name=\"last_name\" [(ngModel)]=\"person.last_name\"\r\n                placeholder=\"Prenom\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.last_name\">\r\n              {{errors.last_name}}\r\n            </div>\r\n\r\n\r\n            <div class=\"form-group {{ errors.nationality ? 'has-error' : '' }} \">\r\n\r\n              <input id=\"nationality\" type=\"text\" class=\"form-control\" name=\"nationality\" [(ngModel)]=\"person.nationality\"\r\n                placeholder=\"Nationalite\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.nationality\">\r\n              {{errors.nationality}}\r\n            </div>\r\n\r\n            <div class=\"form-group {{ errors.birthday ? 'has-error' : '' }}  \">\r\n\r\n              <input id=\"birthday\" type=\"text\" class=\"form-control\" name=\"birthday\" [(ngModel)]=\"person.birthday\"\r\n                placeholder=\"Date de naissance\" bsDatepicker>\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.birthday\">\r\n              {{errors.birthday}}\r\n            </div>\r\n\r\n            <div class=\"form-group {{ errors.sex ? 'has-error' : '' }} \">\r\n              <label class=\"radio-inline\">\r\n                <input type=\"radio\" required #gender=\"ngModel\" value=\"Male\" name=\"sex\" [(ngModel)]=\"person.sex\">\r\n                Male\r\n              </label>\r\n              &nbsp;\r\n              &nbsp;\r\n\r\n              <label class=\"radio-inline\">\r\n                <input type=\"radio\" required #gender=\"ngModel\" value=\"Female\" name=\"sex\" [(ngModel)]=\"person.sex\">\r\n                Female\r\n              </label>\r\n\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.sex\">\r\n              {{errors.sex}}\r\n            </div>\r\n\r\n\r\n            <div class=\"form-group {{ errors.academic_level ? 'has-error' : '' }} \">\r\n              <select id=\"academic_level\" appSelectValidator=\"select\" name=\"academic_level\" [(ngModel)]=\"person.academic_level\"\r\n                class=\"form-control\" #academic_level=\"ngModel\">\r\n                <option value=\"select\">Niveau academique</option>\r\n                <option value=\"bac\">bac</option>\r\n                <option value=\"bac+1\">bac+1</option>\r\n                <option value=\"bac+2\">Bac+2 </option>\r\n                <option value=\"bac+3\">Bac+3 </option>\r\n                <option value=\"bac+4\">Bac+4 </option>\r\n                <option value=\"bac+5\">Bac+5</option>\r\n                <option value=\"bac+8\">Bac+8</option>\r\n\r\n\r\n\r\n              </select>\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.academic_level\">\r\n              {{errors.academic_level}}\r\n            </div>\r\n\r\n\r\n\r\n            <div class=\"form-group {{ errors.email ? 'has-error' : '' }} \">\r\n              <input id=\"v\" type=\"email\" class=\"form-control\" name=\"email\" [(ngModel)]=\"person.email\" placeholder=\"Email\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.email\">\r\n              {{errors.email}}\r\n            </div>\r\n\r\n            <div class=\"form-group {{ errors.study_area ? 'has-error' : '' }} \">\r\n              <input id=\"study_area\" type=\"text\" class=\"form-control\" name=\"study_area\" [(ngModel)]=\"person.study_area\"\r\n                placeholder=\"Domaine d'etude\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.study_area\">\r\n              {{errors.study_area}}\r\n            </div>\r\n\r\n\r\n            <div class=\"form-group {{ errors.number_phone ? 'has-error' : '' }} \">\r\n              <input id=\"number_phone\" type=\"text\" class=\"form-control\" name=\"number_phone\" [(ngModel)]=\"person.number_phone\"\r\n                placeholder=\"Telephone\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.number_phone\">\r\n              {{errors.number_phone}}\r\n            </div>\r\n\r\n            <div class=\"form-group {{ errors.short_biography ? 'has-error' : '' }} \">\r\n              <input id=\"short_biography\" type=\"text\" class=\"form-control\" name=\"short_biography\" [(ngModel)]=\"person.short_biography\"\r\n                placeholder=\"Bref Biographie\">\r\n            </div>\r\n            <div class=\"alert alert-danger\" [hidden]=\"!errors.short_biography\">\r\n              {{errors.short_biography}}\r\n            </div>\r\n\r\n\r\n\r\n\r\n          </div>\r\n          <div class=ibox-footer>\r\n            <button type=\"button\" class=\"btn btn-block  btn-primary\">Sauvgarder</button>\r\n          </div>\r\n        </form>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n    <div class=\"col-md-7\">\r\n      <div class=\"ibox\">\r\n        <div class=\"ibox-content\">\r\n          <h2>Membres et Employés</h2>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerPerson\" class=\"table table-striped table-hover\">\r\n                <thead>\r\n                  <tr>\r\n                    <th>First name</th>\r\n                    <th>Last name</th>\r\n                    <th>Niveau Academique</th>\r\n                    <th>Domaine d'etude</th>\r\n                    <th>Email</th>\r\n\r\n                  </tr>\r\n                </thead>\r\n                <tbody>\r\n                  <tr *ngFor=\"let person of person\">\r\n                    <td>{{person.first_name}}</td>\r\n                    <td>{{person.last_name}}</td>\r\n                    <td>{{person.academic_level}}</td>\r\n                    <td>{{person.study_area}}</td>\r\n                    <td>{{person.email}}</td>\r\n                  </tr>\r\n                </tbody>\r\n              </table>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2166,9 +2393,10 @@ var PersonComponent = /** @class */ (function () {
         this._personService = _personService;
         this._route = _route;
         this.person = [];
+        this.errors = [];
         this.dtOptions = {};
         this.dtTriggerPerson = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
-        this.confirmationString = "New Person has been added";
+        this.confirmationString = 'New Person has been added';
         this.isAdded = false;
     }
     PersonComponent.prototype.ngOnInit = function () {
@@ -3176,12 +3404,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @swimlane/ngx-charts */ "./node_modules/@swimlane/ngx-charts/release/esm.js");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+/* harmony import */ var ngx_slick__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-slick */ "./node_modules/ngx-slick/ngx-slick.umd.js");
+/* harmony import */ var ngx_slick__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(ngx_slick__WEBPACK_IMPORTED_MODULE_14__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -3202,9 +3435,10 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-                _error_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_7__["PageNotFoundComponent"]
+                _error_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_7__["PageNotFoundComponent"],
             ],
             imports: [
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_13__["BsDatepickerModule"].forRoot(),
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"],
                 _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_12__["NgxChartsModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -3214,7 +3448,8 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
                 _auth_auth_module__WEBPACK_IMPORTED_MODULE_1__["AuthModule"],
                 _admin_admin_module__WEBPACK_IMPORTED_MODULE_0__["AdminModule"],
-                _maps_maps_module__WEBPACK_IMPORTED_MODULE_9__["MapsModule"]
+                _maps_maps_module__WEBPACK_IMPORTED_MODULE_9__["MapsModule"],
+                ngx_slick__WEBPACK_IMPORTED_MODULE_14__["SlickModule"].forRoot()
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -3953,7 +4188,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"contact\" class=\"gray-section contact\">\r\n  <div class=\"container\">\r\n    <div class=\"row m-b-lg\">\r\n      <div class=\"col-lg-12 text-center\">\r\n        <div class=\"navy-line\"></div>\r\n        <h1>Contactez Nous</h1>\r\n        <p>Cités et Gouvernements Locaux Unis d’Afrique (CGLU Afrique )​\r\n          L’organisation faîtière des gouvernements locaux africains a été fondée en 2005 dans la ville de\r\n           Tshwane en Afrique du Sud à la suite de l’unification de trois groupes continentaux de gouvernements locaux,\r\n            à savoir l’Union Africaine des Autorités Locales (AULA); l’Union des Villes Africaines (UVA);\r\n             et le Chapitre africain de l’Unao dos Ciudades y Capitaes Lusofono Africana, (CCLA).</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"row m-b-lg justify-content-center\">\r\n      <div class=\"col-lg-3\">\r\n        <img height=\"70\" width=\"260\" src=\"assets/img/logo-ucgl.png\" alt=\"UCLGA\" class=\"img-fluid\">\r\n      </div>\r\n\r\n      <div class=\"col-lg-3 \">\r\n        <address>\r\n          <strong><span class=\"navy\">Adresse\r\n\r\n              .</span></strong><br /> 22 ESSAADYINE STREET,<br /> HASSAN, RABAT<br />KINGDOM OF MOROCCO\r\n          <abbr title=\"Phone\">P:</abbr> (123) 456-7890\r\n        </address>\r\n      </div>\r\n      <!-- <div class=\"col-lg-4\">\r\n        <p class=\"text-color\">\r\n          Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam\r\n          veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,\r\n        </p>\r\n      </div> -->\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-6  text-center\">\r\n        <div class=\"boxed-grey\">\r\n          <form id=\"contact-form\">\r\n            <div class=\"row\">\r\n              <div class=\"col-md-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"name\"> Name</label>\r\n                  <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\">\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"email\"> Email Address</label>\r\n                  <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span> </span>\r\n                    <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"subject\"> Subject</label>\r\n                  <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\r\n                    <option value=\"\">Choose One:</option>\r\n                    <option value=\"service\">General Customer Service</option>\r\n                    <option value=\"suggestions\">Suggestions</option>\r\n                    <option value=\"product\">Product Support</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"name\"> Message</label>\r\n                  <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\r\n                    placeholder=\"Message\"></textarea>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-12\">\r\n                <button type=\"submit\" class=\"btn btn-skin pull-right\" id=\"btnContactUs\">\r\n                  Envoyez Message\r\n                </button>\r\n              </div>\r\n            </div>\r\n          </form>\r\n        </div>\r\n        <!-- <a href=\"info@uclga.org\" class=\"btn btn-primary\">Send us mail</a> -->\r\n      </div>\r\n      <div class=\"col-lg-6 text-center\">\r\n        <br>\r\n        <br>\r\n        <br>\r\n        <br>\r\n\r\n        <p class=\"m-t-sm\">\r\n          Suivez-nous sur les réseaux sociaux\r\n        </p>\r\n        <ul class=\"list-inline social-icon\">\r\n          <li class=\"list-inline-item\"><a href=\"https://www.twitter.com/UCLGAfrica\" target=\"_blank\"><i class=\"fab fa-twitter\"></i></a>\r\n          </li>\r\n          <li class=\"list-inline-item\"><a href=\"https://www.facebook.com/CGLUAfrique\" target=\"_blank\"><i class=\"fab fa-facebook\"></i></a>\r\n          </li>\r\n          <li class=\"list-inline-item\"><a href=\"http://www.linkedin.com/company/cglu-afrique?trk=top_nav_home\" target=\"_blank\"><i\r\n                class=\"fab fa-linkedin\"></i></a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-12 text-center m-t-lg m-b-lg\">\r\n        <p><strong>&copy; Copyright © 2018 UCLG Africa</strong><br />\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n"
+module.exports = "<section id=\"contact\" class=\"gray-section contact\">\r\n  <div class=\"container\">\r\n    <div class=\"row m-b-lg\">\r\n      <div class=\"col-lg-12 text-center\">\r\n        <div class=\"navy-line\"></div>\r\n        <h1>Contactez Nous</h1>\r\n        <p>Cités et Gouvernements Locaux Unis d’Afrique (CGLU Afrique )​\r\n          L’organisation faîtière des gouvernements locaux africains a été fondée en 2005 dans la ville de\r\n           Tshwane en Afrique du Sud à la suite de l’unification de trois groupes continentaux de gouvernements locaux,\r\n            à savoir l’Union Africaine des Autorités Locales (AULA); l’Union des Villes Africaines (UVA);\r\n             et le Chapitre africain de l’Unao dos Ciudades y Capitaes Lusofono Africana, (CCLA).</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"row m-b-lg justify-content-center\">\r\n      <div class=\"col-lg-3\">\r\n        <img height=\"70\" width=\"260\" src=\"assets/img/logo-ucgl.png\" alt=\"UCLGA\" class=\"img-fluid\">\r\n      </div>\r\n\r\n      <div class=\"col-lg-3 \">\r\n        <address>\r\n          <strong><span class=\"navy\">Adresse\r\n\r\n              .</span></strong><br /> 22 ESSAADYINE STREET,<br /> HASSAN, RABAT<br />KINGDOM OF MOROCCO\r\n          <abbr title=\"Phone\">P:</abbr> (123) 456-7890\r\n        </address>\r\n      </div>\r\n      <!-- <div class=\"col-lg-4\">\r\n        <p class=\"text-color\">\r\n          Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam\r\n          veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,\r\n        </p>\r\n      </div> -->\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-6  text-center\">\r\n        <div class=\"boxed-grey\">\r\n          <form id=\"contact-form\">\r\n            <div class=\"row text-monospace\">\r\n              <div class=\"col-md-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"name\"> Name</label>\r\n                  <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\">\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"email\"> Email Address</label>\r\n                  <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span> </span>\r\n                    <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"subject\"> Sujet</label>\r\n                  <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\r\n                    <option value=\"\">choisir un:</option>\r\n                    <option value=\"service\">General Customer Service</option>\r\n                    <option value=\"suggestions\">Suggestions</option>\r\n                    <option value=\"product\">Product Support</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"name\"> Message</label>\r\n                  <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\r\n                    placeholder=\"Message\"></textarea>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-12\">\r\n                <button type=\"submit\" class=\"btn btn-skin pull-right\" id=\"btnContactUs\">\r\n                  Envoyez Message\r\n                </button>\r\n              </div>\r\n            </div>\r\n          </form>\r\n        </div>\r\n        <!-- <a href=\"info@uclga.org\" class=\"btn btn-primary\">Send us mail</a> -->\r\n      </div>\r\n      <div class=\"col-lg-6 text-center\">\r\n        <br>\r\n        <br>\r\n        <br>\r\n        <br>\r\n\r\n        <p class=\"m-t-sm\">\r\n          Suivez-nous sur les réseaux sociaux\r\n        </p>\r\n        <ul class=\"list-inline social-icon\">\r\n          <li class=\"list-inline-item\"><a href=\"https://www.twitter.com/UCLGAfrica\" target=\"_blank\"><i class=\"fab fa-twitter\"></i></a>\r\n          </li>\r\n          <li class=\"list-inline-item\"><a href=\"https://www.facebook.com/CGLUAfrique\" target=\"_blank\"><i class=\"fab fa-facebook\"></i></a>\r\n          </li>\r\n          <li class=\"list-inline-item\"><a href=\"http://www.linkedin.com/company/cglu-afrique?trk=top_nav_home\" target=\"_blank\"><i\r\n                class=\"fab fa-linkedin\"></i></a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-12 text-center m-t-lg m-b-lg\">\r\n        <p><strong>&copy; Copyright © 2018 UCLG Africa</strong><br />\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n"
 
 /***/ }),
 
@@ -3998,6 +4233,69 @@ var ContactSectionComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/landing/contact-us/contact-us.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/landing/contact-us/contact-us.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xhbmRpbmcvY29udGFjdC11cy9jb250YWN0LXVzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/landing/contact-us/contact-us.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/landing/contact-us/contact-us.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--Section: Contact v.2-->\n<section class=\"mb-4 container\">\n\n    <!--Section heading-->\n    <h2 class=\"h1-responsive font-weight-bold text-center my-4\">Contact us</h2>\n    <!--Section description-->\n    <p class=\"text-center w-responsive mx-auto mb-5\">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within\n        a matter of hours to help you.</p>\n  \n    <div class=\"row\">\n  \n        <!--Grid column-->\n        <div class=\"col-md-9 mb-md-0 mb-5\">\n            <form id=\"contact-form\" name=\"contact-form\" action=\"mail.php\" method=\"POST\">\n  \n                <!--Grid row-->\n                <div class=\"row\">\n  \n                    <!--Grid column-->\n                    <div class=\"col-md-6\">\n                        <div class=\"md-form mb-0\">\n                            <input type=\"text\" id=\"name\" name=\"name\" class=\"form-control\">\n                            <label for=\"name\" class=\"\">Your name</label>\n                        </div>\n                    </div>\n                    <!--Grid column-->\n  \n                    <!--Grid column-->\n                    <div class=\"col-md-6\">\n                        <div class=\"md-form mb-0\">\n                            <input type=\"text\" id=\"email\" name=\"email\" class=\"form-control\">\n                            <label for=\"email\" class=\"\">Your email</label>\n                        </div>\n                    </div>\n                    <!--Grid column-->\n  \n                </div>\n                <!--Grid row-->\n  \n                <!--Grid row-->\n                <div class=\"row\">\n                    <div class=\"col-md-12\">\n                        <div class=\"md-form mb-0\">\n                            <input type=\"text\" id=\"subject\" name=\"subject\" class=\"form-control\">\n                            <label for=\"subject\" class=\"\">Subject</label>\n                        </div>\n                    </div>\n                </div>\n                <!--Grid row-->\n  \n                <!--Grid row-->\n                <div class=\"row\">\n  \n                    <!--Grid column-->\n                    <div class=\"col-md-12\">\n  \n                        <div class=\"md-form\">\n                            <textarea type=\"text\" id=\"message\" name=\"message\" rows=\"2\" class=\"form-control md-textarea\"></textarea>\n                            <label for=\"message\">Your message</label>\n                        </div>\n  \n                    </div>\n                </div>\n                <!--Grid row-->\n  \n            </form>\n  \n            <div class=\"text-center text-md-left\">\n                <a class=\"btn btn-primary\" onclick=\"document.getElementById('contact-form').submit();\">Send</a>\n            </div>\n            <div class=\"status\"></div>\n        </div>\n        <!--Grid column-->\n  \n        <!--Grid column-->\n        <div class=\"col-md-3 text-center\">\n            <ul class=\"list-unstyled mb-0\">\n                <li><i class=\"fa fa-map-marker fa-2x\"></i>\n                    <p>San Francisco, CA 94126, USA</p>\n                </li>\n  \n                <li><i class=\"fa fa-phone mt-4 fa-2x\"></i>\n                    <p>+ 01 234 567 89</p>\n                </li>\n  \n                <li><i class=\"fa fa-envelope mt-4 fa-2x\"></i>\n                    <p>contact@mdbootstrap.com</p>\n                </li>\n            </ul>\n        </div>\n        <!--Grid column-->\n  \n    </div>\n  \n  </section>\n  <!--Section: Contact v.2-->"
+
+/***/ }),
+
+/***/ "./src/app/landing/contact-us/contact-us.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/landing/contact-us/contact-us.component.ts ***!
+  \************************************************************/
+/*! exports provided: ContactUsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactUsComponent", function() { return ContactUsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ContactUsComponent = /** @class */ (function () {
+    function ContactUsComponent() {
+    }
+    ContactUsComponent.prototype.ngOnInit = function () {
+    };
+    ContactUsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contact-us',
+            template: __webpack_require__(/*! ./contact-us.component.html */ "./src/app/landing/contact-us/contact-us.component.html"),
+            styles: [__webpack_require__(/*! ./contact-us.component.css */ "./src/app/landing/contact-us/contact-us.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ContactUsComponent);
+    return ContactUsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/landing/directory/directory.component.css":
 /*!***********************************************************!*\
   !*** ./src/app/landing/directory/directory.component.css ***!
@@ -4016,7 +4314,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n    <br>\r\n    <br>\r\n    <br>\r\n    <br>\r\n  </div>\r\n  <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n    <div class=\"col-lg-9\">\r\n      <h2>Directory</h2>\r\n      <ol class=\"breadcrumb\">\r\n        <li class=\"breadcrumb-item\">\r\n          <a routerLink=\"/landing/home\">Home</a>\r\n        </li>\r\n        <li class=\"breadcrumb-item\">\r\n          <a #h1Variable></a>\r\n        </li>\r\n      </ol>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<app-navsearch></app-navsearch>\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n\r\n      <!-- <app-navfilter></app-navfilter> -->\r\n\r\n    </div>\r\n    <div class=\"col-md-8\"></div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container\" style=\"margin-top: 90px\">\r\n\r\n  <div class=\"wrapper wrapper-content animated fadeInRight ecommerce\">\r\n\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"ibox-content m-b-sm border-bottom\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"input-group\">\r\n                <input [(ngModel)]=\"searchTerm\" type=\"text\" class=\"form-control\" placeholder=\"Recherche...\">\r\n                <span class=\"input-group-append\">\r\n                  <button (click)=\"search()\" type=\"button\" class=\"btn btn-primary\" style=\"padding-bottom: 0px ;padding-top: 0px\">Recherche</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-4 \">\r\n        <div class=\"col-lg-12 m-b-md\">\r\n\r\n          <small><i class=\"fas fa-search\"></i> Affiner votre recherche par :</small>\r\n        </div>\r\n\r\n\r\n\r\n        <div class=\"col-lg-12 no-paddings no-margins\" style=\"\r\n        padding-left: 0px;\r\n        padding-right: 0px;\">\r\n          <div class=\"panel panel-primary\">\r\n            <div class=\"panel-heading\" (click)=\"isCollapsed1 = !isCollapsed1\"\r\n            [attr.aria-expanded]=\"!isCollapsed1\" aria-controls=\"collapseBasic1\"><i class=\"fas fa-landmark\"></i>\r\n              Collectivité locale :\r\n            </div>\r\n            <div class=\"panel-body\" id=\"collapseBasic1\" [collapse]=\"isCollapsed1\" >\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Categorie</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <ngx-select [allowClear]=\"true\"\r\n                        [items]=\"itemsCategoryLevel\"\r\n                       [disabled]=\"ngxDisabled\"\r\n                        [(ngModel)]=\"Category\"\r\n                       placeholder=\"ex: province ...\">\r\n                       </ngx-select>\r\n                      \r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Region</label>\r\n                    <div class=\"col-sm-8\">\r\n                      <ngx-select [allowClear]=\"true\"\r\n                                  [items]=\"itemsRegion\"\r\n                                 [disabled]=\"ngxDisabled\"\r\n                                 placeholder=\"Regions d'afrique ...\">\r\n                     </ngx-select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Pays</label>\r\n                    <div class=\"col-sm-8\">\r\n                      <ngx-select [allowClear]=\"true\"\r\n                                  [items]=\"itemsPays\"\r\n                                 [disabled]=\"ngxDisabled\"\r\n                                 placeholder=\"Choisir une pays ...\">\r\n                     </ngx-select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Nombre des Femmes élus</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"...\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">N mambres du conseil</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"...\">\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-12 no-paddings no-margins\" style=\"\r\n        padding-left: 0px;\r\n        padding-right: 0px;\">\r\n          <div class=\"panel panel-info\">\r\n              <div class=\"panel-heading\" (click)=\"isCollapsed2 = !isCollapsed2\"\r\n              [attr.aria-expanded]=\"!isCollapsed2\" aria-controls=\"collapseBasic2\"><i class=\"fas fa-user-circle\"></i>\r\n              Personne :\r\n            </div>\r\n            <div class=\"panel-body\" id=\"collapseBasic2\" [collapse]=\"isCollapsed2\">\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Profile</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <ngx-select [allowClear]=\"true\"\r\n                        [items]=\"itemsProfil\"\r\n                       [disabled]=\"ngxDisabled\"\r\n                        [(ngModel)]=\"Category\"\r\n                       placeholder=\"ex: Ministre ...\">\r\n                       </ngx-select>\r\n                      \r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">L'institution d'appartenance</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <ngx-select [allowClear]=\"true\"\r\n                        [items]=\"itemsInstitution\"\r\n                       [disabled]=\"ngxDisabled\"\r\n                        [(ngModel)]=\"Category\"\r\n                       placeholder=\"ex: uclga ...\">\r\n                       </ngx-select>\r\n                      \r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Age</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"ex: 29 ans ...\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Genre</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <div class=\"input-group\">\r\n                            <select class=\"custom-select\" id=\"inputGroupSelect02\">\r\n                              <option selected></option>\r\n                              <option value=\"1\">Femme</option>\r\n                              <option value=\"2\">Homme</option>\r\n                            </select>\r\n                          </div>\r\n                   </div>                        \r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Status</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <div class=\"input-group\">\r\n                            <select class=\"custom-select\" id=\"inputGroupSelect02\">\r\n                              <option selected></option>\r\n                              <option value=\"1\">Nommé</option>\r\n                              <option value=\"2\">Elu</option>\r\n                            </select>\r\n                          </div>\r\n                   </div>                        \r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Fonction</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <ngx-select [allowClear]=\"true\"\r\n                        [items]=\"itemsFonction\"\r\n                       [disabled]=\"ngxDisabled\"\r\n                        [(ngModel)]=\"Category\"\r\n                       placeholder=\"ex: Directeur Technique ...\">\r\n                       </ngx-select>\r\n                      \r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Region</label>\r\n                    <div class=\"col-sm-8\">\r\n                      <ngx-select [allowClear]=\"true\"\r\n                                  [items]=\"itemsRegion\"\r\n                                 [disabled]=\"ngxDisabled\"\r\n                                 placeholder=\"Regions d'afrique ...\">\r\n                     </ngx-select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Pays</label>\r\n                    <div class=\"col-sm-8\">\r\n                      <ngx-select [allowClear]=\"true\"\r\n                                  [items]=\"itemsPays\"\r\n                                 [disabled]=\"ngxDisabled\"\r\n                                 placeholder=\"Choisir une pays ...\">\r\n                     </ngx-select>\r\n                    </div>\r\n                </div>\r\n\r\n\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-12 no-paddings no-margins\" style=\"\r\n        padding-left: 0px;\r\n        padding-right: 0px;\">\r\n          <div class=\"panel panel-default\">\r\n              <div class=\"panel-heading\" (click)=\"isCollapsed3 = !isCollapsed3\"\r\n              [attr.aria-expanded]=\"!isCollapsed3\" aria-controls=\"collapseBasic3\"><i class=\"fas fa-building\"></i>\r\n              Institution\r\n            </div>\r\n            <div class=\"panel-body\" id=\"collapseBasic3\" [collapse]=\"isCollapsed3\" >\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Categorie</label>\r\n                    <div class=\"col-sm-8\">\r\n                        <ngx-select [allowClear]=\"true\"\r\n                        [items]=\"itemsCategoryLevel\"\r\n                       [disabled]=\"ngxDisabled\"\r\n                        [(ngModel)]=\"Category\"\r\n                       placeholder=\"ex: Organisation x ...\">\r\n                       </ngx-select>\r\n                      \r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Region</label>\r\n                    <div class=\"col-sm-8\">\r\n                      <ngx-select [allowClear]=\"true\"\r\n                                  [items]=\"itemsRegion\"\r\n                                 [disabled]=\"ngxDisabled\"\r\n                                 placeholder=\"Regions d'afrique ...\">\r\n                     </ngx-select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label class=\"col-sm-4 col-form-label\">Pays</label>\r\n                    <div class=\"col-sm-8\">\r\n                      <ngx-select [allowClear]=\"true\"\r\n                                  [items]=\"itemsPays\"\r\n                                 [disabled]=\"ngxDisabled\"\r\n                                 placeholder=\"Choisir une pays ...\">\r\n                     </ngx-select>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n      <div class=\"col-lg-8\">\r\n        <div class=\"ibox \">\r\n          <div class=\"ibox-content no-border-top\">\r\n            <h2 *ngIf=\"resultsCounts\">\r\n              {{ counts }} résultats trouvés pour: <span class=\"text-navy\"> {{ searchTerm }} </span>\r\n            </h2>\r\n            <!-- <small *ngIf=\"results.length > 0\">Request time (0.23 seconds)</small> -->\r\n\r\n            <h2 *ngIf=\"!resultsCounts \">\r\n              Pas résultats trouvés pour: <span class=\"text-navy\">“ {{ searchTerm }}”</span>\r\n            </h2>\r\n\r\n            <!-- levels -->\r\n            <div *ngFor=\"let level of levelsResults \">\r\n\r\n\r\n              <div class=\"hr-line-dashed\"></div>\r\n              <div class=\"search-result\">\r\n\r\n                <h3><a>{{level.properties.category}} {{ level.properties.name}}</a></h3>\r\n                <a href=\"#\" class=\"search-link\">www.inspinia.com/inspinia</a>\r\n\r\n                <h3><a (click)=\"goToLevelProfil( level.properties.id)\">{{ level.properties.category +' '+\r\n                    level.properties.name}}</a></h3>\r\n                <a class=\"search-link\">{{ level.properties.name }}</a>\r\n                <p>\r\n                  Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model\r\n                  text,\r\n                  and a\r\n\r\n                  purpose (injected humour and the like).\r\n                </p>\r\n\r\n\r\n                <app-country-map *ngIf=\"level\" [country]=\"level\" ></app-country-map>\r\n\r\n              </div>\r\n\r\n            </div>\r\n            <!-- persons -->\r\n            <div *ngFor=\"let person of personsResults\">\r\n\r\n\r\n              <div class=\"hr-line-dashed\"></div>\r\n              <div class=\"search-result\">\r\n                <h3><a (click)=\"goToPersonProfil(person.id)\">{{ person.first_name + ' '+ person.last_name}}</a></h3>\r\n                <a (click)=\"goToPersonProfil(person.id)\" class=\"search-link\">{{ person.email}}</a>\r\n\r\n                <div class=\"feed-element\">\r\n                  <a class=\"float-left\" href=\"profile.html\">\r\n                    <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/p5.jpg\">\r\n                  </a>\r\n                  <div class=\"media-body \">\r\n\r\n                    <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>\r\n                    <small class=\"text-muted\">Today 2:10 pm - 12.06.2014</small>\r\n                  </div>\r\n                </div>\r\n\r\n              </div>\r\n\r\n            </div>\r\n\r\n\r\n\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n\r\n\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4032,6 +4330,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectoryComponent", function() { return DirectoryComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var src_app_services_directory_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/directory.service */ "./src/app/services/directory.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4043,11 +4343,83 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+
 var DirectoryComponent = /** @class */ (function () {
-    function DirectoryComponent(http) {
+    // filtredCategory= [];
+    // private _Category: String;
+    //   get Category(): String {
+    //     return this._Category;
+    //   }
+    //   set Category(value: String) {
+    //     this._Category = value;
+    //    this.filtredCategory = this.filterbyCategory(value);
+    //   }
+    //   filterbyCategory(searchString: String) {
+    //     if (searchString === null) {
+    //       this.filtredCategory = this.results['levels'];
+    //     } else {
+    //       return this.results['levels'].filter(
+    //         levels =>
+    //           levels.properties.category.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
+    //       );
+    //     }
+    //   }
+    function DirectoryComponent(http, _directoryService, _router) {
         this.http = http;
+        this._directoryService = _directoryService;
+        this._router = _router;
+        this.isCollapsed1 = false;
+        this.isCollapsed2 = true;
+        this.isCollapsed3 = true;
+        this.results = [];
+        this.levelsResults = [];
+        this.personsResults = [];
+        this.resultsCounts = false;
+        this.counts = null;
+        this.searchTerm = null;
+        // get searchTerm(): String {
+        //   return this._searchTerm;
+        // }
+        // set searchTerm(value: String) {
+        //   this._searchTerm = value;
+        //   this.search();
+        // }
+        // input elements
+        this.itemsProfil = ['directeur', 'Maire', 'secretaire', 'adjoint', 'Technicien'];
+        this.itemsRegion = ['Afrique du nord',
+            'Afrique de l\'est',
+            'Afrique centrale',
+            'Afrique occidentale',
+            'Afrique du sud'];
+        this.itemsPays = [];
+        this.itemsCategoryLevel = ['province', 'region', 'commun'];
+        // public ngxValue: any = [];
+        this.ngxDisabled = false;
     }
     DirectoryComponent.prototype.ngOnInit = function () {
+    };
+    DirectoryComponent.prototype.search = function () {
+        var _this = this;
+        this._directoryService.getData(this.searchTerm).subscribe(function (data) {
+            _this.results = data.data;
+            _this.levelsResults = _this.results['levels'];
+            console.log(_this.levelsResults);
+            _this.personsResults = _this.results['persons'];
+            if (_this.levelsResults.length > 0 || _this.personsResults.length > 0) {
+                _this.resultsCounts = true;
+                _this.counts = _this.levelsResults.length + _this.personsResults.length;
+            }
+            else if (_this.levelsResults.length < 0 && _this.personsResults.length < 0) {
+                _this.resultsCounts = false;
+            }
+        }, function (error) { console.log(error); });
+    };
+    DirectoryComponent.prototype.goToPersonProfil = function (id) {
+        this._router.navigate(['landing/profile-person', id]);
+    };
+    DirectoryComponent.prototype.goToLevelProfil = function (id) {
+        this._router.navigate(['landing/profile-local-government', id]);
     };
     DirectoryComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -4055,7 +4427,9 @@ var DirectoryComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./directory.component.html */ "./src/app/landing/directory/directory.component.html"),
             styles: [__webpack_require__(/*! ./directory.component.css */ "./src/app/landing/directory/directory.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
+            src_app_services_directory_service__WEBPACK_IMPORTED_MODULE_2__["DirectoryService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], DirectoryComponent);
     return DirectoryComponent;
 }());
@@ -4334,7 +4708,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"home\">\r\n  <app-slider-section></app-slider-section>\r\n\r\n\r\n\r\n\r\n  <div class=\"container\">\r\n      <app-statistc-map (messageEvent)=\"getOnclickObject($event)\"></app-statistc-map>\r\n  </div>\r\n  <!-- <app-features-section></app-features-section> -->\r\n\r\n\r\n\r\n\r\n  <!-- <app-pricing-section></app-pricing-section> -->\r\n</div>\r\n"
+module.exports = "<div id=\"home\">\r\n  <app-slider-section></app-slider-section>\r\n\r\n\r\n\r\n\r\n  <div class=\"container\" id=\"maps\">\r\n      <app-statistc-map (messageEvent)=\"getOnclickObject($event)\"></app-statistc-map>\r\n  </div>\r\n\r\n\r\n\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4397,7 +4771,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navbar-wrapper\">\r\n  <nav class=\"navbar navbar-default navbar-fixed-top navbar-expand-md\" role=\"navigation\">\r\n    <div class=\"container\">\r\n      <a routerLink=\"/landing/home\"><img height=\"55\" width=\"240\" src=\"assets/img/logo-ucgl.png\" alt=\"UCLGA\" class=\"img-fluid\"></a>\r\n      <!-- <a routerLink=\"/landing/home\"><img height=\"55\" width=\"240\" src=\"assets/img/logo-ucgl.png\" alt=\"UCLGA\"></a> -->\r\n\r\n      <div class=\"navbar-header page-scroll\">\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar\">\r\n          <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n      </div>\r\n      <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbar\">\r\n        <ul class=\"nav navbar-nav \">\r\n          <li><a class=\"nav-link\" pageScroll routerLink=\"/landing/home\" routerLinkActive=\"active\" href=\"#home\">HOME</a></li>\r\n          <li><a class=\"nav-link\" pageScroll routerLink=\"/landing/home\" href=\"#maps\">MAPS</a></li>\r\n          <li><a class=\"nav-link\" pageScroll routerLink=\"/landing/directory\" routerLinkActive=\"active\">DIRECTORY</a></li>\r\n          <li><a class=\"nav-link\" pageScroll routerLink=\"/landing/transparency\" routerLinkActive=\"active\">TRANSPARENCY</a></li>\r\n          <li><a class=\"nav-link\" pageScroll routerLink=\"/landing/statistic\" routerLinkActive=\"active\" href=\"#statistic\">STATISTICS</a></li>\r\n          <li><a class=\"nav-link\" pageScroll routerLinkActive=\"active\" href=\"#partners\">Partners</a></li>\r\n          <li><a class=\"nav-link\" pageScroll routerLinkActive=\"active\" href=\"#contact\">Contact</a></li>\r\n          <li *ngIf=\"loggedIn\"><a class=\"nav-link page-scroll\" (click)=\"goToAdmin()\">Admin</a></li>\r\n          <li *ngIf=\"!loggedIn\"><a class=\"nav-link page-scroll\" (click)=\"goToLogin()\">Login</a></li>\r\n          <li *ngIf=\"!loggedIn\"><a class=\"nav-link page-scroll\" (click)=\"goToSignup()\">SignUp</a></li>\r\n\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n</div>\r\n"
+module.exports = "<div class=\"navbar-wrapper\">\r\n  <nav class=\"navbar navbar-default navbar-fixed-top navbar-expand-md\" role=\"navigation\">\r\n    <div class=\"container\">\r\n      <a routerLink=\"/landing/home\"><img height=\"55\" width=\"240\" src=\"assets/img/logo-ucgl.png\" alt=\"UCLGA\" class=\"img-fluid\"></a>\r\n      <!-- <a routerLink=\"/landing/home\"><img height=\"55\" width=\"240\" src=\"assets/img/logo-ucgl.png\" alt=\"UCLGA\"></a> -->\r\n\r\n      <div class=\"navbar-header page-scroll\">\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar\">\r\n          <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n      </div>\r\n      <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbar\">\r\n        <ul class=\"nav navbar-nav \">\r\n          <li><a class=\"nav-link text-uppercase\" pageScroll routerLink=\"/landing/home\" routerLinkActive=\"active\" href=\"#home\">HOME</a></li>\r\n          <li><a class=\"nav-link text-uppercase\" pageScroll routerLink=\"/landing/home\" href=\"#maps\">MAPS</a></li>\r\n          <li><a class=\"nav-link text-uppercase\" pageScroll routerLink=\"/landing/directory\" routerLinkActive=\"active\">répertoire</a></li>\r\n          <li><a class=\"nav-link text-uppercase\" pageScroll routerLink=\"/landing/transparency\" routerLinkActive=\"active\">TRANSPARENCE</a></li>\r\n          <li><a class=\"nav-link text-uppercase\" pageScroll routerLink=\"/landing/statistic\" routerLinkActive=\"active\" href=\"#statistic\">STATISTIQUES</a></li>\r\n          <!-- <li><a class=\"nav-link\" pageScroll routerLinkActive=\"active\" href=\"#partners\">Partners</a></li> -->\r\n          <li><a class=\"nav-link text-uppercase\" pageScroll routerLinkActive=\"active\" href=\"#contact\">Contact</a></li>\r\n          <li *ngIf=\"loggedIn\"><a class=\"nav-link page-scroll text-uppercase\" (click)=\"goToAdmin()\">Admin</a></li>\r\n          <li *ngIf=\"!loggedIn\"><a class=\"nav-link page-scroll text-uppercase\" (click)=\"goToLogin()\">Login</a></li>\r\n          <li *ngIf=\"!loggedIn\"><a class=\"nav-link page-scroll text-uppercase\" (click)=\"goToSignup()\">SignUp</a></li>\r\n\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4666,17 +5040,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _directory_directory_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./directory/directory.component */ "./src/app/landing/directory/directory.component.ts");
 /* harmony import */ var _directory_navsearch_navsearch_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./directory/navsearch/navsearch.component */ "./src/app/landing/directory/navsearch/navsearch.component.ts");
 /* harmony import */ var _transparency_transparency_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./transparency/transparency.component */ "./src/app/landing/transparency/transparency.component.ts");
-/* harmony import */ var _directory_navfilter_navfilter_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./directory/navfilter/navfilter.component */ "./src/app/landing/directory/navfilter/navfilter.component.ts");
-/* harmony import */ var _profil_person_profil_person_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./profil-person/profil-person.component */ "./src/app/landing/profil-person/profil-person.component.ts");
-/* harmony import */ var _profile_local_profile_local_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./profile-local/profile-local.component */ "./src/app/landing/profile-local/profile-local.component.ts");
-/* harmony import */ var _statistic_local_government_local_government_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./statistic/local-government/local-government.component */ "./src/app/landing/statistic/local-government/local-government.component.ts");
-/* harmony import */ var _statistic_localy_elected_localy_elected_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./statistic/localy-elected/localy-elected.component */ "./src/app/landing/statistic/localy-elected/localy-elected.component.ts");
-/* harmony import */ var _statistic_general_statistics_general_statistics_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./statistic/general-statistics/general-statistics.component */ "./src/app/landing/statistic/general-statistics/general-statistics.component.ts");
-/* harmony import */ var _statistic_development_partners_development_partners_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./statistic/development-partners/development-partners.component */ "./src/app/landing/statistic/development-partners/development-partners.component.ts");
-/* harmony import */ var _landing_nav_landing_nav_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./landing-nav/landing-nav.component */ "./src/app/landing/landing-nav/landing-nav.component.ts");
-/* harmony import */ var _shared_modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../shared/modal-select-country/modal-select-country.component */ "./src/app/shared/modal-select-country/modal-select-country.component.ts");
-/* harmony import */ var _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! @swimlane/ngx-charts */ "./node_modules/@swimlane/ngx-charts/release/esm.js");
-/* harmony import */ var _statistic_country_statistic_country_statistic_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./statistic/country-statistic/country-statistic.component */ "./src/app/landing/statistic/country-statistic/country-statistic.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var ngx_select_ex__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ngx-select-ex */ "./node_modules/ngx-select-ex/fesm5/ngx-select-ex.js");
+/* harmony import */ var ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ngx-bootstrap/pagination */ "./node_modules/ngx-bootstrap/pagination/fesm5/ngx-bootstrap-pagination.js");
+/* harmony import */ var _directory_navfilter_navfilter_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./directory/navfilter/navfilter.component */ "./src/app/landing/directory/navfilter/navfilter.component.ts");
+/* harmony import */ var _profil_person_profil_person_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./profil-person/profil-person.component */ "./src/app/landing/profil-person/profil-person.component.ts");
+/* harmony import */ var _profile_local_profile_local_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./profile-local/profile-local.component */ "./src/app/landing/profile-local/profile-local.component.ts");
+/* harmony import */ var _statistic_local_government_local_government_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./statistic/local-government/local-government.component */ "./src/app/landing/statistic/local-government/local-government.component.ts");
+/* harmony import */ var _statistic_localy_elected_localy_elected_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./statistic/localy-elected/localy-elected.component */ "./src/app/landing/statistic/localy-elected/localy-elected.component.ts");
+/* harmony import */ var _statistic_general_statistics_general_statistics_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./statistic/general-statistics/general-statistics.component */ "./src/app/landing/statistic/general-statistics/general-statistics.component.ts");
+/* harmony import */ var _statistic_development_partners_development_partners_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./statistic/development-partners/development-partners.component */ "./src/app/landing/statistic/development-partners/development-partners.component.ts");
+/* harmony import */ var _landing_nav_landing_nav_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./landing-nav/landing-nav.component */ "./src/app/landing/landing-nav/landing-nav.component.ts");
+/* harmony import */ var _shared_modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../shared/modal-select-country/modal-select-country.component */ "./src/app/shared/modal-select-country/modal-select-country.component.ts");
+/* harmony import */ var _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @swimlane/ngx-charts */ "./node_modules/@swimlane/ngx-charts/release/esm.js");
+/* harmony import */ var _statistic_country_statistic_country_statistic_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./statistic/country-statistic/country-statistic.component */ "./src/app/landing/statistic/country-statistic/country-statistic.component.ts");
+/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/landing/contact-us/contact-us.component.ts");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4686,6 +5065,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // import { ModalSelectCountryComponent } from './../shared/modal-select-country/modal-select-country.component';
+
+
+
 
 
 
@@ -4723,23 +5105,29 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var LandingModule = /** @class */ (function () {
     function LandingModule() {
     }
     LandingModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             imports: [
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_42__["CollapseModule"].forRoot(),
+                ngx_select_ex__WEBPACK_IMPORTED_MODULE_28__["NgxSelectModule"],
                 _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"],
                 _landing_routing_module__WEBPACK_IMPORTED_MODULE_6__["LandingRoutingModule"],
                 ngx_page_scroll__WEBPACK_IMPORTED_MODULE_17__["NgxPageScrollModule"],
                 ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__["AccordionModule"].forRoot(),
-                _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_36__["NgxChartsModule"],
+                _swimlane_ngx_charts__WEBPACK_IMPORTED_MODULE_39__["NgxChartsModule"],
                 _maps_maps_module__WEBPACK_IMPORTED_MODULE_1__["MapsModule"],
-                angular_datatables__WEBPACK_IMPORTED_MODULE_0__["DataTablesModule"]
+                angular_datatables__WEBPACK_IMPORTED_MODULE_0__["DataTablesModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_27__["FormsModule"],
+                ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_29__["PaginationModule"]
             ],
             declarations: [
                 _landing_component__WEBPACK_IMPORTED_MODULE_7__["LandingComponent"],
-                _landing_nav_landing_nav_component__WEBPACK_IMPORTED_MODULE_34__["LandingNavComponent"],
+                _landing_nav_landing_nav_component__WEBPACK_IMPORTED_MODULE_37__["LandingNavComponent"],
                 _comments_section_comments_section_component__WEBPACK_IMPORTED_MODULE_8__["CommentsSectionComponent"],
                 _contact_section_contact_section_component__WEBPACK_IMPORTED_MODULE_9__["ContactSectionComponent"],
                 _features_section_features_section_component__WEBPACK_IMPORTED_MODULE_10__["FeaturesSectionComponent"],
@@ -4758,18 +5146,19 @@ var LandingModule = /** @class */ (function () {
                 _directory_directory_component__WEBPACK_IMPORTED_MODULE_24__["DirectoryComponent"],
                 _directory_navsearch_navsearch_component__WEBPACK_IMPORTED_MODULE_25__["NavsearchComponent"],
                 _transparency_transparency_component__WEBPACK_IMPORTED_MODULE_26__["TransparencyComponent"],
-                _directory_navfilter_navfilter_component__WEBPACK_IMPORTED_MODULE_27__["NavfilterComponent"],
+                _directory_navfilter_navfilter_component__WEBPACK_IMPORTED_MODULE_30__["NavfilterComponent"],
                 _transparency_indicator_indicator_component__WEBPACK_IMPORTED_MODULE_2__["IndicatorComponent"],
-                _profil_person_profil_person_component__WEBPACK_IMPORTED_MODULE_28__["ProfilPersonComponent"],
-                _profile_local_profile_local_component__WEBPACK_IMPORTED_MODULE_29__["ProfileLocalComponent"],
-                _statistic_local_government_local_government_component__WEBPACK_IMPORTED_MODULE_30__["LocalGovernmentComponent"],
-                _statistic_localy_elected_localy_elected_component__WEBPACK_IMPORTED_MODULE_31__["LocalyElectedComponent"],
-                _statistic_general_statistics_general_statistics_component__WEBPACK_IMPORTED_MODULE_32__["GeneralStatisticsComponent"],
-                _statistic_development_partners_development_partners_component__WEBPACK_IMPORTED_MODULE_33__["DevelopmentPartnersComponent"],
-                _statistic_country_statistic_country_statistic_component__WEBPACK_IMPORTED_MODULE_37__["CountryStatisticComponent"],
+                _profil_person_profil_person_component__WEBPACK_IMPORTED_MODULE_31__["ProfilPersonComponent"],
+                _profile_local_profile_local_component__WEBPACK_IMPORTED_MODULE_32__["ProfileLocalComponent"],
+                _statistic_local_government_local_government_component__WEBPACK_IMPORTED_MODULE_33__["LocalGovernmentComponent"],
+                _statistic_localy_elected_localy_elected_component__WEBPACK_IMPORTED_MODULE_34__["LocalyElectedComponent"],
+                _statistic_general_statistics_general_statistics_component__WEBPACK_IMPORTED_MODULE_35__["GeneralStatisticsComponent"],
+                _statistic_development_partners_development_partners_component__WEBPACK_IMPORTED_MODULE_36__["DevelopmentPartnersComponent"],
+                _statistic_country_statistic_country_statistic_component__WEBPACK_IMPORTED_MODULE_40__["CountryStatisticComponent"],
+                _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_41__["ContactUsComponent"],
             ],
             entryComponents: [
-                _shared_modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_35__["ModalSelectCountryComponent"]
+                _shared_modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_38__["ModalSelectCountryComponent"]
             ]
         })
     ], LandingModule);
@@ -4924,7 +5313,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" id=\"profile_person\">\r\n        <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n          <div class=\"\">\r\n            <h2><br></h2>\r\n            <h2><br></h2>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"container\">\r\n        <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n          <div class=\"col-lg-9\">\r\n            <h2>Profile</h2>\r\n            <ol class=\"breadcrumb\">\r\n              <li class=\"breadcrumb-item\">\r\n                <a routerLink=\"\">Home / profile</a>\r\n              </li>\r\n              <li class=\"breadcrumb-item\">\r\n                <a #h1Variable></a>\r\n              </li>\r\n            </ol>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n    <div class=\"col-md\">\r\n            <div class=\"ibox selected\">\r\n    \r\n                <div class=\"ibox-content\">\r\n                    <div class=\"tab-content\">\r\n                        <div id=\"contact-1\" class=\"tab-pane active\">\r\n                            <div class=\"row m-b-lg\">\r\n                                <div class=\"col-lg-4 text-center\">\r\n                                    <h2>{{person?.first_name}} {{person?.last_name}}</h2>\r\n    \r\n                                    <div class=\"m-b-sm\">\r\n                                        <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/landing/ad.png\"\r\n                                             style=\"width: 120px\">\r\n                                    </div>\r\n                                    <strong>Secretaire</strong>\r\n                                </div>\r\n                                <div class=\"col-lg-8\">\r\n                                    <strong>\r\n                                        Biographie\r\n                                    </strong>\r\n    \r\n                                    <p>\r\n                                        {{person?.short_biography}}\r\n                                    </p>\r\n                                    <a href=\"mailto:{{person?.email}}\">\r\n                                    <button type=\"button\" class=\"btn btn-primary btn-sm btn-block\" ><i\r\n                                            class=\"fa fa-envelope\"></i> Envoyez Message\r\n                                    </button>\r\n                                </a>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"client-detail\">\r\n                            <div class=\"full-height-scroll\">\r\n    \r\n                                <strong><i class=\"fa fa-user\"></i> Informations Personnelle  : </strong>\r\n    \r\n                                <ul class=\"list-group clear-list\">\r\n                                    <li class=\"list-group-item fist-item\">\r\n                                        <span class=\"float-right\"> {{person?.nationality}} </span>\r\n                                        Nationalité\r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.birthday}}</span>\r\n                                        Date de naissance \r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.email}}</span>\r\n                                        Email\r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.number_phone}}</span>\r\n                                        Tél  \r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.academic_level}} </span>\r\n                                        Niveau Acadimique\r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\">  {{person?.study_area}} </span>\r\n                                        Domaine d'etude\r\n                                    </li>\r\n                                </ul>\r\n                                <strong>Plus</strong>\r\n                                <p>\r\n                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n                                    tempor incididunt ut labore et dolore magna aliqua.\r\n                                </p>\r\n                                <hr/>\r\n                                <strong>Professional Infos</strong>\r\n                                <div id=\"vertical-timeline\" class=\"vertical-container dark-timeline\">\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-institution\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Statut (élu ou Nommé) : Elu\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Mandat : 07/2015 - 07/2020 </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-briefcase\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Fonction : Maire\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Organe : Municipalite de Rabat </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-calendar\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Le Premier Mandat  : 1999\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Ancien Elu </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon navy-bg\">\r\n                                            <i class=\"fa fa-history\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <strong>Mandates Precedents .\r\n                                            </strong>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-briefcase\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Fonction : Maire à Municipalite  Rabat\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Periode : 1999-2004 </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-briefcase\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Many desktop publishing packages and web page editors now use Lorem.\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> 4:20 pm - 10.05.2014 </span>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            </div>\r\n                        </div>\r\n                        \r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>"
+module.exports = "<div class=\"container\" id=\"profile_person\">\r\n        <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n          <div class=\"\">\r\n            <h2><br></h2>\r\n            <h2><br></h2>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"container\">\r\n        <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n          <div class=\"col-lg-9\">\r\n            <h2 class=\"text-uppercase\">Profile</h2>\r\n            <ol class=\"breadcrumb\">\r\n              <li class=\"breadcrumb-item\">\r\n                <a routerLink=\"\">Home / profile</a>\r\n              </li>\r\n              <li class=\"breadcrumb-item\">\r\n                <a #h1Variable></a>\r\n              </li>\r\n            </ol>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n    <div class=\"col-md\">\r\n            <div class=\"ibox selected\">\r\n    \r\n                <div class=\"ibox-content\">\r\n                    <div class=\"tab-content\">\r\n                        <div id=\"contact-1\" class=\"tab-pane active\">\r\n                            <div class=\"row m-b-lg\">\r\n                                <div class=\"col-lg-4 text-center\">\r\n                                    <h2>{{person?.first_name}} {{person?.last_name}}</h2>\r\n    \r\n                                    <div class=\"m-b-sm\">\r\n                                        <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/landing/ad.png\"\r\n                                             style=\"width: 120px\">\r\n                                    </div>\r\n                                    <strong>Secretaire</strong>\r\n                                </div>\r\n                                <div class=\"col-lg-8\">\r\n                                    <strong>\r\n                                        Biographie\r\n                                    </strong>\r\n    \r\n                                    <p>\r\n                                        {{person?.short_biography}}\r\n                                    </p>\r\n                                    <a href=\"mailto:{{person?.email}}\">\r\n                                    <button type=\"button\" class=\"btn btn-primary btn-sm btn-block\" ><i\r\n                                            class=\"fa fa-envelope\"></i> Envoyez Message\r\n                                    </button>\r\n                                </a>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"client-detail\">\r\n                            <div class=\"full-height-scroll\">\r\n    \r\n                                <strong><i class=\"far fa-id-card\"></i> Informations Personnelle  : </strong>\r\n    \r\n                                <ul class=\"list-group clear-list\">\r\n                                    <li class=\"list-group-item fist-item\">\r\n                                        <span class=\"float-right\"> {{person?.nationality}} </span>\r\n                                        Nationalité\r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.birthday}}</span>\r\n                                        Date de naissance \r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.email}}</span>\r\n                                        Email\r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.number_phone}}</span>\r\n                                        Tél  \r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\"> {{person?.academic_level}} </span>\r\n                                        Niveau Acadimique\r\n                                    </li>\r\n                                    <li class=\"list-group-item\">\r\n                                        <span class=\"float-right\">  {{person?.study_area}} </span>\r\n                                        Domaine d'etude\r\n                                    </li>\r\n                                </ul>\r\n                                <strong>Plus</strong>\r\n                                <p>\r\n                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n                                    tempor incididunt ut labore et dolore magna aliqua.\r\n                                </p>\r\n                                <hr/>\r\n                                <strong>Professional Infos</strong>\r\n                                <div id=\"vertical-timeline\" class=\"vertical-container dark-timeline\">\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-institution\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Statut (élu ou Nommé) : Elu\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Mandat : 07/2015 - 07/2020 </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-briefcase\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Fonction : Maire\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Organe : Municipalite de Rabat </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-calendar\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Le Premier Mandat  : 1999\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Ancien Elu </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon navy-bg\">\r\n                                            <i class=\"fa fa-history\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <strong>Mandates Precedents .\r\n                                            </strong>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-briefcase\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Fonction : Maire à Municipalite  Rabat\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> Periode : 1999-2004 </span>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"vertical-timeline-block\">\r\n                                        <div class=\"vertical-timeline-icon gray-bg\">\r\n                                            <i class=\"fa fa-briefcase\"></i>\r\n                                        </div>\r\n                                        <div class=\"vertical-timeline-content\">\r\n                                            <p>Many desktop publishing packages and web page editors now use Lorem.\r\n                                            </p>\r\n                                            <span class=\"vertical-date small text-muted\"> 4:20 pm - 10.05.2014 </span>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            </div>\r\n                        </div>\r\n                        \r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>"
 
 /***/ }),
 
@@ -5122,7 +5511,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"statistic\" class=\"container\" style=\"margin-top: 130px; margin-bottom: 10px\">\r\n  <div class=\"row\">\r\n    <!-- profile details -->\r\n    <div class=\"col-lg-4\">\r\n      <div class=\"ibox border\">\r\n        <div class=\"ibox-title\">\r\n          <h3>{{level?.properties.category}} {{ level?.properties.name }}</h3>\r\n          <div class=\"hr-line-dashed\"></div>\r\n        </div>\r\n        <div>\r\n          <div class=\"ibox-content no-padding border-left-right\">\r\n\r\n            <!-- <app-country-map *ngIf=\"level\" [country]=\"level\"></app-country-map> -->\r\n            <app-level-map *ngIf=\"level\" [levelHoverName]=\"levelHoverName\" [levelInput]=\"level\"></app-level-map>\r\n          </div>\r\n          <div class=\"ibox-content profile-content\">\r\n            <p><i class=\"fa fa-bank\"></i><strong> {{level?.properties.category}}</strong></p>\r\n            <p><i class=\"fa fa-map-marker\"></i> Pays : {{level?.properties.country}} <br> Region :\r\n              {{level?.properties.region}} </p>\r\n            <p><i class=\"fa fa-envelope-open-o\" aria-hidden=\"true\"></i> {{level?.properties.email}} </p>\r\n            <p><i class=\"fa fa-phone-square\"></i> TEL / FAX : {{level?.properties.number_phone}} </p>\r\n            <p><i class=\"fa fa-globe\"></i> {{level?.properties.web_site}} </p>\r\n            <h5> Adress :</h5><address>{{level?.properties.address}}</address>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-6\">\r\n            <div class=\"ibox\">\r\n              <div class=\"ibox-content\">\r\n                <h5>Population:</h5>\r\n                <h3 class=\"no-margins\">{{level?.properties.population}} Hbt</h3>\r\n                <!-- <h5>Densité:</h5>\r\n                            <h4 class=\"no-margins\">3600 Hbt/Km²</h4> -->\r\n                <div class=\"stat-percent font-bold text-navy\">{{level?.properties.date_population}}</div>\r\n                <small>Year</small>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-lg-6\">\r\n            <div class=\"ibox\">\r\n              <div class=\"ibox-content\">\r\n                <h5>Surface</h5>\r\n                <h3 class=\"no-margins\">117Km²</h3>\r\n                <div class=\"stat-percent font-bold text-navy\">36% <i class=\"fa fa-bolt\"></i></div>\r\n                <small>% Urbain</small>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!-- fin profile details -->\r\n    <div class=\"col-lg-8\">\r\n      <div class=\"tabs-container\">\r\n        <ul class=\"nav nav-tabs\" role=\"tablist\">\r\n          <!-- under local government -->\r\n          <li><a class=\"nav-link active show\" data-toggle=\"tab\" href=\"#tab-1\"> COLLECTIVITES LOCALS</a></li>\r\n          <!-- fin  -->\r\n          <!-- membres and leaderships -->\r\n          <li><a class=\"nav-link\" data-toggle=\"tab\" href=\"#tab-2\">MEMBRES ET LEADERSHIPS </a></li>\r\n          <!-- generale information -->\r\n          <li><a class=\"nav-link\" data-toggle=\"tab\" href=\"#tab-3\"> INFORMATION GENERAL</a></li>\r\n        </ul>\r\n        <div class=\"tab-content\">\r\n          <!-- tab levels -->\r\n          <div role=\"tabpanel\" id=\"tab-1\" class=\"tab-pane active show\">\r\n            <div class=\"panel-body\">\r\n              <div class=\"container\">\r\n                <!-- table levels -->\r\n                <h2><i _ngcontent-c11=\"\" class=\"fa fa-bank\"></i> {{level?.properties.category_level | uppercase}} {{\r\n                  level?.properties.name | uppercase }}\r\n                </h2>\r\n                <div class=\"row\">\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-title\">\r\n                        <div class=\"d-flex justify-content-between col-12\">\r\n                          <h4>LES SOUS {{level?.properties.category_level | uppercase}}</h4>\r\n                        </div>\r\n                      </div>\r\n                      <div class=\"ibox-content\">\r\n                        <div class=\"row\">\r\n                          <div class=\"col-md-12\">\r\n                            <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerLevels\" class=\"table table-hover\">\r\n                              <thead>\r\n                                <tr>\r\n                                  <th> Name</th>\r\n                                  <th> Categorie</th>\r\n                                  <th> Email</th>\r\n                                  <th> Tél</th>\r\n\r\n                                </tr>\r\n                              </thead>\r\n                              <tbody>\r\n                                <tr *ngFor=\"let level of levels ; let i = index\" (mouseenter)=\"onMouseEnterTR(level.properties.name  , i)\"\r\n                                  (mouseleave)=\"onMouseLeaveTR(level.properties.id)\">\r\n                                  <td>{{level?.properties.name}}</td>\r\n                                  <td>{{level?.properties.category}}</td>\r\n                                  <td>{{level?.properties.email}}</td>\r\n                                  <td>{{level?.properties.number_phone}}</td>\r\n\r\n                                </tr>\r\n                              </tbody>\r\n                            </table>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n\r\n\r\n                <!--fin tab levels -->\r\n\r\n                <!-- statistiques profile-->\r\n\r\n                <div class=\"row\">\r\n                  <div class=\"col-lg-4\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content\">\r\n                        <h5>Nombre de collectivités inclus</h5>\r\n                        <h2>{{level?.properties.levels_count}}</h2>\r\n                        <div class=\"progress progress-mini\">\r\n                          <div style=\"width: 68%;\" class=\"progress-bar\"></div>\r\n                        </div>\r\n\r\n                        <div class=\"m-t-sm small\">date de mise a jour des donnees: .</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"col-lg-4\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content\">\r\n                        <h5>Nombre d’élus locaux </h5>\r\n                        <h2>{{level?.properties.N_of_person_elu}}</h2>\r\n                        <div class=\"progress progress-mini\">\r\n                          <div style=\"width: 78%;\" class=\"progress-bar\"></div>\r\n                        </div>\r\n\r\n                        <div class=\"m-t-sm small\">date de mise a jour des donnees: .</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"col-lg-4\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content\">\r\n                        <h5>Nombres d’associations nationales </h5>\r\n                        <h2>3</h2>\r\n                        <div class=\"progress progress-mini\">\r\n                          <div style=\"width: 38%;\" class=\"progress-bar progress-bar-danger\"></div>\r\n                        </div>\r\n\r\n                        <div class=\"m-t-sm small\">date de mise a jour des donnees: .</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                  <div class=\"col-lg-6\">\r\n                    <div class=\"panel panel-info\">\r\n                      <div class=\"panel-heading\">\r\n                        <i class=\"fa fa-info-circle\"></i>Partenaires Par type d’institutions\r\n                      </div>\r\n                      <div class=\"panel-body d-flex justify-content-center\">\r\n                        <ngx-charts-bar-vertical [scheme]=\"colorSchemePopulation\" [results]=\"singleType\" [xAxis]=\"showXAxis\"\r\n                          [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                          [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabelinst\" [yAxisLabel]=\"yAxisLabelinst\">\r\n                        </ngx-charts-bar-vertical>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-lg-6\">\r\n                    <div class=\"panel panel-info\">\r\n                      <div class=\"panel-heading\">\r\n                        <i class=\"fa fa-info-circle\"></i>Partenaires Par domaine d’interventions\r\n                      </div>\r\n                      <div class=\"panel-body d-flex justify-content-center\">\r\n                        <ngx-charts-bar-horizontal [scheme]=\"colorSchemePopulation\" [results]=\"singleDomaine\" [xAxis]=\"showXAxis\"\r\n                          [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                          [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabeldomaine\" [yAxisLabel]=\"yAxisLabeldomaine\">\r\n                        </ngx-charts-bar-horizontal>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-lg-12\">\r\n                    <div class=\"panel panel-info\">\r\n                      <div class=\"panel-heading\">\r\n                        <i class=\"fa fa-info-circle\"></i>Partenaires Par siège (% Afrique et % Hors Afrique)\r\n                      </div>\r\n                      <div class=\"panel-body d-flex justify-content-center \">\r\n                        <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleSiege\">\r\n                        </ngx-charts-pie-grid>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <!-- tab Membres and Leaderships -->\r\n          <div role=\"tabpanel\" id=\"tab-2\" class=\"tab-pane\">\r\n            <div class=\"panel-body\">\r\n              <div class=\"container\">\r\n                <!-- leaderships -->\r\n                <div class=\"row m-b-lg\">\r\n                  <div class=\"col-lg-12 text-center\">\r\n                    <div class=\"navy-line\"></div>\r\n                    <h1>Leaderships</h1>\r\n                  </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                  <div class=\"col-sm-4 wow fadeInLeft animated\" style=\"visibility: visible; animation-name: fadeInLeft;\">\r\n                    <div class=\"team-member\">\r\n                      <img src=\"assets/img/landing/addd.png\" class=\"img-fluid rounded-circle img-small\" alt=\"\">\r\n                      <h4><span class=\"navy\">Amelia</span> Smith</h4>\r\n                      <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam\r\n                        an soluta sensibus. </p>\r\n                      <ul class=\"list-inline social-icon\">\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a>\r\n                        </li>\r\n                      </ul>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-sm-4\">\r\n                    <div class=\"team-member wow zoomIn animated\" style=\"visibility: visible;\">\r\n                      <img src=\"assets/img/landing/add.png\" class=\"img-fluid rounded-circle\" alt=\"\">\r\n                      <h4><span class=\"navy\">John</span> Novak</h4>\r\n                      <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam\r\n                        an soluta sensibus.</p>\r\n                      <ul class=\"list-inline social-icon\">\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a>\r\n                        </li>\r\n                      </ul>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-sm-4 wow fadeInRight animated\" style=\"visibility: visible; animation-name: fadeInRight;\">\r\n                    <div class=\"team-member\">\r\n                      <img src=\"assets/img/landing/ad.png\" class=\"img-fluid rounded-circle img-small\" alt=\"\">\r\n                      <h4><span class=\"navy\">Peter</span> Johnson</h4>\r\n                      <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam\r\n                        an soluta sensibus.</p>\r\n                      <ul class=\"list-inline social-icon\">\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a>\r\n                        </li>\r\n                      </ul>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!-- fin leaderships -->\r\n                <div class=\"row\">\r\n\r\n                  <!-- table membres male and famale -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content\">\r\n                        <h2>Membres et Employés</h2>\r\n                    <div class=\"row\">\r\n                      <div class=\"col-md-12\" >\r\n                        <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerLevels\" class=\"table table-striped table-hover\">\r\n                          <thead>\r\n                            <tr>\r\n                              <th>First name</th>\r\n                              <th>Last name</th>\r\n                              <th>Niveau Academique</th>\r\n                              <th>Domaine d'etude</th>\r\n                              <th>Email</th>\r\n\r\n                            </tr>\r\n                          </thead>\r\n                          <tbody>\r\n                            <tr *ngFor=\"let person of persons\" (click)=\"onSelect(person?.id)\" >\r\n                              <td>{{person?.first_name}}</td>\r\n                              <td>{{person?.last_name}}</td>\r\n                              <td>{{person?.academic_level}}</td>\r\n                              <td>{{person?.study_area}}</td>\r\n                              <td>{{person?.email}}</td>\r\n                            </tr>\r\n                          </tbody>\r\n                        </table>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  </div>\r\n\r\n                  </div>\r\n\r\n                  <!-- fin table  -->\r\n\r\n\r\n                  <div class=\"col-md-12\">\r\n\r\n                      <div class=\"panel-body d-flex justify-content-center\" style=\"height: 250px\">\r\n                        <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleParite\">\r\n                        </ngx-charts-pie-grid>\r\n                      </div>\r\n                   \r\n                  </div>\r\n\r\n                  <!-- old leaderships  -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"row m-b-lg\">\r\n                      <div class=\"col-lg-12 text-center\">\r\n                        <div class=\"navy-line\"></div>\r\n                        <h1>les anciens Leaderships</h1>\r\n                      </div>\r\n                    </div>\r\n\r\n                    <div class=\"ibox \">\r\n\r\n                      <div class=\"ibox-content\">\r\n\r\n                        <div>\r\n                          <div class=\"chat-activity-list\">\r\n\r\n                            <div class=\"chat-element\">\r\n                              <a href=\"#\" class=\"float-left\">\r\n                                <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/landing/ad.png\">\r\n                              </a>\r\n                              <div class=\"media-body \">\r\n                                <small class=\"float-right text-navy\">1m ago</small>\r\n                                <strong>Mike Smith</strong>\r\n                                <p class=\"m-b-xs\">\r\n                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\r\n                                  Ipsum has been\r\n                                </p>\r\n                                <small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>\r\n                              </div>\r\n                            </div>\r\n\r\n                            <div class=\"chat-element right\">\r\n                              <a href=\"#\" class=\"float-right\">\r\n                                <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/a4.jpg\">\r\n                              </a>\r\n                              <div class=\"media-body text-right \">\r\n                                <small class=\"float-left\">5m ago</small>\r\n                                <strong>John Smith</strong>\r\n                                <p class=\"m-b-xs\">\r\n                                  Lorem Ipsum is simply dummy text of the printing.\r\n                                </p>\r\n                                <small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>\r\n                              </div>\r\n                            </div>\r\n\r\n                            <div class=\"chat-element \">\r\n                              <a href=\"#\" class=\"float-left\">\r\n                                <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/landing/add.png\">\r\n                              </a>\r\n                              <div class=\"media-body \">\r\n                                <small class=\"float-right\">2h ago</small>\r\n                                <strong>Mike Smith</strong>\r\n                                <p class=\"m-b-xs\">\r\n                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\r\n                                  Ipsum has been\r\n                                </p>\r\n                                <small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>\r\n                              </div>\r\n                            </div>\r\n                          </div>\r\n                        </div>\r\n\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <!-- fin old leaderships -->\r\n\r\n                </div>\r\n\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <!-- tab General Infomations -->\r\n          <div role=\"tabpanel\" id=\"tab-3\" class=\"tab-pane\">\r\n            <div class=\"panel-body\">\r\n              <div class=\"container\">\r\n\r\n\r\n\r\n                <div class=\"row\">\r\n\r\n\r\n                  <!-- finance -->\r\n\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox \">\r\n                      <div class=\"ibox-content\">\r\n                        <h3><i class=\"fa fa-dollar\"></i> Finances</h3>\r\n                        <small>This is example of small version of todo list</small>\r\n                        <ul class=\"todo-list m-t small-list ui-sortable\">\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Compte administratifs 3 derniers années :</span>\r\n                            <a href=\"\"><small class=\"text-right\"> view </small></a>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Dépenses de fonctionnemment </span>\r\n                            <small class=\"label label-warning\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Recettes de fonctionnemment </span>\r\n                            <small class=\"label label-danger\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Masse salariale </span>\r\n                            <small class=\"label label-info\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Dépenses investissement e</span>\r\n                            <small class=\"label label-muted\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Financial policies </span>\r\n                            <a href=\"\"><small class=\"text-right\"> view </small></a>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <!-- finance -->\r\n\r\n\r\n                  <!-- Projet/Programmes relatifs aux ODDs -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox \">\r\n                      <div class=\"ibox-content\">\r\n                        <h3><i class=\"fa fa-cubes\"></i> Projet/Programmes relatifs aux ODDs </h3>\r\n                        <small>This is example of small version of todo list</small>\r\n                        <ul class=\"todo-list m-t small-list ui-sortable\">\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Programmme d'insertion des jeunes</span>\r\n                            <a href=\"\"><small class=\"text-right\"> view </small></a>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Programme Rabat city urbanisation </span>\r\n                            <small class=\"label label-primary\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Programme Know your city</span>\r\n                            <small class=\"label label-success\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <!-- fin Projet/Programmes relatifs aux ODDs -->\r\n\r\n\r\n                  <!-- Projet/Programmes relatifs au Climat change -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox \">\r\n                      <div class=\"ibox-content\">\r\n                        <h3><i class=\"fa fa-globe\"></i> Projet/Programmes relatifs au Climat change </h3>\r\n                        <small>This is example of small version of todo list</small>\r\n                        <ul class=\"todo-list m-t small-list ui-sortable\">\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Programme rabat Green city </span>\r\n                            <small class=\"label label-primary\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                          <li>\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs\">Projet Ensemble protegeons la ville </span>\r\n                            <small class=\"label label-success\"><i class=\"fa fa-clock-o\"></i> 1 mins</small>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <!-- fin Projet/Programmes relatifs au Climat change -->\r\n\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n\r\n      </div>\r\n\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div id=\"statistic\" class=\"container\" style=\"margin-top: 130px; margin-bottom: 10px\">\r\n  <div class=\"row\">\r\n    <!-- profile details -->\r\n    <div class=\"col-lg-4\">\r\n      <div class=\"ibox border\">\r\n        <div class=\"ibox-title bg-primary rounded\">\r\n          <h3>{{level?.properties.category}} {{ level?.properties.name }}</h3>\r\n          <!-- <div class=\"hr-line-dashed\"></div> -->\r\n        </div>\r\n        <div>\r\n          <div class=\"ibox-content no-padding border-left-right\">\r\n\r\n            <!-- <app-country-map *ngIf=\"level\" [country]=\"level\"></app-country-map> -->\r\n            <app-level-map *ngIf=\"level\" [levelHoverName]=\"levelHoverName\" [levelInput]=\"level\"></app-level-map>\r\n          </div>\r\n          <div class=\"ibox-content profile-content\">\r\n            <p><i class=\"fa fa-bank\"></i><strong> {{level?.properties.category}}</strong></p>\r\n            <p><i class=\"fa fa-map-marker\"></i> Pays : {{level?.properties.country}} <br> Region :\r\n              {{level?.properties.region}} </p>\r\n            <p><i class=\"fa fa-envelope-open-o\" aria-hidden=\"true\"></i> {{level?.properties.email}} </p>\r\n            <p><i class=\"fa fa-phone-square\"></i> TEL / FAX : {{level?.properties.number_phone}} </p>\r\n            <p><i class=\"fa fa-globe\"></i> {{level?.properties.web_site}} </p>\r\n            <h5> Adress :</h5><address>{{level?.properties.address}}</address>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-6\">\r\n            <div class=\"ibox\">\r\n              <div class=\"ibox-content\">\r\n                <h5>Population:</h5>\r\n                <h3 class=\"no-margins\">{{level?.properties.population}} Hbt</h3>\r\n                <!-- <h5>Densité:</h5>\r\n                            <h4 class=\"no-margins\">3600 Hbt/Km²</h4> -->\r\n                <div class=\"stat-percent font-bold text-navy\">{{level?.properties.date_population}}</div>\r\n                <small>Year</small>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-lg-6\">\r\n            <div class=\"ibox\">\r\n              <div class=\"ibox-content\">\r\n                <h5>Surface</h5>\r\n                <h3 class=\"no-margins\">117Km²</h3>\r\n                <div class=\"stat-percent font-bold text-navy\">36% <i class=\"fa fa-bolt\"></i></div>\r\n                <small>% Urbain</small>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!-- fin profile details -->\r\n    <div class=\"col-lg-8\">\r\n      <div class=\"tabs-container\">\r\n        <ul class=\"nav nav-tabs\" role=\"tablist\">\r\n          <!-- under local government -->\r\n          <li><a class=\"nav-link active show\" data-toggle=\"tab\" href=\"#tab-1\"> COLLECTIVITES LOCALS</a></li>\r\n          <!-- fin  -->\r\n          <!-- membres and leaderships -->\r\n          <li><a class=\"nav-link\" data-toggle=\"tab\" href=\"#tab-2\">MEMBRES ET LEADERSHIPS </a></li>\r\n          <!-- generale information -->\r\n          <li><a class=\"nav-link\" data-toggle=\"tab\" href=\"#tab-3\"> INFORMATION GENERAL</a></li>\r\n        </ul>\r\n        <div class=\"tab-content\">\r\n          <!-- tab levels -->\r\n          <div role=\"tabpanel\" id=\"tab-1\" class=\"tab-pane active show\">\r\n            <div class=\"panel-body\">\r\n              <div class=\"container\">\r\n                <!-- table levels -->\r\n                <h3><i class=\"fas fa-list-ul\"></i> LISTE DE COLLECTIVITES LOCALS INCLUS DE LA\r\n                  {{level?.properties.category | uppercase}} {{\r\n                  level?.properties.name | uppercase }}\r\n                </h3>\r\n                <div class=\"row\">\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content\">\r\n                        <div class=\"row\">\r\n                          <div class=\"col-md-12\">\r\n                            <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerLevels\" class=\"table table-striped table-hover\">\r\n                              <thead>\r\n                                <tr>\r\n                                  <th> Name</th>\r\n                                  <th> Email</th>\r\n                                  <th> Tél</th>\r\n\r\n                                </tr>\r\n                              </thead>\r\n                              <tbody>\r\n                                <tr *ngFor=\"let level of levels ; let i = index\" (mouseenter)=\"onMouseEnterTR(level.properties.name  , i)\"\r\n                                  (mouseleave)=\"onMouseLeaveTR(level.properties.id)\" (click)=\"gotToLevelDetails(level.properties.id)\">\r\n                                  <td>{{level?.properties.name}}</td>\r\n                                  <td>{{level?.properties.email}}</td>\r\n                                  <td>{{level?.properties.number_phone}}</td>\r\n\r\n                                </tr>\r\n                              </tbody>\r\n                            </table>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n\r\n\r\n                <!--fin tab levels -->\r\n\r\n                <!-- statistiques profile-->\r\n\r\n                <div class=\"row\">\r\n                  <div class=\"col-lg-4\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content border rounded \">\r\n                        <h4><i class=\"fas fa-landmark\"></i> Nombre de collectivités inclus</h4>\r\n                        <h2>{{level?.properties.levels_count}}</h2>\r\n                        <div class=\"progress progress-mini\">\r\n                          <div style=\"width: 68%;\" class=\"progress-bar\"></div>\r\n                        </div>\r\n\r\n                        <div class=\"m-t-sm small\">date de mise a jour des donnees: .</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"col-lg-4\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content border rounded\">\r\n                        <h4><i class=\"fas fa-user-tie\"></i> Nombre d’élus locaux </h4>\r\n                        <h2>{{level?.properties.N_of_person_elu}}</h2>\r\n                        <div class=\"progress progress-mini\">\r\n                          <div style=\"width: 78%;\" class=\"progress-bar\"></div>\r\n                        </div>\r\n\r\n                        <div class=\"m-t-sm small\">date de mise a jour des donnees: .</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"col-lg-4\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content border rounded\">\r\n                        <h4><i class=\"far fa-building\"></i> Nombres d’associations nationales </h4>\r\n                        <h2>3</h2>\r\n                        <div class=\"progress progress-mini\">\r\n                          <div style=\"width: 38%;\" class=\"progress-bar \"></div>\r\n                        </div>\r\n\r\n                        <div class=\"m-t-sm small\">date de mise a jour des donnees: .</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                  <div class=\"col-lg-6\">\r\n                    <div class=\"panel panel-info\">\r\n                      <div class=\"panel-heading\">\r\n                        <i class=\"fa fa-info-circle\"></i>Partenaires Par type d’institutions\r\n                      </div>\r\n                      <div class=\"panel-body d-flex justify-content-center\">\r\n                        <ngx-charts-bar-vertical [scheme]=\"colorSchemePopulation\" [results]=\"singleType\" [xAxis]=\"showXAxis\"\r\n                          [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                          [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabelinst\" [yAxisLabel]=\"yAxisLabelinst\">\r\n                        </ngx-charts-bar-vertical>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-lg-6\">\r\n                    <div class=\"panel panel-info\">\r\n                      <div class=\"panel-heading\">\r\n                        <i class=\"fa fa-info-circle\"></i>Partenaires Par domaine d’interventions\r\n                      </div>\r\n                      <div class=\"panel-body d-flex justify-content-center\">\r\n                        <ngx-charts-bar-horizontal [scheme]=\"colorSchemePopulation\" [results]=\"singleDomaine\" [xAxis]=\"showXAxis\"\r\n                          [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                          [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabeldomaine\" [yAxisLabel]=\"yAxisLabeldomaine\">\r\n                        </ngx-charts-bar-horizontal>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-lg-12\">\r\n                    <div class=\"panel panel-info\">\r\n                      <div class=\"panel-heading\">\r\n                        <i class=\"fa fa-info-circle\"></i>Partenaires Par siège (% Afrique et % Hors Afrique)\r\n                      </div>\r\n                      <div class=\"panel-body d-flex justify-content-center \">\r\n                        <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleSiege\">\r\n                        </ngx-charts-pie-grid>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <!-- tab Membres and Leaderships -->\r\n          <div role=\"tabpanel\" id=\"tab-2\" class=\"tab-pane\">\r\n            <div class=\"panel-body\">\r\n              <div class=\"container\">\r\n                <!-- leaderships -->\r\n                <div class=\"row m-b-lg\">\r\n                  <div class=\"col-lg-12 text-center\">\r\n                    <div class=\"navy-line\"></div>\r\n                    <h1>Leaderships</h1>\r\n                  </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                  <div class=\"col-sm-4 wow fadeInLeft animated\" style=\"visibility: visible; animation-name: fadeInLeft;\">\r\n                    <div class=\"team-member\">\r\n                      <img src=\"assets/img/landing/addd.png\" class=\"img-fluid rounded-circle img-small\" alt=\"\">\r\n                      <h4><span class=\"navy\">Amelia</span> Smith</h4>\r\n                      <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam\r\n                        an soluta sensibus. </p>\r\n                      <ul class=\"list-inline social-icon\">\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a>\r\n                        </li>\r\n                      </ul>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-sm-4\">\r\n                    <div class=\"team-member wow zoomIn animated\" style=\"visibility: visible;\">\r\n                      <img src=\"assets/img/landing/add.png\" class=\"img-fluid rounded-circle\" alt=\"\">\r\n                      <h4><span class=\"navy\">John</span> Novak</h4>\r\n                      <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam\r\n                        an soluta sensibus.</p>\r\n                      <ul class=\"list-inline social-icon\">\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a>\r\n                        </li>\r\n                      </ul>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"col-sm-4 wow fadeInRight animated\" style=\"visibility: visible; animation-name: fadeInRight;\">\r\n                    <div class=\"team-member\">\r\n                      <img src=\"assets/img/landing/ad.png\" class=\"img-fluid rounded-circle img-small\" alt=\"\">\r\n                      <h4><span class=\"navy\">Peter</span> Johnson</h4>\r\n                      <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam\r\n                        an soluta sensibus.</p>\r\n                      <ul class=\"list-inline social-icon\">\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n                        </li>\r\n                        <li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a>\r\n                        </li>\r\n                      </ul>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!-- fin leaderships -->\r\n                <div class=\"row\">\r\n\r\n                  <!-- table membres male and famale -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox\">\r\n                      <div class=\"ibox-content\">\r\n                        <h3 class=\"text-uppercase\"><i class=\"fas fa-list-ul\"></i> Membres et Employés</h3>\r\n                        <div class=\"hr-line-dashed\"></div>\r\n                        <div class=\"row\">\r\n                          <div class=\"col-md-12\">\r\n                            <table datatable [dtOptions]=\"dtOptions\" [dtTrigger]=\"dtTriggerPersons\" class=\"table table-striped table-hover\">\r\n                              <thead>\r\n                                <tr>\r\n                                  <th>First name</th>\r\n                                  <th>Last name</th>\r\n                                  <!-- <th>Niveau Academique</th> -->\r\n                                  <th>Domaine d'etude</th>\r\n                                  <th>Email</th>\r\n\r\n                                </tr>\r\n                              </thead>\r\n                              <tbody>\r\n                                <tr *ngFor=\"let person of persons\" (click)=\"onSelect(person?.id)\">\r\n                                  <td>{{person?.first_name}}</td>\r\n                                  <td>{{person?.last_name}}</td>\r\n                                  <!-- <td>{{person?.academic_level}}</td> -->\r\n                                  <td>{{person?.study_area}}</td>\r\n                                  <td>{{person?.email}}</td>\r\n                                </tr>\r\n                              </tbody>\r\n                            </table>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n\r\n                  </div>\r\n\r\n                  <!-- fin table  -->\r\n\r\n\r\n                  <div class=\"col-md-12\">\r\n\r\n                    <div class=\"panel-body d-flex justify-content-center\" style=\"height: 250px\">\r\n                      <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleParite\">\r\n                      </ngx-charts-pie-grid>\r\n                    </div>\r\n\r\n                  </div>\r\n\r\n                  <!-- old leaderships  -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"row m-b-lg\">\r\n                      <div class=\"col-lg-12 text-center\">\r\n                        <div class=\"navy-line\"></div>\r\n                        <h1>les anciens Leaderships</h1>\r\n                      </div>\r\n                    </div>\r\n\r\n                    <div class=\"ibox \">\r\n\r\n                      <div class=\"ibox-content\">\r\n\r\n                        <div>\r\n                          <div class=\"chat-activity-list\">\r\n\r\n                            <div class=\"chat-element\">\r\n                              <a href=\"#\" class=\"float-left\">\r\n                                <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/landing/ad.png\">\r\n                              </a>\r\n                              <div class=\"media-body \">\r\n                                <small class=\"float-right text-navy\">1m ago</small>\r\n                                <strong>Mike Smith</strong>\r\n                                <p class=\"m-b-xs\">\r\n                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\r\n                                  Ipsum has been\r\n                                </p>\r\n                                <small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>\r\n                              </div>\r\n                            </div>\r\n\r\n                            <div class=\"chat-element right\">\r\n                              <a href=\"#\" class=\"float-right\">\r\n                                <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/a4.jpg\">\r\n                              </a>\r\n                              <div class=\"media-body text-right \">\r\n                                <small class=\"float-left\">5m ago</small>\r\n                                <strong>John Smith</strong>\r\n                                <p class=\"m-b-xs\">\r\n                                  Lorem Ipsum is simply dummy text of the printing.\r\n                                </p>\r\n                                <small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>\r\n                              </div>\r\n                            </div>\r\n\r\n                            <div class=\"chat-element \">\r\n                              <a href=\"#\" class=\"float-left\">\r\n                                <img alt=\"image\" class=\"rounded-circle\" src=\"assets/img/landing/add.png\">\r\n                              </a>\r\n                              <div class=\"media-body \">\r\n                                <small class=\"float-right\">2h ago</small>\r\n                                <strong>Mike Smith</strong>\r\n                                <p class=\"m-b-xs\">\r\n                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\r\n                                  Ipsum has been\r\n                                </p>\r\n                                <small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>\r\n                              </div>\r\n                            </div>\r\n                          </div>\r\n                        </div>\r\n\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <!-- fin old leaderships -->\r\n\r\n                </div>\r\n\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <!-- tab General Infomations -->\r\n          <div role=\"tabpanel\" id=\"tab-3\" class=\"tab-pane\">\r\n            <div class=\"panel-body\">\r\n              <div class=\"container\">\r\n\r\n\r\n\r\n                <div class=\"row\">\r\n\r\n\r\n                  <!-- finance -->\r\n\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox \">\r\n                      <div class=\"ibox-content\">\r\n                        <h3><i class=\"fa fa-dollar\"></i> Finances</h3>\r\n                        <ul class=\"todo-list m-t small-list ui-sortable\">\r\n\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs  w-100 bd-highlight\">Compte administratifs 3 derniers années :</span>\r\n                            <small class=\"label label-primary flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail </small>\r\n                          </li>\r\n\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs  w-100 bd-highlight\">Dépenses de fonctionnemment :</span>\r\n                            <small class=\"label label-primary flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs  w-100 bd-highlight\">Recettes de fonctionnemment </span>\r\n                            <small class=\"label label-primary flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs w-100 bd-highlight\">Masse salariale </span>\r\n                            <small class=\"label label-info flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>Détail</small>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs w-100 bd-highlight\">Dépenses investissement e</span>\r\n                            <small class=\"label label-muted flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs w-100 bd-highlight\">Financial policies </span>\r\n                            <small class=\"label label-muted flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <!-- finance -->\r\n\r\n\r\n                  <!-- Projet/Programmes relatifs aux ODDs -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox \">\r\n                      <div class=\"ibox-content\">\r\n                        <h3><i class=\"fa fa-cubes\"></i> Projet/Programmes relatifs aux ODDs </h3>\r\n                        <ul class=\"todo-list m-t small-list ui-sortable\">\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs w-100 bd-highlight\">Programmme d'insertion des jeunes</span>\r\n                            <a href=\"\"><small class=\"text-right flex-shrink-1 bd-highlight\"> view </small></a>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs w-100 bd-highlight\">Programme Rabat city urbanisation </span>\r\n                            <small class=\"label label-primary flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs w-100 bd-highlight\">Programme Know your city</span>\r\n                            <small class=\"label label-success flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <!-- fin Projet/Programmes relatifs aux ODDs -->\r\n\r\n\r\n                  <!-- Projet/Programmes relatifs au Climat change -->\r\n                  <div class=\"col-md-12\">\r\n                    <div class=\"ibox \">\r\n                      <div class=\"ibox-content\">\r\n                        <h3><i class=\"fa fa-globe\"></i> Projet/Programmes relatifs au Climat change </h3>\r\n                        <ul class=\"todo-list m-t small-list ui-sortable\">\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs  w-100 bd-highlight\">Programme rabat Green city </span>\r\n                            <small class=\"label label-primary flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>Détail</small>\r\n                          </li>\r\n                          <li class=\"d-flex bd-highlight\">\r\n                            <i class=\"fa fa-chevron-right\"></i>\r\n                            <span class=\"m-l-xs  w-100 bd-highlight\">Projet Ensemble protegeons la ville</span>\r\n                            <small class=\"label label-primary flex-shrink-1 bd-highlight\"><i class=\"fa fa-clock-o\"></i>\r\n                              Détail</small>\r\n                          </li>\r\n\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <!-- fin Projet/Programmes relatifs au Climat change -->\r\n\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -5144,6 +5533,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_services_country_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/country.service */ "./src/app/services/country.service.ts");
 /* harmony import */ var src_app_maps_map_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/maps/map.service */ "./src/app/maps/map.service.ts");
 /* harmony import */ var _dataProfile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dataProfile */ "./src/app/landing/profile-local/dataProfile.ts");
+/* harmony import */ var angular_datatables__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-datatables */ "./node_modules/angular-datatables/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5153,6 +5543,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -5233,25 +5624,36 @@ var ProfileLocalComponent = /** @class */ (function () {
         this.levelHoverName = null;
         Object.assign(this, { singleType: _dataProfile__WEBPACK_IMPORTED_MODULE_7__["singleType"], singleDomaine: _dataProfile__WEBPACK_IMPORTED_MODULE_7__["singleDomaine"], singleSiege: _dataProfile__WEBPACK_IMPORTED_MODULE_7__["singleSiege"] });
     }
+    ProfileLocalComponent.prototype.gotToLevelDetails = function (id) {
+        this._router.navigate(['landing/profile-local-government', id]);
+        // this._router.navigate(['landing/profile-local-government', props.id], { queryParams: { c: props.country_id } });
+    };
+    ProfileLocalComponent.prototype.rerenderTablesLevels = function () {
+        var _this = this;
+        this.dtElementLevel.dtInstance.then(function (dtInstance) {
+            // Destroy the table first
+            dtInstance.destroy();
+            // Call the dtTrigger to rerender again
+            _this.dtTriggerLevels.next();
+        });
+    };
     ProfileLocalComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._route.paramMap.subscribe(function (params) {
             _this.level_id = +params.get('id');
-            console.log(_this.country_id);
             _this._levelService.getLevel(_this.country_id, _this.level_id).subscribe(function (levelApi) {
                 _this.level = levelApi.data;
                 _this.getLevels(_this.level.properties.country_id, _this.level_id);
-                console.log(_this.levels);
-                _this.getPersons(_this.level_id);
+                _this.getPersons(_this.level.properties.country_id, _this.level_id);
             }, function (error) { console.log(error); });
         });
-        // parite genre 
+        // parite genre
         this.singleParite = [{
-                name: 'male',
+                name: 'Hommes',
                 value: 10
             },
             {
-                name: 'female',
+                name: 'Femmes',
                 value: 9
             }];
         this.single = [{
@@ -5269,13 +5671,25 @@ var ProfileLocalComponent = /** @class */ (function () {
         ];
         this.dtOptions = {
             pagingType: 'full_numbers',
-            pageLength: 10
+            pageLength: 10,
+            rowCallback: function (row, data, index) {
+                var self = _this;
+                // Unbind first in order to avoid any duplicate handler
+                // (see https://github.com/l-lin/angular-datatables/issues/87)
+                $('td', row).unbind('click');
+                $('td', row).bind('click', function () {
+                    console.log(data);
+                    // self.someClickHandler(data);
+                });
+                return row;
+            }
         };
     };
-    ProfileLocalComponent.prototype.getPersons = function (level_id) {
+    ProfileLocalComponent.prototype.getPersons = function (country_id, level_id) {
         var _this = this;
-        this._personService.getPersons(level_id).subscribe(function (personApi) {
+        this._personService.getPersonsLevel(country_id, level_id).subscribe(function (personApi) {
             _this.persons = personApi.data;
+            _this.rerenderTablesLevels();
             _this.dtTriggerPersons.next();
         }, function (error) {
             console.log(error);
@@ -5285,7 +5699,9 @@ var ProfileLocalComponent = /** @class */ (function () {
         var _this = this;
         this._levelService.getLevels(country_id, level_id).subscribe(function (levelApi) {
             _this.levels = levelApi.data;
+            _this.rerenderTablesLevels();
             _this.dtTriggerLevels.next();
+            // this.dtTriggerPersons.next();
         }, function (error) {
             console.log(error);
         });
@@ -5330,7 +5746,6 @@ var ProfileLocalComponent = /** @class */ (function () {
     };
     ProfileLocalComponent.prototype.onMouseEnterTR = function (name, i) {
         this.levelHoverName = name;
-        console.log(name);
     };
     ProfileLocalComponent.prototype.onMouseLeaveTR = function (country) {
         this.levelHoverName = null;
@@ -5338,9 +5753,13 @@ var ProfileLocalComponent = /** @class */ (function () {
     ProfileLocalComponent.prototype.onSelect = function (id) {
         var country_id = this.level.properties.country_id;
         var level_id = this.level_id;
-        console.log('profil local', id, level_id, country_id);
+        // console.log('profil local', id, level_id, country_id);
         this._router.navigate(['landing/profile-person', id], { queryParams: { c: country_id, l: level_id } });
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(angular_datatables__WEBPACK_IMPORTED_MODULE_8__["DataTableDirective"]),
+        __metadata("design:type", angular_datatables__WEBPACK_IMPORTED_MODULE_8__["DataTableDirective"])
+    ], ProfileLocalComponent.prototype, "dtElementLevel", void 0);
     ProfileLocalComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-profile-local',
@@ -5442,7 +5861,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"inSlider\" class=\"carousel slide\" data-ride=\"carousel\">\r\n    <ol class=\"carousel-indicators\">\r\n      <li data-target=\"#inSlider\" data-slide-to=\"0\" class=\"active\"></li>\r\n      <li data-target=\"#inSlider\" data-slide-to=\"1\"></li>\r\n    </ol>\r\n    <div class=\"carousel-inner\" role=\"listbox\">\r\n      <div class=\"carousel-item active\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Bienvenue sur le portail<br />d’information géographique des cité<br /> et gouvernements locaux d’Afrique<br />\r\n            </h1>\r\n            <!-- <p>\r\n              <a class=\"btn btn-lg btn-primary\" href=\"https://www.uclga.org/who-we-are/\" role=\"button\" target=\"_blank\">READ\r\n                MORE</a>\r\n            </p> -->\r\n          </div>\r\n          <!-- <div class=\"carousel-image wow zoomIn\">\r\n          <img src=\"assets/img/landing/laptop.png\" alt=\"laptop\" />\r\n        </div> -->\r\n        </div>\r\n        <!-- Set background for slide in css -->\r\n        <div class=\"header-back one\"></div>\r\n\r\n      </div>\r\n      <!-- <div class=\"carousel-item\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption blank\">\r\n            <h1>THE VOICE <br /> OF LOCAL AFRICA.\r\n            </h1>\r\n            <p><a class=\"btn btn-lg btn-primary\" href=\"https://www.uclga.org/\" role=\"button\" target=\"_blank\">UCLGA...Learn\r\n                more</a></p>\r\n          </div>\r\n        </div>\r\n        Set background for slide in css\r\n        <div class=\"header-back two\"></div>\r\n      </div> -->\r\n    </div>\r\n    <a class=\"carousel-control-prev\" href=\"#inSlider\" role=\"button\" data-slide=\"prev\">\r\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n      <span class=\"sr-only\">Previous</span>\r\n    </a>\r\n    <a class=\"carousel-control-next\" href=\"#inSlider\" role=\"button\" data-slide=\"next\">\r\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n      <span class=\"sr-only\">Next</span>\r\n\r\n    </a>\r\n  </div>\r\n\r\n"
+module.exports = "<div id=\"inSlider\" class=\"carousel slide\" data-ride=\"carousel\">\r\n    <ol class=\"carousel-indicators\">\r\n      <li data-target=\"#inSlider\" data-slide-to=\"0\" class=\"active\"></li>\r\n      <li data-target=\"#inSlider\" data-slide-to=\"1\"></li>\r\n    </ol>\r\n    <div class=\"carousel-inner\" role=\"listbox\">\r\n      <div class=\"carousel-item active\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Bienvenue sur le géoportail<br />de cités et gouvernements locaux d’Afrique<br />\r\n            </h1>\r\n            <!-- <p>\r\n              <a class=\"btn btn-lg btn-primary\" href=\"https://www.uclga.org/who-we-are/\" role=\"button\" target=\"_blank\">READ\r\n                MORE</a>\r\n            </p> -->\r\n          </div>\r\n          <!-- <div class=\"carousel-image wow zoomIn\">\r\n          <img src=\"assets/img/landing/laptop.png\" alt=\"laptop\" />\r\n        </div> -->\r\n        </div>\r\n        <!-- Set background for slide in css -->\r\n        <div class=\"header-back one\"></div>\r\n\r\n      </div>\r\n      <!-- <div class=\"carousel-item\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption blank\">\r\n            <h1>THE VOICE <br /> OF LOCAL AFRICA.\r\n            </h1>\r\n            <p><a class=\"btn btn-lg btn-primary\" href=\"https://www.uclga.org/\" role=\"button\" target=\"_blank\">UCLGA...Learn\r\n                more</a></p>\r\n          </div>\r\n        </div>\r\n        Set background for slide in css\r\n        <div class=\"header-back two\"></div>\r\n      </div> -->\r\n    </div>\r\n    <a class=\"carousel-control-prev\" href=\"#inSlider\" role=\"button\" data-slide=\"prev\">\r\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n      <span class=\"sr-only\">Previous</span>\r\n    </a>\r\n    <a class=\"carousel-control-next\" href=\"#inSlider\" role=\"button\" data-slide=\"next\">\r\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n      <span class=\"sr-only\">Next</span>\r\n\r\n    </a>\r\n  </div>\r\n\r\n"
 
 /***/ }),
 
@@ -6101,7 +6520,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"statistic\" class=\"container\" style=\"margin-top: 130px; margin-bottom: 10px\">\r\n  <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n    <div class=\"col-lg-9\">\r\n      <h2>Statistiques</h2>\r\n      <ol class=\"breadcrumb\">\r\n        <li class=\"breadcrumb-item\">\r\n          <a routerLink=\"/landing/home\">Home</a>\r\n        </li>\r\n        <li class=\"breadcrumb-item\">\r\n          <a #h1Variable></a>\r\n        </li>\r\n      </ol>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n  <!-- <div class=\"container \" style=\"margin-bottom: 10px\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n      <img class=\"d-block w-100 border rounded\" src=\"assets/img/landing/statisticg.png\" alt=\"First slide\">\r\n    </div>\r\n    <div class=\"ibox col-md-6\">\r\n      <div class=\"ibox-content\">\r\n          <h2>\r\n            The European languages are members\r\n          </h2>\r\n\r\n\r\n        <p>\r\n          The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div> -->\r\n\r\n\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <app-statistc-map (messageEvent)=\"getOnclickObject($event)\"></app-statistc-map>\r\n\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n  <div class=\"panel\" *ngIf=\"layerObject === null\">\r\n    <div class=\"panel-body\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n          <div class=\"panel panel-info\">\r\n            <div class=\"panel-heading\">\r\n              <i class=\"fa fa-info-circle\"></i>Population\r\n            </div>\r\n            <div class=\"panel-body d-flex justify-content-center\">\r\n              <ngx-charts-bar-horizontal [scheme]=\"colorSchemePopulation\" [results]=\"singlePOP\" [xAxis]=\"showXAxis\"\r\n                [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabel\" [yAxisLabel]=\"yAxisLabel\">\r\n              </ngx-charts-bar-horizontal>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-12\">\r\n          <div class=\"panel panel-info\">\r\n            <div class=\"panel-heading\">\r\n              <i class=\"fa fa-info-circle\"></i>Nombre des Collectivites locales\r\n            </div>\r\n            <div class=\"panel-body d-flex justify-content-center\" style=\"height: 300px\">\r\n              <ngx-charts-advanced-pie-chart [scheme]=\"colorSchemeCL\" [results]=\"singleCL\">\r\n              </ngx-charts-advanced-pie-chart>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-12\">\r\n          <div class=\"panel panel-info\">\r\n            <div class=\"panel-heading\">\r\n              <i class=\"fa fa-info-circle\"></i>Nombre des Elus Locaux\r\n            </div>\r\n            <div class=\"panel-body d-flex justify-content-center\" style=\"height: 300px\">\r\n              <ngx-charts-advanced-pie-chart [scheme]=\"colorSchemeEL\" [results]=\"singleEL\">\r\n              </ngx-charts-advanced-pie-chart>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n  <div class=\"tabs-container\" *ngIf=\"layerObject!==null\">\r\n    <ul class=\"nav nav-tabs\" role=\"tablist\">\r\n      <li><a class=\"nav-link   m-r-xxs\" [ngClass]=\"tab1.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab1')\">Statistiques generales </a></li>\r\n      <li><a class=\"nav-link  m-r-xxs\" [ngClass]=\"tab2.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab2')\"> Elus locaux</a></li>\r\n      <li><a class=\"nav-link  m-r-xxs\" [ngClass]=\"tab3.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab3')\"> Collectivites locales</a></li>\r\n      <li><a class=\"nav-link  m-r-xxs\" [ngClass]=\"tab4.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab4')\"> Partenaires au developpement</a></li>\r\n    </ul>\r\n    <div class=\"tab-content\">\r\n      <!--  Statistiques generales -->\r\n      <div role=\"tabpanel\" id=\"tab1\" #tab1 class=\"tab-pane\" [ngClass]=\"tab1.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-12\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 200px\">\r\n                  <ngx-charts-number-card [animations]=\"animations\" [scheme]=\"colorSchemeCL\" [results]=\"singleGenaral\">\r\n                  </ngx-charts-number-card>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n\r\n\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!-- body of informations GÉNÉRALES -->\r\n      <div role=\"tabpanel\" #tab2 id=\"tab2\" class=\"tab-pane\" [ngClass]=\"tab2.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n\r\n            <div class=\"col-6\">\r\n\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Parite genre\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 180px\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleParite\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n            <div class=\"col-6\">\r\n\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Statut (elu ou nomme)\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 180px\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeEL\" [results]=\"singleStatut\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n            <div class=\"col-12\">\r\n\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Niveau académique\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\">\r\n                  <ngx-charts-bar-horizontal [scheme]=\"colorSchemeCL\" [results]=\"singleNiveau\" [gradient]=\"gradient\"\r\n                    [xAxis]=\"showXAxis\" [yAxis]=\"showYAxis\" [legend]=\"showLegend\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                    [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabelNiveau\" [yAxisLabel]=\"yAxisLabelNiveau\">\r\n                  </ngx-charts-bar-horizontal>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n\r\n        </div>\r\n      </div>\r\n      <!-- Collectivites locales  -->\r\n      <div role=\"tabpanel\" #tab3 id=\"tab3\" class=\"tab-pane\" [ngClass]=\"tab3.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n\r\n            <div class=\"col-12\">\r\n\r\n              <div class=\"panel panel-info\">\r\n\r\n                <div class=\"panel-body d-flex justify-content-center\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeCollectivite\" [results]=\"singleCollectivites\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n      <!--Partenaires au développement   -->\r\n      <div role=\"tabpanel\" #tab4 id=\"tab4\" class=\"tab-pane\" [ngClass]=\"tab4.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Par type d’institutions\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center \" style=\"height: 500px\">\r\n                  <ngx-charts-bar-vertical [scheme]=\"colorSchemePopulation\" [results]=\"singleType\" [xAxis]=\"showXAxis\"\r\n                    [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                    [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabelinst\" [yAxisLabel]=\"yAxisLabelinst\">\r\n                  </ngx-charts-bar-vertical>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-lg-6\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Par domaine d’interventions\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 500px\">\r\n                  <ngx-charts-bar-horizontal [scheme]=\"colorSchemePopulation\" [results]=\"singleDomaine\" [xAxis]=\"showXAxis\"\r\n                    [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                    [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabeldomaine\" [yAxisLabel]=\"yAxisLabeldomaine\">\r\n                  </ngx-charts-bar-horizontal>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-lg-12\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Par siège (% Afrique et % Hors Afrique)\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center \" style=\"height: 300px\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleSiege\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n\r\n\r\n\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n"
+module.exports = "<div id=\"statistic\" class=\"container\" style=\"margin-top: 130px; margin-bottom: 10px\">\r\n  <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n    <div class=\"col-lg-9\">\r\n      <h2 class=\"text-uppercase\">Statistiques</h2>\r\n      <ol class=\"breadcrumb\">\r\n        <li class=\"breadcrumb-item\">\r\n          <a routerLink=\"/landing/home\">Home</a>\r\n        </li>\r\n        <li class=\"breadcrumb-item\">\r\n          <a #h1Variable></a>\r\n        </li>\r\n      </ol>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n  <!-- <div class=\"container \" style=\"margin-bottom: 10px\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n      <img class=\"d-block w-100 border rounded\" src=\"assets/img/landing/statisticg.png\" alt=\"First slide\">\r\n    </div>\r\n    <div class=\"ibox col-md-6\">\r\n      <div class=\"ibox-content\">\r\n          <h2>\r\n            The European languages are members\r\n          </h2>\r\n\r\n\r\n        <p>\r\n          The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div> -->\r\n\r\n\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      <app-statistc-map (messageEvent)=\"getOnclickObject($event)\"></app-statistc-map>\r\n\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n  <div class=\"panel\" *ngIf=\"layerObject === null\">\r\n    <div class=\"panel-body\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n          <div class=\"panel panel-info\">\r\n            <div class=\"panel-heading\">\r\n              <i class=\"fa fa-info-circle\"></i>Population\r\n            </div>\r\n            <div class=\"panel-body d-flex justify-content-center\">\r\n              <ngx-charts-bar-horizontal [scheme]=\"colorSchemePopulation\" [results]=\"singlePOP\" [xAxis]=\"showXAxis\"\r\n                [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabel\" [yAxisLabel]=\"yAxisLabel\">\r\n              </ngx-charts-bar-horizontal>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-12\">\r\n          <div class=\"panel panel-info\">\r\n            <div class=\"panel-heading\">\r\n              <i class=\"fa fa-info-circle\"></i>Nombre des Collectivites locales\r\n            </div>\r\n            <div class=\"panel-body d-flex justify-content-center\" style=\"height: 300px\">\r\n              <ngx-charts-advanced-pie-chart [scheme]=\"colorSchemeCL\" [results]=\"singleCL\">\r\n              </ngx-charts-advanced-pie-chart>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-12\">\r\n          <div class=\"panel panel-info\">\r\n            <div class=\"panel-heading\">\r\n              <i class=\"fa fa-info-circle\"></i>Nombre des Elus Locaux\r\n            </div>\r\n            <div class=\"panel-body d-flex justify-content-center\" style=\"height: 300px\">\r\n              <ngx-charts-advanced-pie-chart [scheme]=\"colorSchemeEL\" [results]=\"singleEL\">\r\n              </ngx-charts-advanced-pie-chart>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n  <div class=\"tabs-container\" *ngIf=\"layerObject!==null\">\r\n    <ul class=\"nav nav-tabs\" role=\"tablist\">\r\n      <li><a class=\"nav-link   m-r-xxs\" [ngClass]=\"tab1.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab1')\">Statistiques generales </a></li>\r\n      <li><a class=\"nav-link  m-r-xxs\" [ngClass]=\"tab2.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab2')\"> Elus locaux</a></li>\r\n      <li><a class=\"nav-link  m-r-xxs\" [ngClass]=\"tab3.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab3')\"> Collectivites locales</a></li>\r\n      <li><a class=\"nav-link  m-r-xxs\" [ngClass]=\"tab4.id == tabHover ? 'active show' : ''\" data-toggle=\"tab\"\r\n          (mouseover)=\"onMouseOver('tab4')\"> Partenaires au developpement</a></li>\r\n    </ul>\r\n    <div class=\"tab-content\">\r\n      <!--  Statistiques generales -->\r\n      <div role=\"tabpanel\" id=\"tab1\" #tab1 class=\"tab-pane\" [ngClass]=\"tab1.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-12\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 200px\">\r\n                  <ngx-charts-number-card [animations]=\"animations\" [scheme]=\"colorSchemeCL\" [results]=\"singleGenaral\">\r\n                  </ngx-charts-number-card>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n\r\n\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!-- body of informations GÉNÉRALES -->\r\n      <div role=\"tabpanel\" #tab2 id=\"tab2\" class=\"tab-pane\" [ngClass]=\"tab2.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n\r\n            <div class=\"col-6\">\r\n\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Parite genre\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 180px\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleParite\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n            <div class=\"col-6\">\r\n\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Statut (elu ou nomme)\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 180px\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeEL\" [results]=\"singleStatut\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n            <div class=\"col-12\">\r\n\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Niveau académique\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\">\r\n                  <ngx-charts-bar-horizontal [scheme]=\"colorSchemeCL\" [results]=\"singleNiveau\" [gradient]=\"gradient\"\r\n                    [xAxis]=\"showXAxis\" [yAxis]=\"showYAxis\" [legend]=\"showLegend\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                    [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabelNiveau\" [yAxisLabel]=\"yAxisLabelNiveau\">\r\n                  </ngx-charts-bar-horizontal>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n\r\n        </div>\r\n      </div>\r\n      <!-- Collectivites locales  -->\r\n      <div role=\"tabpanel\" #tab3 id=\"tab3\" class=\"tab-pane\" [ngClass]=\"tab3.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n\r\n            <div class=\"col-12\">\r\n\r\n              <div class=\"panel panel-info\">\r\n\r\n                <div class=\"panel-body d-flex justify-content-center\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeCollectivite\" [results]=\"singleCollectivites\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n      <!--Partenaires au développement   -->\r\n      <div role=\"tabpanel\" #tab4 id=\"tab4\" class=\"tab-pane\" [ngClass]=\"tab4.id == tabHover ? 'active show' : ''\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Par type d’institutions\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center \" style=\"height: 500px\">\r\n                  <ngx-charts-bar-vertical [scheme]=\"colorSchemePopulation\" [results]=\"singleType\" [xAxis]=\"showXAxis\"\r\n                    [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                    [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabelinst\" [yAxisLabel]=\"yAxisLabelinst\">\r\n                  </ngx-charts-bar-vertical>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-lg-6\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Par domaine d’interventions\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center\" style=\"height: 500px\">\r\n                  <ngx-charts-bar-horizontal [scheme]=\"colorSchemePopulation\" [results]=\"singleDomaine\" [xAxis]=\"showXAxis\"\r\n                    [yAxis]=\"showYAxis\" [gradient]=\"gradient\" [legend]=\"showLegendBarChart\" [showXAxisLabel]=\"showXAxisLabel\"\r\n                    [showYAxisLabel]=\"showYAxisLabel\" [xAxisLabel]=\"xAxisLabeldomaine\" [yAxisLabel]=\"yAxisLabeldomaine\">\r\n                  </ngx-charts-bar-horizontal>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-lg-12\">\r\n              <div class=\"panel panel-info\">\r\n                <div class=\"panel-heading\">\r\n                  <i class=\"fa fa-info-circle\"></i>Par siège (% Afrique et % Hors Afrique)\r\n                </div>\r\n                <div class=\"panel-body d-flex justify-content-center \" style=\"height: 300px\">\r\n                  <ngx-charts-pie-grid [scheme]=\"colorSchemeCL\" [results]=\"singleSiege\">\r\n                  </ngx-charts-pie-grid>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n\r\n\r\n\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -6592,7 +7011,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mb-3\">\r\n    <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n      <br>\r\n      <br>\r\n      <br>\r\n      <br>\r\n    </div>\r\n    <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n      <div class=\"col-lg-9\">\r\n        <h2>Transparency</h2>\r\n        <ol class=\"breadcrumb\">\r\n          <li class=\"breadcrumb-item\">\r\n            <a routerLink=\"/landing/home\">Home</a>\r\n          </li>\r\n          <li class=\"breadcrumb-item\">\r\n            <a #h1Variable></a>\r\n          </li>\r\n        </ol>\r\n      </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n      <img class=\"d-block w-100 border rounded\" src=\"assets/img/landing/header_two.jpg\" alt=\"First slide\">\r\n    </div>\r\n    <div class=\"ibox col-md-6\">\r\n      <div class=\"ibox-content\">\r\n          <h2>\r\n            La transparence est un élément essentiel de la bonne gouvernance des affaires publiques.\r\n                    </h2>\r\n\r\n\r\n        <p>\r\n           Cela est nécessaire pour l'efficacité et l'efficience de l'action des gouvernements locaux et pour la responsabilisation des autorités locales vis-à-vis de la population. La transparence est grandement améliorée lorsque les citoyens ont accès à des informations sur le fonctionnement et la gestion du gouvernement local. lorsque les autorités locales respectent un certain nombre de règles et de procédures juridiques relatives au recrutement et à la gestion du personnel, aux appels d’offres, aux marchés publics et au suivi de l’exécution des contrats; et lorsque la loi exige que les administrations locales fassent l'objet d'audits financiers et organisationnels réguliers et indépendants selon un calendrier et dans des délais déterminés, et que cette loi soit appliquée.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<app-indicator></app-indicator>\r\n<app-maps></app-maps>\r\n"
+module.exports = "<div class=\"container mb-3\">\r\n    <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n      <br>\r\n      <br>\r\n      <br>\r\n      <br>\r\n    </div>\r\n    <div class=\"row wrapper border-bottom white-bg page-heading\">\r\n      <div class=\"col-lg-9\">\r\n        <h2>Transparency</h2>\r\n        <ol class=\"breadcrumb\">\r\n          <li class=\"breadcrumb-item\">\r\n            <a routerLink=\"/landing/home\">Home</a>\r\n          </li>\r\n          <li class=\"breadcrumb-item\">\r\n            <a #h1Variable></a>\r\n          </li>\r\n        </ol>\r\n      </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n      <img class=\"d-block w-100 border rounded\" src=\"assets/img/landing/header_two.jpg\" alt=\"First slide\">\r\n    </div>\r\n    <div class=\"ibox col-md-6\">\r\n      <div class=\"ibox-content\">\r\n          <h2>\r\n            La transparence est un élément essentiel de la bonne gouvernance des affaires publiques.\r\n                    </h2>\r\n\r\n\r\n        <p>\r\n           Cela est nécessaire pour l'efficacité et l'efficience de l'action des gouvernements locaux et pour la responsabilisation des autorités locales vis-à-vis de la population. La transparence est grandement améliorée lorsque les citoyens ont accès à des informations sur le fonctionnement et la gestion du gouvernement local. lorsque les autorités locales respectent un certain nombre de règles et de procédures juridiques relatives au recrutement et à la gestion du personnel, aux appels d’offres, aux marchés publics et au suivi de l’exécution des contrats; et lorsque la loi exige que les administrations locales fassent l'objet d'audits financiers et organisationnels réguliers et indépendants selon un calendrier et dans des délais déterminés, et que cette loi soit appliquée.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<app-indicator></app-indicator>\r\n<div class=\"container\">\r\n    <app-statistc-map (messageEvent)=\"getOnclickObject($event)\"></app-statistc-map>\r\n</div>\r\n<app-maps></app-maps>\r\n"
 
 /***/ }),
 
@@ -7206,6 +7625,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7219,19 +7639,40 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var LevelMapComponent = /** @class */ (function () {
-    function LevelMapComponent(_mapService, _levelService) {
+    function LevelMapComponent(_mapService, _levelService, _router) {
         this._mapService = _mapService;
         this._levelService = _levelService;
+        this._router = _router;
         this.levels = [];
         this.levelLayer = null;
         this.levelsLayer = null;
         this.map = null;
     }
+    LevelMapComponent.prototype.ngAfterContentInit = function () {
+        var _this = this;
+        $('div').on('click', '.sidebar-open-button', function (e) {
+            var id = e.target.getAttribute('data');
+            _this.gotToLevelDetails(id);
+        });
+    };
+    LevelMapComponent.prototype.gotToLevelDetails = function (id) {
+        this._router.navigate(['landing/profile-local-government', id]);
+        // this._router.navigate(['landing/profile-local-government', props.id], { queryParams: { c: props.country_id } });
+    };
     LevelMapComponent.prototype.ngOnChanges = function (changes) {
         var _this = this;
-        // console.log(this.levelHoverId);
         var change = changes['levelHoverName'];
+        if (changes['levelInput'] !== undefined) {
+            var changeLevelInput = changes['levelInput'];
+            if (changeLevelInput.currentValue !== changeLevelInput.previousValue) {
+                this.levelLayer.removeFrom(this.map);
+                this.levelsLayer.removeFrom(this.map);
+                this.addlevelLayer();
+                this.getLevelsLayers();
+            }
+        }
         if (change.currentValue !== change.previousValue) {
             this.levelsLayer.eachLayer(function (layer) {
                 if (layer.feature.properties.name !== change.previousValue) {
@@ -7246,26 +7687,74 @@ var LevelMapComponent = /** @class */ (function () {
                 }
                 if (layer.feature.properties.name === _this.levelHoverName) {
                     layer.bringToFront();
+                    layer.openPopup();
                     layer.setStyle({
-                        weight: 5,
-                        color: '#217ca3',
-                        dashArray: '',
-                        fillColor: '#217ca3',
-                        fillOpacity: 0.7
+                        weight: 3,
+                        fillColor: '#00b594',
+                        fillOpacity: 1,
                     });
                 }
             });
         }
     };
     LevelMapComponent.prototype.ngOnInit = function () {
-        var _this = this;
         this.map = this._mapService.initMap('map', 4);
         this.addlevelLayer();
+        this.getLevelsLayers();
+    };
+    LevelMapComponent.prototype.getLevelsLayers = function () {
+        var _this = this;
+        var styleLevels = this._mapService.styleLevels;
+        var styleUploadCountries = this._mapService.styleUploadCountries;
+        var styleHover = this._mapService.styleHover;
         this._levelService.getLevels(this.levelInput.properties.country_id, this.levelInput.properties.id).subscribe(function (levelApi) {
             _this.levels = levelApi.data;
             if (_this.levels.length > 0) {
                 _this.levelsLayer = leaflet__WEBPACK_IMPORTED_MODULE_3__["geoJSON"](levelApi.data, {
-                    style: _this._mapService.styleUploadCountries
+                    style: _this._mapService.styleUploadCountries,
+                    onEachFeature: function (feature, layer) {
+                        layer.bindPopup('<div class="col-lg-12">  ' +
+                            '<div class="widget lazur-bg text-center ">' +
+                            '<h4>  ' +
+                            feature.properties.name +
+                            '                                   </h4>  ' +
+                            // tslint:disable-next-line:max-line-length
+                            '<button type="button" class="btn btn-outline btn-default sidebar-open-button" data = "' +
+                            feature.properties.id +
+                            '" ' + '>Details</button>' +
+                            '</div>  ' +
+                            '</div>  '
+                        //    feature.properties.name
+                        );
+                        layer.on({
+                            'click': function (e1) {
+                                // if (this.level_layers_ids.length < this.lastStage) {
+                                //   this.levelsLayer.removeFrom(this.map);
+                                // }
+                                var l1 = e1.target;
+                                _this.map.fitBounds(l1.getBounds());
+                                // this.layerObject = feature.properties;
+                                // this.addLevelsLayer(feature.properties.country_id, feature.properties.id);
+                                // this.addLevelsLayer(feature.properties.country_id, feature.properties.id);
+                                // console.log(this.addLevelsLayer(feature.properties.country_id, feature.properties.id));
+                                // this.sendMessage();
+                            },
+                            mouseover: function (e) {
+                                // tslint:disable-next-line:no-shadowed-variable
+                                var layer = e.target;
+                                layer.openPopup();
+                                layer.setStyle(styleHover(layer.feature));
+                                // info.update(layer.feature.properties);
+                            },
+                            mouseout: function (e) {
+                                // tslint:disable-next-line:no-shadowed-variable
+                                var layer = e.target;
+                                // layer.closePopup();
+                                layer.setStyle(styleUploadCountries(layer.feature));
+                                // this.geojsonLevelLayer.removeFrom(this.map);
+                            }
+                        });
+                    }
                 }).addTo(_this.map);
                 _this.map.fitBounds(_this.levelsLayer.getBounds());
             }
@@ -7291,7 +7780,7 @@ var LevelMapComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./level-map.component.html */ "./src/app/maps/level-map/level-map.component.html"),
             styles: [__webpack_require__(/*! ./level-map.component.css */ "./src/app/maps/level-map/level-map.component.css")]
         }),
-        __metadata("design:paramtypes", [_map_service__WEBPACK_IMPORTED_MODULE_1__["MapService"], src_app_services_level_service__WEBPACK_IMPORTED_MODULE_0__["LevelService"]])
+        __metadata("design:paramtypes", [_map_service__WEBPACK_IMPORTED_MODULE_1__["MapService"], src_app_services_level_service__WEBPACK_IMPORTED_MODULE_0__["LevelService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], LevelMapComponent);
     return LevelMapComponent;
 }());
@@ -7399,12 +7888,12 @@ var MapService = /** @class */ (function () {
         var white = leaflet__WEBPACK_IMPORTED_MODULE_4__["tileLayer"]('');
         var baseLayers = {
             // Satellite: googleMaps,
-            Blank: white,
-            'Topo Maps': topoLayer
+            'Topo Maps': topoLayer,
+            Blank: white
         };
         // creation de la carte avec layer de base + zoom minimum sur afrique de 4
         var map = leaflet__WEBPACK_IMPORTED_MODULE_4__["map"](divId, {
-            layers: [mainLayer === 'white' ? white : topoLayer],
+            layers: [mainLayer === 'Topo Maps' ? topoLayer : white],
             doubleClickZoom: false,
             zoomDelta: 0.5,
             zoomSnap: 0.25
@@ -7776,7 +8265,7 @@ module.exports = ".leaflet-container {\r\n  background-color: rgba(255, 0, 0, 0.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"panel panel-primary\">\r\n  <div class=\"panel-body\">\r\n    <a class=\"btn btn-default btn-rounded btn-block bg-primary\" (click)=\"selectByContryModal()\"> <i class=\"fab fa-paper-plane-o\"></i>\r\n      Cliquez sur un pays ou un territoire ou sélectionnez-le dans la liste déroulante</a>\r\n    <br>\r\n\r\n\r\n\r\n    <div style=\"height: 580px  ; width: 100%; z-index:0\" id=\"map\"></div>\r\n\r\n\r\n\r\n  </div>\r\n\r\n\r\n</div>\r\n<!-- <div class=\"panel panel-primary\">\r\n\r\n  <div class=\"panel-body\">\r\n    <h5>zoomInit : {{ zoomInit }}</h5>\r\n    <h5>zoomStart : {{ zoomStart }}</h5>\r\n    <h5>zoomClick : {{ zoomClick }}</h5>\r\n\r\n\r\n\r\n  </div>\r\n\r\n\r\n</div> -->\r\n"
+module.exports = "<div class=\"panel panel-primary\">\r\n  <div class=\"panel-body\">\r\n    <a class=\"btn btn-default btn-rounded btn-block bg-primary text-white\" (click)=\"selectByContryModal()\"> <i class=\"fab fa-paper-plane-o\"></i>\r\n      Cliquez sur un pays ou un territoire ou sélectionnez-le dans la liste déroulante</a>\r\n    <br>\r\n\r\n\r\n\r\n    <div style=\"height: 580px  ; width: 100%; z-index:0\" id=\"map\"></div>\r\n\r\n\r\n\r\n  </div>\r\n\r\n\r\n</div>\r\n<!-- <div class=\"panel panel-primary\">\r\n\r\n  <div class=\"panel-body\">\r\n    <h5>zoomInit : {{ zoomInit }}</h5>\r\n    <h5>zoomStart : {{ zoomStart }}</h5>\r\n    <h5>zoomClick : {{ zoomClick }}</h5>\r\n\r\n\r\n\r\n  </div>\r\n\r\n\r\n</div> -->\r\n"
 
 /***/ }),
 
@@ -7892,7 +8381,6 @@ var StatistcMapComponent = /** @class */ (function () {
             onEachFeature: function (feature, layer) {
                 layer.bindPopup(feature.properties.name);
                 layer.on({
-                    'dblclick': function (e9) { },
                     'click': function (e) {
                         _this.lastStage = feature.properties.last_stage;
                         var layers = [];
@@ -8769,6 +9257,29 @@ var UploadShapeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/models/academicLevel.model.ts":
+/*!***********************************************!*\
+  !*** ./src/app/models/academicLevel.model.ts ***!
+  \***********************************************/
+/*! exports provided: AcademicLevel */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AcademicLevel", function() { return AcademicLevel; });
+var AcademicLevel = /** @class */ (function () {
+    function AcademicLevel() {
+        this.id = null;
+        this.name = null;
+        this.bac_level = null;
+    }
+    return AcademicLevel;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/models/country.model.ts":
 /*!*****************************************!*\
   !*** ./src/app/models/country.model.ts ***!
@@ -8878,6 +9389,84 @@ var CountryListResolverService = /** @class */ (function () {
         __metadata("design:paramtypes", [_services_country_service__WEBPACK_IMPORTED_MODULE_0__["CountryService"]])
     ], CountryListResolverService);
     return CountryListResolverService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/academic_level.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/services/academic_level.service.ts ***!
+  \****************************************************/
+/*! exports provided: AcademicLevelService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AcademicLevelService", function() { return AcademicLevelService; });
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/internal/operators/catchError */ "./node_modules/rxjs/internal/operators/catchError.js");
+/* harmony import */ var rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/internal/observable/throwError */ "./node_modules/rxjs/internal/observable/throwError.js");
+/* harmony import */ var rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_4__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var AcademicLevelService = /** @class */ (function () {
+    function AcademicLevelService(_http) {
+        this._http = _http;
+        this.url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].baseUrl;
+        this.baseUrl = this.url + '/academic_levels/';
+    }
+    AcademicLevelService.prototype.getAcademicLevels = function () {
+        return this._http
+            .get(this.baseUrl)
+            .pipe(Object(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.errorHandler));
+    };
+    AcademicLevelService.prototype.deleteAcademicLevel = function (id) {
+        return this._http
+            .delete(this.baseUrl + id)
+            .pipe(Object(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.errorHandler));
+    };
+    AcademicLevelService.prototype.getAcademicLevel = function (id) {
+        return this._http
+            .get(this.baseUrl + id)
+            .pipe(Object(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.errorHandler));
+    };
+    AcademicLevelService.prototype.errorHandler = function (error) {
+        return Object(rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_4__["throwError"])(error);
+    };
+    AcademicLevelService.prototype.save = function (academicLevel) {
+        return this._http
+            .post(this.baseUrl, academicLevel)
+            .pipe(Object(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.errorHandler));
+    };
+    AcademicLevelService.prototype.update = function (academicLevel) {
+        return this._http
+            .put(this.baseUrl + academicLevel.id, academicLevel)
+            .pipe(Object(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.errorHandler));
+    };
+    AcademicLevelService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], AcademicLevelService);
+    return AcademicLevelService;
 }());
 
 
@@ -9119,6 +9708,66 @@ var CountryService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/directory.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/services/directory.service.ts ***!
+  \***********************************************/
+/*! exports provided: DirectoryService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectoryService", function() { return DirectoryService; });
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/internal/operators/catchError */ "./node_modules/rxjs/internal/operators/catchError.js");
+/* harmony import */ var rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/internal/observable/throwError */ "./node_modules/rxjs/internal/observable/throwError.js");
+/* harmony import */ var rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var DirectoryService = /** @class */ (function () {
+    function DirectoryService(_http) {
+        this._http = _http;
+        this.url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].baseUrl;
+        this.levels = [];
+        this.persons = [];
+        this.institutions = [];
+    }
+    DirectoryService.prototype.getData = function (searchTerm) {
+        var baseUrl = this.url + '/search/' + searchTerm;
+        return this._http.get(baseUrl)
+            .pipe(Object(rxjs_internal_operators_catchError__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
+    };
+    DirectoryService.prototype.errorHandler = function (error) {
+        return Object(rxjs_internal_observable_throwError__WEBPACK_IMPORTED_MODULE_3__["throwError"])(error);
+    };
+    DirectoryService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"]])
+    ], DirectoryService);
+    return DirectoryService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/level-category.service.ts":
 /*!****************************************************!*\
   !*** ./src/app/services/level-category.service.ts ***!
@@ -9318,6 +9967,12 @@ var PersonService = /** @class */ (function () {
     };
     PersonService.prototype.getPersons = function (country_id) {
         var url = this.url + '/countries/' + country_id + '/persons';
+        return this._http.get(url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandler));
+    };
+    PersonService.prototype.getPersonsLevel = function (country_id, level_id) {
+        if (country_id === void 0) { country_id = null; }
+        if (level_id === void 0) { level_id = null; }
+        var url = this.url + '/countries/' + country_id + '/levels/' + level_id + '/persons';
         return this._http.get(url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.errorHandler));
     };
     PersonService.prototype.getPersonLevel = function (country_id, level_id, person_id) {
@@ -9531,6 +10186,83 @@ var UploadFileService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/shared/confirm-modal/confirm-modal.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/shared/confirm-modal/confirm-modal.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9jb25maXJtLW1vZGFsL2NvbmZpcm0tbW9kYWwuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/shared/confirm-modal/confirm-modal.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/shared/confirm-modal/confirm-modal.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal-body text-center\">\r\n  <p>Do you want to confirm?</p>\r\n  <button type=\"button\" class=\"btn btn-default\" (click)=\"onConfirm()\">Yes</button>\r\n  <button type=\"button\" class=\"btn btn-primary\" (click)=\"onCancel()\">No</button>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/shared/confirm-modal/confirm-modal.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/confirm-modal/confirm-modal.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: ConfirmModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmModalComponent", function() { return ConfirmModalComponent; });
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ConfirmModalComponent = /** @class */ (function () {
+    function ConfirmModalComponent(_modalRef) {
+        this._modalRef = _modalRef;
+    }
+    ConfirmModalComponent.prototype.onCancel = function () {
+        this.onClose.next(false);
+        this._modalRef.hide();
+    };
+    ConfirmModalComponent.prototype.onConfirm = function () {
+        this._modalRef.hide();
+        this.onClose.next(true);
+    };
+    ConfirmModalComponent.prototype.ngOnInit = function () {
+        this.onClose = new rxjs__WEBPACK_IMPORTED_MODULE_0__["Subject"]();
+    };
+    ConfirmModalComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-confirm-modal',
+            template: __webpack_require__(/*! ./confirm-modal.component.html */ "./src/app/shared/confirm-modal/confirm-modal.component.html"),
+            styles: [__webpack_require__(/*! ./confirm-modal.component.css */ "./src/app/shared/confirm-modal/confirm-modal.component.css")]
+        }),
+        __metadata("design:paramtypes", [ngx_bootstrap__WEBPACK_IMPORTED_MODULE_2__["BsModalRef"]])
+    ], ConfirmModalComponent);
+    return ConfirmModalComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/ibox/ibox.component.css":
 /*!************************************************!*\
   !*** ./src/app/shared/ibox/ibox.component.css ***!
@@ -9725,12 +10457,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _ibox_ibox_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ibox/ibox.component */ "./src/app/shared/ibox/ibox.component.ts");
 /* harmony import */ var _modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modal-select-country/modal-select-country.component */ "./src/app/shared/modal-select-country/modal-select-country.component.ts");
+/* harmony import */ var _confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./confirm-modal/confirm-modal.component */ "./src/app/shared/confirm-modal/confirm-modal.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -9745,11 +10479,13 @@ var SharedModule = /** @class */ (function () {
             ],
             declarations: [
                 _ibox_ibox_component__WEBPACK_IMPORTED_MODULE_2__["IboxComponent"],
-                _modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_3__["ModalSelectCountryComponent"]
+                _modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_3__["ModalSelectCountryComponent"],
+                _confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmModalComponent"]
             ],
             exports: [
                 _ibox_ibox_component__WEBPACK_IMPORTED_MODULE_2__["IboxComponent"],
-                _modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_3__["ModalSelectCountryComponent"]
+                _modal_select_country_modal_select_country_component__WEBPACK_IMPORTED_MODULE_3__["ModalSelectCountryComponent"],
+                _confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmModalComponent"]
             ]
         })
     ], SharedModule);

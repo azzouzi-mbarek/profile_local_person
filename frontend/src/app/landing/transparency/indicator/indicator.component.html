@@ -2,60 +2,56 @@
 
   <div class="row">
 
-
-    <div class="col-lg ">
+    <div class="col-lg " style="
+        padding-left: 0px;
+        padding-right: 0px;">
       <div class="ibox-content">
           <div class="tabs-container">
-            <ul class="nav nav-tabs  " role="tablist">
-              <li><a class="nav-link bg-primary m-r-xxs" [ngClass]="tab1.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab1')"> Plans et planification</a></li>
-              <li><a class="nav-link bg-primary m-r-xxs" [ngClass]="tab2.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab2')">informations GÉNÉRALES </a></li>
-              <li><a class="nav-link bg-primary m-r-xxs" [ngClass]="tab3.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab3')"> Local taxes, rates</a></li>
-              <li><a class="nav-link bg-primary m-r-xxs" [ngClass]="tab4.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab4')"> Relationship with citizen</a></li>
-              <li><a class="nav-link bg-primary m-r-xxs" [ngClass]="tab5.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab5')"> Public procurement</a></li>
-              <li><a class="nav-link bg-primary m-r-xxs" [ngClass]="tab6.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab6')"> Economic and financial</a></li>
+            <ul class="nav nav-tabs  justify-content-between text-capitalize text-white font-weight-bold " role="tablist">
+              <li><a class="nav-link bg-primary " [ngClass]="tab1.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab1')"> Plans et planification</a></li>
+              <li><a class="nav-link bg-primary " [ngClass]="tab2.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab2')">informations GÉNÉRALES </a></li>
+              <li><a class="nav-link bg-primary " [ngClass]="tab3.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab3')"> Taxes locales,impôts</a></li>
+              <li><a class="nav-link bg-primary " [ngClass]="tab4.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab4')"> Relation avec le citoyen</a></li>
+              <li><a class="nav-link bg-primary " [ngClass]="tab5.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab5')"> marchés publics</a></li>
+              <li><a class="nav-link bg-primary " [ngClass]="tab6.id == tabHover ? 'active show' : ''" data-toggle="tab" (mouseover)="onMouseOver('tab6')"> économique et financière</a></li>
             </ul>
             <div class="tab-content">
               <!--  body of Plans et planification -->
-              <div role="tabpanel" id="tab1" #tab1 class="tab-pane" [ngClass]="tab1.id == tabHover ? 'active show' : ''">
+              <div role="tabpanel" #tab1 id="tab1"  class="tab-pane" [ngClass]="tab1.id == tabHover ? 'active show' : ''">
                 <div class="panel-body">
 
                   <div class="row">
 
 
                     <div class="col-sm-12 ">
-                      <div class="p-xxs b-r-lg m-b-xs">
-                        <div class="icheck-default">
-                          <input type="radio" id="Plans1" name="someGroupName1" checked />
-                          <label for="Plans1">Rapport annuel disponible </label>
-                        </div>
-                      </div>
 
-                      <div class="p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Plans2" name="someGroupName1" />
-                          <label for="Plans2">Rapport sur le développement de la collectivité </label>
-                        </div>
-                      </div>
+                        <div class="icheck-default  b-r-lg m-b">
+                            <input type="radio" id="Plans1" name="indicator" checked/>
+                            <label for="Plans1">Rapport annuel disponible</label>
+                          </div>
+                          <div class="icheck-default  b-r-lg m-b">
+                            <input type="radio" id="Plans2" name="indicator"/>
+                            <label for="Plans2">Rapport sur le développement de la collectivité </label>
+                          </div>
 
-                      <div class="p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Plans3" name="someGroupName1" />
+               
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Plans3" name="indicator" />
                           <label for="Plans3">Rapport sur les manquements  </label>
                         </div>
-                      </div>
-                      <div class="p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Plans4" name="someGroupName1" />
+    
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Plans4" name="indicator" />
                           <label for="Plans4">Plan stratégique disponible  </label>
                         </div>
-                      </div>
+             
 
-                      <div class="p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Plans5" name="someGroupName1" />
+                    
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Plans5" name="indicator" />
                           <label for="Plans5">Plan financier disponible   </label>
                         </div>
-                      </div>
+             
 
                     </div>
                   </div>
@@ -71,161 +67,154 @@
 
 
                     <div class="col-sm-12 ">
-                      <div class="p-xxs b-r-lg m-b-xs">
-                        <div class="icheck-default">
-                          <input type="radio" id="informations1" name="someGroupName5" checked />
+                  
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="informations1" name="indicator"/>
                           <label for="informations1">Rôle et composition clairement définie </label>
                         </div>
-                      </div>
+                   
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="informations2" name="someGroupName5" />
+                    
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="informations2" name="indicator" />
                           <label for="informations2">CV et biographies des maires disponibles </label>
                         </div>
-                      </div>
+             
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="informations3" name="someGroupName5" />
+                   
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="informations3" name="indicator" />
                           <label for="informations3">Email de la collectivité disponible  </label>
                         </div>
-                      </div>
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="informations4" name="someGroupName5" />
+                    
+            
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="informations4" name="indicator" />
                           <label for="informations4">Déclaration disponible  </label>
                         </div>
-                      </div>
+                
 
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- body  Local taxes, rates  -->
+              <!-- body  Taxes locales,impôts  -->
               <div role="tabpanel" #tab3 id="tab3" class="tab-pane" [ngClass]="tab3.id == tabHover ? 'active show' : ''">
                 <div class="panel-body">
                   <div class="row">
 
 
                     <div class="col-sm-12 ">
-                      <div class="   p-xxs b-r-lg m-b-xs">
-                        <div class="icheck-default">
-                          <input type="radio" id="taxes1" name="someGroupName5" checked />
+
+                      <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="taxes1" name="indicator"/>
                           <label for="taxes1">Rapport sur les recettes de taxes </label>
                         </div>
-                      </div>
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="taxes2" name="someGroupName5" />
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="taxes2" name="indicator" />
                           <label for="taxes2">Publication transparence des taux </label>
                         </div>
-                      </div>
 
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- body of Relationship with citizen  -->
+              <!-- body Relation avec le citoyen  -->
               <div role="tabpanel" #tab4 id="tab4" class="tab-pane" [ngClass]="tab4.id == tabHover ? 'active show' : ''">
                 <div class="panel-body">
                   <div class="row">
 
 
                     <div class="col-sm-12 ">
-                      <div class="p-xxs b-r-lg m-b-xs">
-                        <div class="icheck-default">
-                          <input type="radio" id="Relationship1" name="someGroupName5" checked />
+               
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Relationship1" name="indicator"  />
                           <label for="Relationship1">Outils de communication disponible  </label>
                         </div>
-                      </div>
+                
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Relationship2" name="someGroupName5" />
+     
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Relationship2" name="indicator" />
                           <label for="Relationship2">Site web disponible  </label>
                         </div>
-                      </div>
+                     
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Relationship3" name="someGroupName5" />
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Relationship3" name="indicator" />
                           <label for="Relationship3">Journal d’information  </label>
                         </div>
-                      </div>
+                   
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Relationship4" name="someGroupName5" />
+                   
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Relationship4" name="indicator" />
                           <label for="Relationship4">Newsletter disponible  </label>
                         </div>
-                      </div>
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Relationship5" name="someGroupName5" />
+          
+                     
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Relationship5" name="indicator" />
                           <label for="Relationship5">Pages réseaux sociaux disponibles  </label>
                         </div>
-                      </div>
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Relationship6" name="someGroupName5" />
+               
+                   
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Relationship6" name="indicator" />
                           <label for="Relationship6">Rencontres de la population</label>
                         </div>
-                      </div>
+                     
 
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- body of Public procurement  -->
+              <!-- body of marchés publics  -->
               <div role="tabpanel" #tab5 id="tab5" class="tab-pane" [ngClass]="tab5.id == tabHover ? 'active show' : ''">
                 <div class="panel-body">
                   <div class="row">
 
 
                     <div class="col-sm-12 ">
-                      <div class="p-xxs b-r-lg m-b-xs">
-                        <div class="icheck-default">
-                          <input type="radio" id="procurement1" name="someGroupName5" checked />
+
+                      <div class="icheck-default b-r-lg m-b-xs">
+                          <input type="radio" id="procurement1" name="indicator"  />
                           <label for="procurement1">Service délivré à la population  </label>
                         </div>
-                      </div>
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="procurement2" name="someGroupName5" />
+                        <div class="icheck-default b-r-lg m-b-xs">
+                          <input type="radio" id="procurement2" name="indicator" />
                           <label for="procurement2">Existence d’un document de procédures </label>
                         </div>
-                      </div>
 
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- body of Economic and financial transparency  -->
+              <!-- body of économique et financière  -->
               <div role="tabpanel" #tab6 id="tab6" class="tab-pane" [ngClass]="tab6.id == tabHover ? 'active show' : ''">
                 <div class="panel-body">
                   <div class="row">
 
 
                     <div class="col-sm-12 ">
-                      <div class="p-xxs b-r-lg m-b-xs">
-                        <div class="icheck-default">
-                          <input type="radio" id="Economic1" name="someGroupName5" checked />
+  
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Economic1" name="indicator"  />
                           <label for="Economic1">Budget de la collectivité communiqué  </label>
                         </div>
-                      </div>
+            
 
-                      <div class=" p-xxs b-r-lg  ">
-                        <div class="icheck-default">
-                          <input type="radio" id="Economic2" name="someGroupName5" />
+           
+                        <div class="icheck-default b-r-lg m-b">
+                          <input type="radio" id="Economic2" name="indicator" />
                           <label for="Economic2">Recettes de la collectivité  </label>
                         </div>
-                      </div>
+                     
 
                     </div>
                   </div>

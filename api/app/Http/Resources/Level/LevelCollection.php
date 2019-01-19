@@ -31,6 +31,7 @@ class LevelCollection extends JsonResource
                 'stage' => $this->stage,
                 'st' => $this->levels->count(),
                 'population' => $this->population,
+                // 'Indicators' => $this->Indicators,
                 // 'population_year' => 2005,
                 'date_population' => $this->census_date_population,
                 'levels_count' => Level::where('level_id', $this->id)->count(),

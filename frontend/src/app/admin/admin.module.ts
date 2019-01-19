@@ -51,6 +51,14 @@ import { PersonComponent } from './person/person.component';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { AcademicLevelComponent } from './person/academic-level/academic-level.component';
 import { ToastrModule } from 'ngx-toastr';
+import { PopulationComponent } from './level/population/population.component';
+import { LegalFrameworkComponent } from './level/legal-framework/legal-framework.component';
+import { CommunicationToolsComponent } from './level/communication-tools/communication-tools.component';
+import { ProgrammesComponent } from './level/programmes/programmes.component';
+import { EvenementsComponent } from './level/evenements/evenements.component';
+import { FinancesComponent } from './level/finances/finances.component';
+import { NgxSelectModule } from 'ngx-select-ex';
+
 
 
 
@@ -73,10 +81,12 @@ import { ToastrModule } from 'ngx-toastr';
     MapsModule,
     NgxChartsModule,
     NgxEasypiechartModule,
+    NgxSelectModule,
     EasyPieChartModule,
     BrowserAnimationsModule,
     MorrisJsModule,
-    DataTablesModule
+    DataTablesModule,
+    
   ],
   declarations: [
     AdminComponent,
@@ -102,7 +112,12 @@ import { ToastrModule } from 'ngx-toastr';
     CategoryLevelComponent,
     PersonComponent,
     AcademicLevelComponent,
-
+    PopulationComponent,
+    LegalFrameworkComponent,
+    CommunicationToolsComponent,
+    ProgrammesComponent,
+    EvenementsComponent,
+    FinancesComponent
   ],
   exports: [EasyPieDirective],
   entryComponents: [

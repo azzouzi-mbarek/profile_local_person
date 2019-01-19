@@ -1,8 +1,8 @@
-import { CountryService } from './../../services/country.service';
-import { Component, OnInit, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
-import { singleCL, singleEL,singleSiege,singleDomaine,singleType } from './data';
-import { RegionService } from 'src/app/services/region.service';
-import { StatistcMapComponent } from 'src/app/maps/statistc-map/statistc-map.component';
+import {CountryService} from './../../services/country.service';
+import {Component, OnInit, OnChanges, SimpleChanges, ViewChild} from '@angular/core';
+import {singleCL, singleEL, singleSiege, singleDomaine, singleType} from './data';
+import {RegionService} from 'src/app/services/region.service';
+import {StatistcMapComponent} from 'src/app/maps/statistc-map/statistc-map.component';
 
 @Component({
   selector: 'app-statistic',
@@ -15,10 +15,10 @@ export class StatisticComponent implements OnInit {
   singleEL: any[];
   singlePOP = [];
   singleParite = [];
-  singleCollectivites=[];
+  singleCollectivites = [];
   singleStatut = [];
-  singleGenaral=[];
-  singleNiveau=[];
+  singleGenaral = [];
+  singleNiveau = [];
   multi: any[];
   tabHover = 'tab1';
   regions = [];
@@ -29,7 +29,7 @@ export class StatisticComponent implements OnInit {
   legendPosition = ['right', 'below'];
   // options
   showLegend = true;
-  colorSchemeCollectivite= {
+  colorSchemeCollectivite = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };
   colorSchemeCL = {
@@ -74,9 +74,8 @@ export class StatisticComponent implements OnInit {
   };
 
   constructor(private _countriesService: CountryService, private _regionsService: RegionService) {
-    Object.assign(this, { singleCL, singleEL,singleSiege,singleDomaine,singleType });
+    Object.assign(this, {singleCL, singleEL, singleSiege, singleDomaine, singleType});
   }
-
 
 
   getOnclickObject($event) {
@@ -86,89 +85,90 @@ export class StatisticComponent implements OnInit {
       name: 'male',
       value: this.layerObject.partie_genre_male
     },
-    {
-      name: 'female',
-      value: this.layerObject.partie_genre_female
-    }];
+      {
+        name: 'female',
+        value: this.layerObject.partie_genre_female
+      }];
 // elus locaux par genre
     this.singleStatut = [{
       name: 'Elu',
       value: this.layerObject.N_of_person_elu
     },
-    {
-      name: 'Nomme',
-      value: this.layerObject.N_of_person_nomme
-    }];
+      {
+        name: 'Nomme',
+        value: this.layerObject.N_of_person_nomme
+      }];
 // statistique generals
-    this.singleGenaral =[{
+    this.singleGenaral = [{
       name: 'Nombre de collectivités inclus',
       value: this.layerObject.levels_count
     },
-    {
-      name: 'Nombre d’élus locaux ',
-      value: this.layerObject.N_of_person_elu
-    },
-    {
-      name: 'Nombre de ministères ',
-      value: this.layerObject.N_de_Ministres
-    },
-    {
-      name: 'Nombre de partenaires',
-      value: this.layerObject.N_de_Ministres
-    },
-    {
-      name: 'Nombres d’associations Nationales',
-      value: this.layerObject.N_de_Ministres
-    }
-  ]
+      {
+        name: 'Nombre d’élus locaux ',
+        value: this.layerObject.N_of_person_elu
+      },
+      {
+        name: 'Nombre de ministères ',
+        value: this.layerObject.N_de_Ministres
+      },
+      {
+        name: 'Nombre de partenaires',
+        value: this.layerObject.N_de_Ministres
+      },
+      {
+        name: 'Nombres d’associations Nationales',
+        value: this.layerObject.N_de_Ministres
+      }
+    ]
 
-  // Niveau acadimique
-  this.singleNiveau =[{
-    name: 'bac+8',
-    value:this.layerObject.N_academic.bac_8
-  },
-  {
-    name: 'bac+5',
-    value:this.layerObject.N_academic.bac_5
-  },
-  {
-    name: 'bac+3',
-    value:this.layerObject.N_academic.bac_3
-  },
-  {
-    name: 'bac+2',
-    value:this.layerObject.N_academic.bac_2
-  },
-  {
-    name: 'sans bac',
-    value:this.layerObject.N_academic.sans_bac
-  }]
+    // Niveau acadimique
+    this.singleNiveau = [{
+      name: 'bac+8',
+      value: this.layerObject.N_academic.bac_8
+    },
+      {
+        name: 'bac+5',
+        value: this.layerObject.N_academic.bac_5
+      },
+      {
+        name: 'bac+3',
+        value: this.layerObject.N_academic.bac_3
+      },
+      {
+        name: 'bac+2',
+        value: this.layerObject.N_academic.bac_2
+      },
+      {
+        name: 'sans bac',
+        value: this.layerObject.N_academic.sans_bac
+      }]
 //Collectivites locales 
-  this.singleCollectivites =[{
-  name: 'Population ',
-  value:'97245252 Hbt'
-},
-{
-  name: 'Superficie ',
-  value:'54534533 Ha'
-},
-{
-  name: 'Nombre de conseillers communaux ',
-  value:30
-},
-{
-  name: 'Nombre de collectivités avec Maire élu ',
-  value:20
-},
-{
-  name: 'Finances (Budget) ',
-  value:'4564563 dh'
-},
-{
-  name: 'Pourcentage Par outils de communication développés ',
-  value:10
-}]
+    this.singleCollectivites = [{
+      name: 'Population ',
+      value: '97245252 Hbt'
+    },
+      {
+        name: 'Superficie ',
+        value: '54534533 Ha'
+      },
+      {
+        name: 'Nombre de conseillers communaux ',
+        value: 30
+      },
+      {
+        name: 'Nombre de collectivités avec Maire élu ',
+        value: 20
+      },
+      {
+        name: 'Finances (Budget) ',
+        value: '4564563 dh'
+      },
+      {
+        name: 'Pourcentage Par outils de communication développés ',
+        value: 10
+      }]
   }
+
   ngOnInit() {
 
     this._regionsService.getRegions().subscribe(
@@ -177,30 +177,29 @@ export class StatisticComponent implements OnInit {
         this.singlePOP = this.getPopulationData(this.regions);
         // this.singleParite = this.getParite(this.region);
       },
-      (error) => { console.log(error); }
-
+      (error) => {
+        console.log(error);
+      }
     );
   }
 
   getParite(country) {
 
   }
+
   getPopulationData(regions) {
     const population = [];
     regions.forEach(region => {
-      const pop = { name: region.name, value: region.population };
+      const pop = {name: region.name, value: region.population};
       population.push(pop);
     });
     return population;
   }
 
 
-
   onMouseOver(id) {
     this.tabHover = id;
   }
-
-
 
 
 }

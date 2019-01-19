@@ -46,5 +46,7 @@ class DatabaseSeeder extends Seeder
         // factory(App\Models\Person\CountryPerson::class, 50)->create();
 
         //        factory(App\Models\Institution\CountryInstitution::class,50)->create();
+                       factory(App\Models\Indicator\IndicatorLevel::class,100)->create();
+
     }
 }

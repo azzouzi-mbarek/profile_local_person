@@ -32,6 +32,7 @@
               "./src/vendor/pace/pace.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js",
               "src/vendor/js/popper.min.js",
+              "src/vendor/js/javascript.js",
               "src/vendor/js/metisMenu/jquery.metisMenu.js",
               "src/vendor/js/slimscroll/jquery.slimscroll.min.js",
               "src/vendor/js/inspinia.js",
@@ -99,7 +100,8 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/ngx-slick/slick/slick.min.js"
+              "./node_modules/ngx-slick/slick/slick.min.js",
+              "./node_modules/metismenu/dist/metisMenu.js"
             ],
             "assets": [
               "src/favicon.ico",

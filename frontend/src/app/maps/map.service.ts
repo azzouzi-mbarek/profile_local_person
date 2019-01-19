@@ -82,7 +82,7 @@ export class MapService {
     // construction des base Layers
     // tslint:disable-next-line:max-line-length
     const mapBoxUrl = 'https://api.tiles.mapbox.com/v4/mapbox.streets-satellite/{z}/{x}/{y}.png?access_token=sk.eyJ1IjoiamVtbWxtZWQiLCJhIjoiY2puY2wxMG91MGJ1ajNwc2Z5aHRpaXcwZiJ9.PihyI84-WjzwYTp_WKDf_A';
-
+    const esrimap = 'https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}';
     const googleMapsUrl = 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}';
     const osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png';
     const openTopoUrl = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
@@ -113,6 +113,33 @@ export class MapService {
     L.control.layers(baseLayers).addTo(map);
 
     return map;
+  }
+
+
+  styletransparency(feature) {
+
+    const d: String = feature.properties.region;
+    return {
+
+      fillColor: (function () {
+        return d.toLowerCase() === 'western africa'
+          ? '#dddddd'
+          : d.toLowerCase() === 'northern africa'
+            ? '#dddddd'
+            : d.toLowerCase() === 'middle africa'
+              ? '#dddddd'
+              : d.toLowerCase() === 'eastern africa'
+                ? '#dddddd'
+                : d.toLowerCase() === 'southern africa'
+                  ? '#dddddd'
+                  : '#dddddd';
+      })(),
+      weight: 2,
+      opacity: 0.1,
+      color: 'green',
+      dashArray: '3',
+      fillOpacity: 0.7
+    };
   }
 
   styleRegion(feature) {

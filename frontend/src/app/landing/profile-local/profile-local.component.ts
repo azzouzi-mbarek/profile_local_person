@@ -107,7 +107,6 @@ export class ProfileLocalComponent implements OnInit {
   }
   rerenderTablesLevels(): void {
 
-
     this.dtElementLevel.dtInstance.then((dtInstance: DataTables.Api) => {
       // Destroy the table first
       dtInstance.destroy();
@@ -118,8 +117,6 @@ export class ProfileLocalComponent implements OnInit {
   }
 
   ngOnInit() {
-
-
 
     this._route.paramMap.subscribe(params => {
       this.level_id = +params.get('id');

@@ -10,7 +10,8 @@ class Indicator extends Model
     protected $fillable =[
         "name"
     ];
-    public  function  Levels(){
-        return $this->belongsToMany(Level::class);
+    public  function  levels(){
+        return $this->belongsToMany(Level::class)            
+        ->withPivot('created_at', 'note');
     }
 }

@@ -14,7 +14,7 @@ class CreateIndicatorLevelsTable extends Migration
     public function up()
     {
         Schema::create('indicator_level', function (Blueprint $table) {
-            $table->float('note');
+            $table->float('note')->nullable();
             $table->integer('indicator_id')->unsigned()->index();
             $table->integer('level_id')->unsigned()->index();
             $table->timestamps();

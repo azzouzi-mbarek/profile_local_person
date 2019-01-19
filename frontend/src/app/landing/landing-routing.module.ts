@@ -13,6 +13,8 @@ import { LocalGovernmentComponent } from './statistic/local-government/local-gov
 import { LocalyElectedComponent } from './statistic/localy-elected/localy-elected.component';
 import { GeneralStatisticsComponent } from './statistic/general-statistics/general-statistics.component';
 import { DevelopmentPartnersComponent } from './statistic/development-partners/development-partners.component';
+import { ProfileUserComponent } from './profile-user/profile-user.component';
+import { ModifProfileComponent } from './profile-user/modif-profile/modif-profile.component';
 
 const landingRoutes: Routes = [
   {
@@ -28,7 +30,10 @@ const landingRoutes: Routes = [
       { path: 'directory', component: DirectoryComponent },
       { path: 'profile-local-government/:id', component: ProfileLocalComponent },
       { path: 'profile-person/:id', component: ProfilPersonComponent },
-      { path: 'transparency', component: TransparencyComponent }
+      { path: 'transparency', component: TransparencyComponent },
+      { path: 'profile-user', component: ProfileUserComponent },
+      {path: 'modifprofile', component: ModifProfileComponent}
+
 
     ]
   }

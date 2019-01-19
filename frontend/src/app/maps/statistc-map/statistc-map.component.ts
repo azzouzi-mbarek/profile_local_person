@@ -300,7 +300,10 @@ export class StatistcMapComponent implements OnInit, AfterContentInit {
     );
   }
 
+  selectByContryModal() {
 
+    // this.openModalSelect();
+  }
 
 
   openModalSelect() {

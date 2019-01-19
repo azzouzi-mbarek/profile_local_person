@@ -4,9 +4,9 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Models\Indicator\Indicator::class, function (Faker $faker) {
     return [
-        'category_indicator_id' => function () {
-            return CategoryIndicator::all()->random();
-        },
+        // 'category_indicator' => function () {
+        //     return CategoryIndicator::all()->random();
+        // },
         'name'=> $faker->word,
     ];
 });

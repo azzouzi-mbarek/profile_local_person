@@ -14,12 +14,13 @@
             <app-level-map *ngIf="level" [levelHoverName]="levelHoverName" [levelInput]="level"></app-level-map>
           </div>
           <div class="ibox-content profile-content">
-            <p><i class="fa fa-bank"></i><strong> {{level?.properties.category}}</strong></p>
-            <p><i class="fa fa-map-marker"></i> Pays : {{level?.properties.country}} <br> Region :
-              {{level?.properties.region}} </p>
-            <p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> {{level?.properties.email}} </p>
-            <p><i class="fa fa-phone-square"></i> TEL / FAX : {{level?.properties.number_phone}} </p>
-            <p><i class="fa fa-globe"></i> {{level?.properties.web_site}} </p>
+            <p  (click)="gotToLevelDetails(level.properties.level_id)">upper level {{level?.properties.level_id}} </p>
+            <p><i class="fas fa-university"></i><strong> Type: {{level?.properties.category}}</strong></p>
+            <p><i class="fas fa-globe-africa"></i> Region :{{level?.properties.region}}   </p>
+            <p><i class="fas fa-map-marked-alt"></i> Pays : {{level?.properties.country}}</p>
+            <p><i class="fas fa-at"></i>{{level?.properties.email}} </p>
+            <p><i class="fas fa-phone-square"></i> TEL / FAX : {{level?.properties.number_phone}} </p>
+            <p><i class="fas fa-globe"></i> {{level?.properties.web_site}} </p>
             <h5> Adress :</h5><address>{{level?.properties.address}}</address>
 
           </div>
@@ -68,13 +69,14 @@
             <div class="panel-body">
               <div class="container">
                 <!-- table levels -->
-                <h3><i class="fas fa-list-ul"></i> LISTE DE COLLECTIVITES LOCALS INCLUS DE LA
-                  {{level?.properties.category | uppercase}} {{
-                  level?.properties.name | uppercase }}
-                </h3>
-                <div class="row">
+          
+                <div class="row" *ngIf="level?.properties.levels_count !== 0" >
+                    <h3><i class="fas fa-list-ul"></i> LISTE DE COLLECTIVITES LOCALS INCLUS DE LA
+                      {{level?.properties.category | uppercase}} {{
+                      level?.properties.name | uppercase }}
+                    </h3>
                   <div class="col-md-12">
-                    <div class="ibox">
+                    <div class="ibox" >
                       <div class="ibox-content">
                         <div class="row">
                           <div class="col-md-12">

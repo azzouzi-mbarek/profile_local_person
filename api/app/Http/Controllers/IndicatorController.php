@@ -8,15 +8,40 @@ use App\Http\Resources\Indicator\IndicatorResource;
 use App\Models\Indicator\Indicator;
 use App\Models\Level\Level;
 use Illuminate\Http\Request;
-
+use App\Http\Resources\Level\LevelCollection;
 class IndicatorController extends Controller
 {
+
+    public function search($indicator)
+    {
+
+        $results = $this->searchIndicator($indicator);
+
+        return response(
+            [
+                'data' => $results,
+            ],
+            201
+        );
+
+    }
+
+    public function searchIndicator($indicator)
+    {
+        $searchText = strtolower($indicator);
+
+        $IndicatorLevel = Indicator::where('name', 'LIKE', '%' . $searchText . '%')->first();
+    
+        $levels = $IndicatorLevel->levels;
+
+        return LevelCollection::collection($IndicatorLevel->Levels);
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($region_id, $country_id, Level $level)
+    public function index($country_id, Level $level)
     {
 
         return IndicatorCollection::collection($level->Indicators);

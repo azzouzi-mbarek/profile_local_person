@@ -23,6 +23,8 @@ export class DirectoryComponent implements OnInit {
   resultsCounts = false;
   counts: number = null;
   searchTerm = null;
+  HoverId = null;
+
 
   // get searchTerm(): String {
   //   return this._searchTerm;
@@ -114,5 +116,18 @@ public ngxDisabled = false;
     this._router.navigate(['landing/profile-local-government', id]);
   }
 
+
+  onMouseEnterTR(e) {
+
+    console.log(e.type);
+
+  }
+
+  onMouseLeaveTR(name) {
+    this.HoverId = null;
+
+
+
+  }
 
 }

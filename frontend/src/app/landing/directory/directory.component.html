@@ -255,11 +255,9 @@
               <div class="hr-line-dashed"></div>
               <div class="search-result">
 
-                <h3><a>{{level.properties.category}} {{ level.properties.name}}</a></h3>
-                <a href="#" class="search-link">www.inspinia.com/inspinia</a>
-
-                <h3><a (click)="goToLevelProfil( level.properties.id)">{{ level.properties.category +' '+
-                    level.properties.name}}</a></h3>
+                <div (click)="goToLevelProfil( level.properties.id)">
+                <h3>{{ level.properties.category +' '+
+                    level.properties.name}}</h3>
                 <a class="search-link">{{ level.properties.name }}</a>
                 <p>
                   Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
@@ -270,7 +268,8 @@
                 </p>
 
 
-                <app-country-map *ngIf="level" [country]="level" ></app-country-map>
+              </div>
+                <!-- <app-country-map *ngIf="level" [country]="level" ></app-country-map> -->
 
               </div>
 
@@ -278,25 +277,35 @@
             <!-- persons -->
             <div *ngFor="let person of personsResults">
 
-
-              <div class="hr-line-dashed"></div>
-              <div class="search-result">
-                <h3><a (click)="goToPersonProfil(person.id)">{{ person.first_name + ' '+ person.last_name}}</a></h3>
-                <a (click)="goToPersonProfil(person.id)" class="search-link">{{ person.email}}</a>
-
-                <div class="feed-element">
-                  <a class="float-left" href="profile.html">
-                    <img alt="image" class="rounded-circle" src="assets/img/p5.jpg">
-                  </a>
-                  <div class="media-body ">
-
-                    <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>
-                    <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
-                  </div>
-                </div>
-
-              </div>
-
+                <div class="hr-line-dashed"></div>
+                <div class="row"(click)="goToPersonProfil(person.id)">
+                    <div class="col-md-9">
+    
+                        <div class="profile-image">
+                            <img src="assets/img/a4.jpg" class="rounded-circle circle-border m-b-md" alt="profile">
+                        </div>
+                        <div class="profile-info">
+                            <div class="">
+                                <div>
+                                    <h2 class="no-margins">
+                                        {{ person.first_name + ' '+ person.last_name}}
+                                    </h2>
+                                    <h4>Founder of Groupeq</h4>
+                                    <small>
+                                        {{ person.email}}
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <small>Sales in last 24h</small>
+                        <h2 class="no-margins">206 480</h2>
+                        <div id="sparkline1"><canvas style="display: inline-block; width: 384.75px; height: 50px; vertical-align: top;" width="384" height="50"></canvas></div>
+                    </div>
+    
+    
+                </div>  
             </div>
 
 

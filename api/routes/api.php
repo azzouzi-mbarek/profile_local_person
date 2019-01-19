@@ -28,15 +28,19 @@ Route::group([
         Route::group(['prefix' => '/{country}/levels'], function () {
             Route::apiResource('/{level}/population', 'PopulationController');
             Route::apiResource('/{level}/persons', 'PersonController');
+            Route::apiResource('/{level}/indicators', 'IndicatorController');
+
 
         });
 
     });
 
-    Route::apiResource('levelCategory', 'CategoryLevelController');
+    Route::apiResource('category_levels', 'CategoryLevelController');
     Route::apiResource('persons', 'PersonController');
     Route::apiResource('academic_levels', 'AcademicLevelController');
 
     Route::get('/search/{searchTerm}', 'SearchController@search');
+    Route::get('/indicator/{indicator}', 'IndicatorController@search');
+
 
 });

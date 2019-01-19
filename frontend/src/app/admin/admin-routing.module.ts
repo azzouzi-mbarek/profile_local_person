@@ -19,6 +19,13 @@ import { LevelComponent } from './level/level.component';
 import { LeveldetailsComponent } from './level/leveldetails/leveldetails.component';
 import { CountryListResolverService } from '../resolvers/country-resolver.service';
 import { PersonComponent } from './person/person.component';
+import { CategoryLevelComponent } from './level/category-level/category-level.component';
+import { PopulationComponent } from './level/population/population.component';
+import { LegalFrameworkComponent } from './level/legal-framework/legal-framework.component';
+import { CommunicationToolsComponent } from './level/communication-tools/communication-tools.component';
+import { EvenementsComponent } from './level/evenements/evenements.component';
+import { ProgrammesComponent } from './level/programmes/programmes.component';
+import { FinancesComponent } from './level/finances/finances.component';
 
 const routes: Routes = [
   {
@@ -31,9 +38,19 @@ const routes: Routes = [
       { path: 'countries/:id/levels', component: LevelComponent },
       { path: 'countries/:id/levels/:l_id', component: LeveldetailsComponent },
       { path: 'countries/:id/levels/:l_id/levels', component: LevelComponent },
+      { path: 'category_level',component:CategoryLevelComponent},
       { path: 'persons', component: PersonComponent },
       { path: 'academic_level', component: AcademicLevelComponent },
-      { path: 'academic_level', component: AcademicLevelComponent },
+      { path: 'population', component: PopulationComponent },
+      {path: 'legal_framework', component: LegalFrameworkComponent},
+      {path: 'communication_tool', component: CommunicationToolsComponent},
+      {path: 'evenement', component: EvenementsComponent},
+      {path: 'programme', component: ProgrammesComponent},
+      {path: 'finance', component: FinancesComponent},
+
+
+
+      
 
 
 

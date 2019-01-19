@@ -16,8 +16,8 @@ export class LevelMapComponent implements OnInit, OnChanges, AfterContentInit {
   levels = [];
   levelLayer = null;
   levelsLayer = null;
-
   map = null;
+
   constructor(private _mapService: MapService, private _levelService: LevelService, private _router: Router) { }
 
   ngAfterContentInit() {
@@ -46,8 +46,13 @@ export class LevelMapComponent implements OnInit, OnChanges, AfterContentInit {
     if (changes['levelInput'] !== undefined) {
       const changeLevelInput = changes['levelInput'];
       if (changeLevelInput.currentValue !== changeLevelInput.previousValue) {
-        this.levelLayer.removeFrom(this.map);
-        this.levelsLayer.removeFrom(this.map);
+        if (this.levelLayer !== null){
+          this.levelLayer.removeFrom(this.map);
+
+        }
+        if(this.levelsLayer){
+          this.levelsLayer.removeFrom(this.map);
+        }
 
         this.addlevelLayer();
         this.getLevelsLayers();
