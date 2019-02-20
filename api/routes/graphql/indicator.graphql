@@ -1,0 +1,52 @@
+type Indicator { 
+    id: ID!
+    name:String!
+    CategoryIndicator: [CategoryIndicator]
+
+}
+
+type CategoryIndicator{
+    id: ID!
+    name: String!
+    Indicators: [Indicator]
+
+}
+
+extend type Query    {
+    Indicators: [Indicator] @all
+    # persons: [Person] @field(resolver: "App\\Http\\GraphQL\\Queries\\PersonQueries@persons")
+    # regions : [Person] @field(resolve : "App\\Http\\GraphQL\\Queris\\PersonQueris@regions")
+    # Indicator(id: ID! @eq): Indicator @first
+  CategoryIndicatorByName(name: String @eq): [CategoryIndicator] @all
+    CategoryIndicators: [CategoryIndicator] @all
+    # CategoryIndicatorId(id: ID! @eq): CategoryIndicator @first
+}
+
+extend type Mutation   {
+
+    createCategoryIndicator(
+        name: String @rules(apply: ["required", "unique:CategoryIndicators,name"])
+    ): CategoryIndicator @create
+
+    updateCategoryIndicator(
+        id: ID @rules(apply: ["required"])
+        name: String @rules(apply: ["required", "unique:CategoryIndicators,name"])
+    ): CategoryIndicator @update
+
+    deleteCategoryIndicator(
+        id: ID! @rules(apply: ["required"])
+    ): CategoryIndicator @delete
+
+     createIndicator(
+        name: String @rules(apply : ["required"])
+        category_indicator_id: Int  @rules(apply : ["nullable" ])
+     ) : Indicator @create 
+
+
+    updateIndicator(
+        id: ID @rules(apply: ["required"])
+        name: String @rules(apply : ["required"])
+       ): Indicator @update
+
+    deleteIndicator(id:ID!) : Indicator @delete
+}

@@ -101,15 +101,14 @@ class CountryController extends Controller
                     $country->iso_a3 = $value->getProperties()['iso_a3'];
                     $country->iso_a2 = $value->getProperties()['iso_a2'];
                     $country->iso_n3 = $value->getProperties()['iso_n3'];
-                    $country->population = $value->getProperties()['pop_est'];
-                    $country->population_year = $value->getProperties()['lastcensus'];
+               
 
                     $country->region_id = Region::where('name', $value->getProperties()['subregion'])->first()->id;
                     //get geometry in Object PHP format
                     $geometry = $value->getGeometry();
                     // create Geometry from json
 
-                    $country->area = Geometry::fromJson(json_encode($geometry));
+                    $country->geom = Geometry::fromJson(json_encode($geometry));
 
                     // dd($country->area instanceof Polygon);
                     $country->save();

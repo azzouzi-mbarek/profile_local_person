@@ -1,0 +1,32 @@
+<div class="modal-header" [ngClass]="{ 'bg-primary' : !state, 'bg-warning' : state }">
+    <h4 class="modal-title pull-left">{{title}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="onDecline()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form #Form="ngForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group {{ errors.name ? 'has-error' : '' }} ">
+          <label for="name">Nom</label>
+          <input id="name" type="text" class="form-control" name="name" [(ngModel)]="academic_level.name" required>
+        </div>
+        <div class="alert alert-danger" [hidden]="!errors.name">
+            {{errors.name}}
+          </div>
+        <div class="col-md-12">
+            <label for="bac">Années apres le baccalaureat</label>
+            <input id="bac" type="text" class="form-control" name="bac" required>
+        </div>
+      </div>
+      </div>
+    </form>
+  </div>
+  
+  
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="onDecline()">Annuler</button>
+    <button [disabled]="!Form.valid" type="button" class="btn " [ngClass]="{ 'btn-primary' : !state, 'btn-warning' : state }"
+      (click)="onSubmit()">{{SubmitBtnTitle}}</button>
+  </div>

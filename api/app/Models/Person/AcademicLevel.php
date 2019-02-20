@@ -13,6 +13,6 @@ class AcademicLevel extends Model
     protected $table = 'academic_levels';
     
     public  function  Persons(){
-        return $this->belongsToMany(Person::class);
+        return $this->hasMany(Person::class);
     }
 }

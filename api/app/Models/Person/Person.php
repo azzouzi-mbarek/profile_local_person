@@ -12,15 +12,16 @@ class Person extends Model
     protected $fillable = [
         "first_name",
         "last_name",
-        "image",
+        "image_url",
+        "profession",
         'birthday',
         'nationality',
         'sex',
-        'academic_level',
         'study_area',
         'short_biography',
         'email',
         'number_phone',
+        'academic_level_id',
     ];
     protected $table = 'persons';
 

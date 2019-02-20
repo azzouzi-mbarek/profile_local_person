@@ -45,7 +45,7 @@ class CountryResource extends Resource
                 'population' => $this->population,
                 'population_year' => $this->population_year,
             ],
-            'geometry' => $this->area,
+            'geometry' => $this->geom,
 
             // 'levels_1' => count($this->levels->filter(function ($value, $key) {return $value->level_id == null;})),
             // 'href' => [

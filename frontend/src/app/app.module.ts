@@ -10,12 +10,18 @@ import { LandingModule } from './landing/landing.module';
 import { PageNotFoundComponent } from './error/page-not-found/page-not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapsModule } from './maps/maps.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { StatisticComponent } from './landing/statistic/statistic.component';
 import { SlickModule } from 'ngx-slick';
+import { GraphQLModule } from './graphql.module';
+import { HttpLinkModule } from 'apollo-angular-link-http';
+import { ApolloModule } from 'apollo-angular';
+
+
+
 
 
 @NgModule({
@@ -36,9 +42,16 @@ import { SlickModule } from 'ngx-slick';
     AuthModule,
     AdminModule,
     MapsModule,
-    SlickModule.forRoot()
+    SlickModule.forRoot(),
+    GraphQLModule,
+    HttpLinkModule,
+    ApolloModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

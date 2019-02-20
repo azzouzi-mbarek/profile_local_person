@@ -7,6 +7,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 import { FormCountryComponent } from './form-country/form-country.component';
 import { NgForm } from '@angular/forms';
+import { CountryQlService } from 'src/app/graphql_services/country-ql.service';
 
 @Component({
   selector: 'app-country',
@@ -44,40 +45,35 @@ export class CountryComponent implements OnInit {
       );
     }
   }
+
+
   constructor(
     private _countryService: CountryService,
+    private _countryQlService: CountryQlService,
     private _modalService: BsModalService,
 
     private _router: Router,
     private _route: ActivatedRoute
   ) {
-    const resolvedData: Country[] | any = this._route.snapshot.data['countriesList'];
+    // const resolvedData: Country[] | any = this._route.snapshot.data['countriesList'];
 
 
-    if (Array.isArray(resolvedData.data)) {
+    // if (Array.isArray(resolvedData.data)) {
 
-      this.countries = resolvedData.data;
-      this.filtredCountries = this.countries;
+    //   this.countries = resolvedData.data;
+    //   this.filtredCountries = this.countries;
 
-    } else {
-      this.errors = resolvedData;
-      console.log(this.errors);
-    }
+    // } else {
+    //   this.errors = resolvedData;
+    //   console.log(this.errors);
+    // }
 
 
   }
 
 
   ngOnInit() {
-    // this._countryService.getCountries().subscribe(
-    //   (countriesApi: any) => {
-    //     this.countries = countriesApi.data;
-    //     this.filtredCountries = this.countries;
-    //   },
-    //   error => {
-    //     this.errors = error;
-    //   }
-    // );
+    this.getCountries()
 
   }
   gotoCountryDetails(id) {
@@ -85,8 +81,17 @@ export class CountryComponent implements OnInit {
       relativeTo: this._route
     });
   }
-  getCountries() {
 
+  getCountries() {
+    return this._countryQlService.getCountries()
+      .valueChanges
+      .subscribe(
+        (dataQl: any) => {
+          this.countries = dataQl.data.countries;
+          console.log(dataQl.data.countries);
+          console.log(this.countries);
+        }
+      )
   }
 
   createCountry() {

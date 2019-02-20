@@ -1,4 +1,4 @@
-<div class="row wrapper border-bottom white-bg page-heading">
+<!-- <div class="row wrapper border-bottom white-bg page-heading">
   <div class="col-lg-9">
     <h2>Niveaux Academiques </h2>
     <ol class="breadcrumb">
@@ -10,117 +10,96 @@
       </li>
     </ol>
   </div>
+</div> -->
+
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Niveaux Academiques</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a [routerLink]="['/administrateur']">Page d'accueil</a>
+      </li>
+      <li class="breadcrumb-item active">
+        <a [routerLink]="['']">Niveaux Academiques</a>
+      </li>
+
+    </ol>
+  </div>
+  <div class="col-lg-2">
+
+  </div>
 </div>
 
-<div class="wrapper wrapper-content animated fadeInRight">
+<div class="wrapper wrapper-content animated fadeInRight ecommerce ">
 
-  <div class="row">
-    <div class="col-md-5">
-      <div class="ibox ">
-        <form #AcademicLevelForm="ngForm">
-          <div class="ibox-content">
+    <button (click)="openModelFormAcademicLevel()" type="button" class="btn btn-block btn-outline btn-primary m-b-md  ">Nouvelle</button>
 
 
+  <div class="ibox-content m-b-xs   border-bottom">
+    <div class="row m-t-md">
 
-            <div class="form-group {{ errors.name ? 'has-error' : '' }} ">
-
-              <input type="text" class="form-control" required="" name="name" [(ngModel)]="aca_level.name" placeholder="Nom">
-            </div>
-            <div class="alert alert-danger" [hidden]="!errors.name">
-              {{ errors.name }}
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="form-group {{ errors?.bac_level ? 'has-error' : '' }} ">
-              <select appSelectValidator="select" required="" id="bac_level" name="bac_level" [(ngModel)]="aca_level.bac_level"
-                class="form-control">
-
-                <option value="bac">bac</option>
-                <option value="bac+1">bac+1</option>
-                <option value="bac+2">Bac+2 </option>
-                <option value="bac+3">Bac+3 </option>
-                <option value="bac+4">Bac+4 </option>
-                <option value="bac+5">Bac+5</option>
-                <option value="bac+8">Bac+8</option>
-
-              </select>
-            </div>
-            <div class="alert alert-danger" [hidden]="!errors.bac_level">
-              {{errors.bac_level}}
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="col-sm-6">
+        <div class="form-group row">
+          <label class="col-lg-2 col-form-label text-right pr-0">Afficher</label>
+          <div class="col-lg-4">
+            <select class="form-control  " name="perPage" [(ngModel)]="perPage">
+              <option value=5 selected>5</option>
+              <option value=10>10</option>
+              <option value=25>25</option>
+              <option value=50>50</option>
+              <option value=100>100</option>
+            </select>
           </div>
-          <div class=ibox-footer>
-            <button type="submit" class="btn btn-block  btn-primary" [disabled]="AcademicLevelForm.invalid" (click)="createNavigateur()">Sauvgarder</button>
-          </div>
-        </form>
-      </div>
+          <label class="col-lg-2 col-form-label text-left pl-0">Element</label>
 
-    </div>
-
-
-
-    <div class="col-md-7">
-      <div class="ibox">
-        <div class="ibox-content">
-          <h2>Niveaux acadeique </h2>
-          <div class="row">
-            <div class="col-md-12">
-              <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTriggerALevel" class="table table-striped table-hover">
-                <thead>
-                  <tr>
-                    <th>Niveau Academique</th>
-                    <th>Baccalaureat</th>
-
-                    <th>Action</th>
-
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let level of aca_levels">
-                 
-                    <td>{{level.name}}</td>
-                    <td>{{level.bac_level}}</td>
-
-                    <td>
-                      <div class="btn-group float-right">
-                        <!-- <button (click)="goToAcademicLevelDetails(level.id)" class="btn-info btn btn-xs">Voir</button> -->
-                        <button (click)="editerAcademicLevel(level.id)" class="btn-warning btn btn-xs">Editer</button>
-                        <button (click)="deleteAcademicLevel(level.id)" class="btn-danger btn btn-xs">Supprimer</button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
         </div>
       </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input type="text" placeholder="Recherche..." class="form-control" [(ngModel)]="searchTerm">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+
+
+      <ngx-datatable class="material striped" [sortType]="'single'" [reorderable]="false" [rows]="rows" [columnMode]="'force'"
+        [headerHeight]="50" [footerHeight]="50" [rowHeight]="50" [messages]="tableMessages" [limit]="perPage"
+        [selected]="selected" [selectionType]="'multi'" (activate)="onActivate($event)" (select)='onSelect($event)'
+        [loadingIndicator]="loadingIndicator">
+        <ngx-datatable-column name="ID"></ngx-datatable-column>
+        <ngx-datatable-column name="NAME"></ngx-datatable-column>
+        <ngx-datatable-column name="ACTIONS" headerClass="text-center" cellClass="text-center">
+          <ng-template ngx-datatable-cell-template let-row="row" let-rowIndex='rowIndex'>
+            <div class="btn-group">
+              <!-- <button (click)="goToAcademicLevelDetails(level.id)" class="btn-info btn btn-xs">Voir</button> -->
+              <button (click)="openModelFormAcademicLevel(row)" class="btn-warning btn btn-xs">Editer</button>
+              <button (click)="onClickDelete(row)" class="btn-danger btn btn-xs">Supprimer</button>
+            </div>
+          </ng-template>
+        </ngx-datatable-column>
+      </ngx-datatable>
 
     </div>
-    {{aca_levels|json}}
-    {{aca_levels.length}}
   </div>
+
+
+
+
+
+
 
 
 </div>

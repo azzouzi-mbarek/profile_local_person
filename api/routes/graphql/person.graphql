@@ -1,0 +1,80 @@
+type Person { 
+    id: ID!
+    first_name:String!
+    last_name: String!
+    image_url: String
+    sex: String
+    birthday: Date
+    profession: String
+    nationality: String
+    study_area: String
+    short_biography: String
+    email: String
+    number_phone: String
+    created_at: DateTime
+    updated_at: DateTime
+    AcademicLevel: [AcademicLevel]
+
+}
+
+type AcademicLevel{
+    id: ID!
+    name: String
+    bac_level: String
+    created_at: DateTime
+    updated_at: DateTime
+    Persons: [Person]
+
+}
+
+extend type Query    {
+    Persons: [Person] @all
+    # persons: [Person] @field(resolver: "App\\Http\\GraphQL\\Queries\\PersonQueries@persons")
+    # regions : [Person] @field(resolve : "App\\Http\\GraphQL\\Queris\\PersonQueris@regions")
+    Person(id: ID! @eq): Person @first
+   AcademicLevelByName(name: String @eq): [AcademicLevel] @all
+    AcademicLevels: [AcademicLevel] @all
+    AcademicLevelId(id: ID! @eq): AcademicLevel @first
+}
+
+extend type Mutation   {
+
+    createAcademicLevel(
+        name: String @rules(apply: ["required", "unique:academic_levels,name"])
+        bac_level: String
+    ): AcademicLevel @create
+
+    updateAcademicLevel(
+        id: ID @rules(apply: ["required"])
+        name: String @rules(apply: ["required", "unique:academic_levels,name"])
+        bac_level:String
+    ): AcademicLevel @update
+
+    deleteAcademicLevel(
+        id: ID! @rules(apply: ["required"])
+    ): AcademicLevel @delete
+
+     createPerson(
+        first_name: String @rules(apply : ["required"])
+        last_name: String @rules(apply : ["required"])
+        image_url: String  @rules(apply : ["nullable" ])
+        sex: String  @rules(apply : ["nullable" ])
+        birthday: Date  @rules(apply : ["nullable" ])
+        profession: String  @rules(apply : ["nullable" ])
+        nationality: String  @rules(apply : ["nullable" ])
+        study_area: String  @rules(apply : ["nullable" ])
+        short_biography: String  @rules(apply : ["nullable" ])
+        email: String  @rules(apply : ["nullable" ])
+        number_phone: String  @rules(apply : ["nullable" ])
+        academic_level_id: Int  @rules(apply : ["nullable" ])
+     ) : Person @create 
+
+
+    updatePerson(
+        id: ID @rules(apply: ["required"])
+        first_name: String @rules(apply : ["required"])
+        last_name: String @rules(apply : ["required"])
+       ): Person @update
+
+    deletePerson(id:ID!) : Person @delete
+}

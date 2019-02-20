@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use App\Models\Level\Level;
-use App\Models\Person\Person;
+use App\Models\Person;
 use Grimzy\LaravelMysqlSpatial\Eloquent\SpatialTrait;
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,11 +13,16 @@ class Country extends Model
     protected $fillable = [
         'name', 'region_id', 'iso_a3', 'iso_a2', 'iso_n3', 'capital', 'description', 'devise', 'indicatif_tele', 'drapeau_url',
     ];
-    protected $spatialFields = ['area'];
+    protected $spatialFields = ['geom'];
 
     public function region()
     {
         return $this->belongsTo(Region::class);
+    }
+
+    public function populations()
+    {
+        return $this->hasMany(Country_population::class);
     }
 
     public function Levels()

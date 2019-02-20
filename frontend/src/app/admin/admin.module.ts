@@ -2,7 +2,7 @@ import { ConfirmModalComponent } from './../shared/confirm-modal/confirm-modal.c
 import { CountryListResolverService } from './../resolvers/country-resolver.service';
 import { NgModule, PlatformRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, NgControl } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AdminRoutingModule } from './admin-routing.module';
@@ -58,6 +58,9 @@ import { ProgrammesComponent } from './level/programmes/programmes.component';
 import { EvenementsComponent } from './level/evenements/evenements.component';
 import { FinancesComponent } from './level/finances/finances.component';
 import { NgxSelectModule } from 'ngx-select-ex';
+import { ModelFormAcademicLevelComponent } from './person/model-form-academic-level/model-form-academic-level.component';
+import { ModelFormPersonComponent } from './person/model-form-person/model-form-person.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 
 
@@ -86,7 +89,11 @@ import { NgxSelectModule } from 'ngx-select-ex';
     BrowserAnimationsModule,
     MorrisJsModule,
     DataTablesModule,
-    
+    NgxDatatableModule,
+  
+
+
+
   ],
   declarations: [
     AdminComponent,
@@ -117,13 +124,17 @@ import { NgxSelectModule } from 'ngx-select-ex';
     CommunicationToolsComponent,
     ProgrammesComponent,
     EvenementsComponent,
-    FinancesComponent
+    FinancesComponent,
+    ModelFormAcademicLevelComponent,
+    ModelFormPersonComponent
   ],
   exports: [EasyPieDirective],
   entryComponents: [
     ConfirmModalComponent,
     FormCountryComponent,
-    FormRegionComponent
+    FormRegionComponent,
+    ModelFormAcademicLevelComponent,
+    ModelFormPersonComponent,
   ],
   providers: [
     UploadFileService,

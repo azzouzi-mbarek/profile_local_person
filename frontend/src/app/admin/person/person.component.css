@@ -1,0 +1,11 @@
+#myTable {
+  table-layout: fixed;
+  width: 100% !important;
+}
+#myTable td,
+#myTable th{
+  width: auto !important;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://192.168.33.20/api'
+  baseUrl: 'http://192.168.33.20/api',
   // baseUrl: 'http://ec2-18-191-253-63.us-east-2.compute.amazonaws.com/api'
-
+  graphQlUrl: 'http://192.168.33.20/graphql'
 };
 
 /*

@@ -16,11 +16,12 @@ class CreateIndicatorsTable extends Migration
         Schema::create('indicators', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('category_indicator')->nullable();
+            $table->integer('category_indicator_id')->nullable()->unsigned()->index();
 
             $table->timestamps();
         });
         Schema::table('indicators', function (Blueprint $table) {
+            $table->foreign('category_indicator_id')->references('id')->on('category_indicators')->onDelete('cascade');;
 
         });
 

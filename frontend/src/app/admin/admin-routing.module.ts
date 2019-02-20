@@ -33,24 +33,25 @@ const routes: Routes = [
     component: AdminComponent,
     canActivate: [AfterLoginService],
     children: [
-      { path: 'countries', component: CountryComponent, resolve: { countriesList: CountryListResolverService } },
+      // { path: 'countries', component: CountryComponent, resolve: { countriesList: CountryListResolverService } },
+      { path: 'countries', component: CountryComponent },
       { path: 'countries/:id', component: CountryDetailsComponent },
       { path: 'countries/:id/levels', component: LevelComponent },
       { path: 'countries/:id/levels/:l_id', component: LeveldetailsComponent },
       { path: 'countries/:id/levels/:l_id/levels', component: LevelComponent },
-      { path: 'category_level',component:CategoryLevelComponent},
+      { path: 'category_level', component: CategoryLevelComponent },
       { path: 'persons', component: PersonComponent },
       { path: 'academic_level', component: AcademicLevelComponent },
       { path: 'population', component: PopulationComponent },
-      {path: 'legal_framework', component: LegalFrameworkComponent},
-      {path: 'communication_tool', component: CommunicationToolsComponent},
-      {path: 'evenement', component: EvenementsComponent},
-      {path: 'programme', component: ProgrammesComponent},
-      {path: 'finance', component: FinancesComponent},
+      { path: 'legal_framework', component: LegalFrameworkComponent },
+      { path: 'communication_tool', component: CommunicationToolsComponent },
+      { path: 'evenement', component: EvenementsComponent },
+      { path: 'programme', component: ProgrammesComponent },
+      { path: 'finance', component: FinancesComponent },
 
 
 
-      
+
 
 
 

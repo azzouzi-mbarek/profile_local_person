@@ -34,7 +34,6 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 
 
-
 // import { MapsModule } from '../maps/maps.module';
 import { NavfilterComponent } from './directory/navfilter/navfilter.component';
 import { ProfilPersonComponent } from './profil-person/profil-person.component';
@@ -65,7 +64,8 @@ import { ModifProfileComponent } from './profile-user/modif-profile/modif-profil
     DataTablesModule,
     FormsModule,
     BrowserModule,
-    PaginationModule
+    PaginationModule,
+  
   ],
   declarations: [
     LandingComponent,
@@ -107,4 +107,7 @@ import { ModifProfileComponent } from './profile-user/modif-profile/modif-profil
     ModalSelectCountryComponent
   ]
 })
-export class LandingModule { }
+export class LandingModule {
+
+
+ }

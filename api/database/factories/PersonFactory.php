@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\Person\AcademicLevel;
+use App\Models\AcademicLevel;
 use Faker\Generator as Faker;
 
-$factory->define(App\Models\Person\Person::class, function (Faker $faker) {
+$factory->define(App\Models\Person::class, function (Faker $faker) {
     return array(
         'image_url' => $faker->imageUrl($width = 640, $height = 480),
         'sex' => function () {
@@ -15,6 +15,7 @@ $factory->define(App\Models\Person\Person::class, function (Faker $faker) {
         'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,
         'birthday' => $faker->date($format = 'Y-m-d', $max = 'now'),
+        'profession'=> $faker->jobTitle,
         'nationality' => $faker->country,
         'academic_level_id' => function () {
             return AcademicLevel::all()->random();

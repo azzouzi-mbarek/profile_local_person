@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Models\Person\AcademicLevel::class, function (Faker $faker) {
+$factory->define(App\Models\AcademicLevel::class, function (Faker $faker) {
     return [
         'name' => function () {
             return collect([

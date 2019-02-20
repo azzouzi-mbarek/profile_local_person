@@ -9,7 +9,7 @@ import { BsModalRef } from 'ngx-bootstrap';
 })
 export class ConfirmModalComponent implements OnInit {
   message: String;
-  confirmation: boolean;
+  state: String = 'default';
 
   public onClose: Subject<boolean>;
 
@@ -18,7 +18,7 @@ export class ConfirmModalComponent implements OnInit {
   }
 
 
-  onCancel(): void {
+  onDecline(): void {
 
     this.onClose.next(false);
     this._modalRef.hide();
@@ -26,8 +26,8 @@ export class ConfirmModalComponent implements OnInit {
 
   onConfirm(): void {
 
-    this._modalRef.hide();
     this.onClose.next(true);
+
   }
 
 

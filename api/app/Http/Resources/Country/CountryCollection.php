@@ -57,7 +57,7 @@ class CountryCollection extends Resource
                 ],
                 'N_de_Ministres' => CountryPerson::all()->where('country_id', $this->id)->where('function', 'Ministre')->count(),
             ],
-            'geometry' => $this->area,
+            'geometry' => $this->geom,
 
             // 'levels_1' => count($this->levels->filter(function ($value, $key) {
             //     return $value->level_id == null;

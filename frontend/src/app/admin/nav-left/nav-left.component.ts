@@ -23,6 +23,7 @@ export class NavLeftComponent implements OnInit, AfterViewInit {
   ) { }
 
   ngOnInit() { }
+
   ngAfterViewInit() {
     // jQuery('#side-menu').metisMenu();
     jQuery("#side-menu").metisMenu({

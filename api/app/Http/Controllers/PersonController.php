@@ -7,7 +7,7 @@ use App\Http\Resources\Person\PersonCollection;
 use App\Http\Resources\Person\PersonResource;
 use App\Models\Country;
 use App\Models\Level\Level;
-use App\Models\Person\Person;
+use App\Models\Person;
 use Illuminate\Http\Request;
 
 class PersonController extends Controller
@@ -100,7 +100,7 @@ class PersonController extends Controller
         $person->update($request->all());
         if ($person->update()) {
             //        $level->Persons()->save($person);
-            $level->Persons()->updateExistingPivot($person->id, ['category_person_id' => $request->category_person_id]);
+            // $level->Persons()->updateExistingPivot($person->id, ['category_person_id' => $request->category_person_id]);
         }
         return response([
             'data' => new PersonResource($person),
