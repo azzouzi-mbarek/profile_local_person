@@ -5,7 +5,7 @@ import { BsModalRef } from 'ngx-bootstrap';
 import * as academicLevelQueries from './../../../queries/academicLevelQueries';
 import { AcademicLevelQlService } from 'src/app/graphql_services/academic_level_ql.service';
 import { ErrorHandlerService } from 'src/app/graphql_services/error_handler.service';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder,ReactiveFormsModule, FormControl } from '@angular/forms';
 
 
 
@@ -26,7 +26,7 @@ export class ModelFormAcademicLevelComponent implements OnInit {
   errors: any = [];
   AcademicLevelSubject: Subject<{}>;
   // form category
-  academicLevelForm: FormGroup;
+  AcademicLevelForm: FormGroup;
 
   constructor(private _BsModalRef: BsModalRef,
     private _academiqueLevelService: AcademicLevelQlService,
@@ -34,9 +34,10 @@ export class ModelFormAcademicLevelComponent implements OnInit {
     private _fb: FormBuilder) { }
 
   ngOnInit() {
+ 
 
 
-    this.academicLevelForm = this._fb.group({
+    this.AcademicLevelForm = this._fb.group({
       name: [''],
       bac_level: [''],
     });
@@ -58,7 +59,7 @@ export class ModelFormAcademicLevelComponent implements OnInit {
     this.title = !this.state ? 'Nouveau Niveau Academique :' : 'Éditer ' + this.academic_level.name + this.academic_level.bac_level;
     this.SubmitBtnTitle = !this.state ? 'Sauvegarder' : 'Éditer';
 
-    this.academicLevelForm.patchValue(this.academic_level);
+    this.AcademicLevelForm.patchValue(this.academic_level);
 
 
 
@@ -67,7 +68,7 @@ export class ModelFormAcademicLevelComponent implements OnInit {
 
 
   initErrors(field) {
-    this.academicLevelForm.get(field).valueChanges.subscribe(
+    this.AcademicLevelForm.get(field).valueChanges.subscribe(
       value => {
         delete this.errors['name'];
         console.log(this.errors);
@@ -80,8 +81,8 @@ export class ModelFormAcademicLevelComponent implements OnInit {
   }
 
   mapFromValueToAcademicLevel() {
-    this.academic_level.name = this.academicLevelForm.value.name;
-    this.academic_level.bac_level = this.academicLevelForm.value.bac_level;
+    this.academic_level.name = this.AcademicLevelForm.value.name;
+    this.academic_level.bac_level = this.AcademicLevelForm.value.bac_level;
   }
   onSubmit() {
     this.mapFromValueToAcademicLevel()

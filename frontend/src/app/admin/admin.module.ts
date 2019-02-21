@@ -2,7 +2,7 @@ import { ConfirmModalComponent } from './../shared/confirm-modal/confirm-modal.c
 import { CountryListResolverService } from './../resolvers/country-resolver.service';
 import { NgModule, PlatformRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, NgForm, NgControl } from '@angular/forms';
+import { FormsModule, NgForm, NgControl, ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AdminRoutingModule } from './admin-routing.module';
@@ -90,6 +90,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     MorrisJsModule,
     DataTablesModule,
     NgxDatatableModule,
+    CommonModule,
+    ReactiveFormsModule,
   
 
 
