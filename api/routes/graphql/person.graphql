@@ -41,13 +41,12 @@ extend type Mutation   {
 
     createAcademicLevel(
         name: String @rules(apply: ["required", "unique:academic_levels,name"])
-        bac_level: String
+        bac_level: String  @rules(apply : ["nullable" ])
     ): AcademicLevel @create
 
     updateAcademicLevel(
         id: ID @rules(apply: ["required"])
         name: String @rules(apply: ["required", "unique:academic_levels,name"])
-        bac_level:String
     ): AcademicLevel @update
 
     deleteAcademicLevel(

@@ -12,7 +12,10 @@ export const QUERY_ACADEMIC_LEVELS = gql`
 
 
 export const MUTATION_CREATE_ACADEMIC_LEVEL = gql`
-    mutation createAcademicLevel($name:String,$bac_level:String){
+    mutation createAcademicLevel(
+      $name:String,
+    $bac_level:String
+    ){
       createAcademicLevel(name: $name, bac_level: $bac_level){
         id
         name

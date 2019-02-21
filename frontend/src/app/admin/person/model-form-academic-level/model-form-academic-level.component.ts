@@ -56,7 +56,7 @@ export class ModelFormAcademicLevelComponent implements OnInit {
 
     this.AcademicLevelSubject = new Subject();
 
-    this.title = !this.state ? 'Nouveau Niveau Academique :' : 'Éditer ' + this.academic_level.name + this.academic_level.bac_level;
+    this.title = !this.state ? 'Nouveau Niveau Academique :' : 'Éditer ' + this.academic_level.name;
     this.SubmitBtnTitle = !this.state ? 'Sauvegarder' : 'Éditer';
 
     this.AcademicLevelForm.patchValue(this.academic_level);

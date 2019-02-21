@@ -67,7 +67,8 @@ export class AcademicLevelQlService {
       mutation: mutation,
       variables: {
         id: academic_Level.id,
-        name: academic_Level.name
+        name: academic_Level.name,
+        bac_level: academic_Level.bac_level
       }
     });
 
